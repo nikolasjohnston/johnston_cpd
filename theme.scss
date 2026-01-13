@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family: "Atkinson Hyperlegible", sans-serif;
+
+
+.quarto-reader-toggle, 
+.quarto-color-scheme-toggle {
+  color: white !important; /* Ensures the text is white */
+  font-family: Atkinson Hyperlegible, sans-serif !important;
+}
+
+.quarto-reader-toggle::before, 
+.quarto-color-scheme-toggle::before {
+  color: white !important; /* Ensures the text inside pseudo-elements is white */
+  font-family: Atkinson Hyperlegible, sans-serif !important;
+}
+
+.quarto-reader-toggle i.bi, 
+.quarto-color-scheme-toggle i.bi {
+  color: white !important;
+}
+/*-- scss:rules --*/

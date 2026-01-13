@@ -1,0 +1,50 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "BIOL340 - Autumn 2025"
+  description: "Homepage for BIOL340 Dry Pracs, University of Wollongong, Autumn 2025."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    
+include-in-header:
+
+  text: |
+    <style type="text/css">
+    .quarto-reader-toggle .bi::before, .quarto-color-scheme-toggle .bi::before {
+      display: flex;
+      height: 2rem;
+      width: 2rem;
+      gap: 0.5rem;
+      background-size: 2rem 2rem;
+      font-size: 1rem;
+      font-family: sans-serif;
+      display: inline-block;
+    }
+
+    .quarto-reader-toggle::before, .quarto-color-scheme-toggle::before {
+        content: "Dark Mode";
+        display: flex;
+        font-size: 1rem;
+        gap: 0.5rem;
+        font-family: Atkinson Hyperlegible, sans-serif;
+    </style>
+    
+freeze: auto
+
+editor: visual
