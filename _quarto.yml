@@ -10,8 +10,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      
+  open-graph: true
 
-
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2025, Nikolas Johnston"
+    background: "#960e0c"
 format:
   html:
     theme:
