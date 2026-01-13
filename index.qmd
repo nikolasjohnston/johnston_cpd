@@ -1,11 +1,237 @@
 ---
-title: "Nikolas Johnston"
+title: "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology"
+author: "Dr. Nikolas Johnston"
+date: "2026-01-13"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    theme: cosmo
+    code-fold: true
+    code-tools: true
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
-This is a Quarto website.
+<!--
+Hosting notes (GitHub Pages + Quarto):
+- Put this file in a Quarto project (e.g., /docs or /site).
+- Add _quarto.yml with `project: type: website` and `output-dir: docs` for GitHub Pages.
+- Render with `quarto render` and publish the /docs folder.
+-->
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Statement of context
 
-```{r}
-1 + 1
-```
+I am a Lecturer in Bioinformatics, and my teaching is informed by the realities of contemporary biological research and industry practice. Across my teaching, I emphasise that **digital skills are essential for modern biology graduates**, spanning:
+
+- **data analysis and visualisation** (e.g., working with real biological datasets using modern tools), and  
+- **ethical, transparent use of generative AI (GenAI)** as an emerging workplace capability.
+
+This portfolio is written for **CPD (L&T) Level 2**, aligned explicitly to the **UOW CPD (L&T) Framework (updated 14/08/25)** and its Level 2 descriptors and review indicators (p. 2) :contentReference[oaicite:0]{index=0}.
+
+A central example underpinning this portfolio is my curriculum redesign work in **BIOL340 (Cell and Molecular Biology)**, where I have developed a coherent plan to restructure practical teaching to better support research- and industry-relevant capabilities in data interpretation, computational thinking, and scientific communication :contentReference[oaicite:1]{index=1}.
+
+---
+
+# Teaching philosophy
+
+My teaching philosophy is grounded in the principle that **digital competence is now foundational to biological literacy**. Biology graduates must be able to interpret data, understand computational workflows, and engage critically with emerging technologies (including GenAI). My goal is therefore to design learning experiences that help students build:
+
+- confidence with data and computation,
+- authentic scientific reasoning skills,
+- strong scientific communication, and
+- ethical judgement in the use of powerful digital tools.
+
+I aim to normalise computational thinking for biology students by embedding it in discipline-relevant contexts, rather than treating it as a specialist add-on. In practice, this means students work with realistic datasets, apply analysis tools in guided “dry” sessions, and develop scientific writing as an applied skill linked to experimental evidence :contentReference[oaicite:2]{index=2}.
+
+---
+
+# Alignment to the UOW CPD (L&T) Framework — Level 2
+
+The sections below respond directly to the **seven Higher Education Teaching Criteria** in the UOW CPD (L&T) Framework, using the **Level 2 descriptors and review indicators** as the organising structure (Framework p. 2) :contentReference[oaicite:3]{index=3}.
+
+---
+
+## 1. Design and plan effective learning experiences (Level 2)
+
+### Level 2 descriptor
+**Effectively design curriculum demonstrating integration across the degree** :contentReference[oaicite:4]{index=4}.
+
+### How my practice aligns
+A major focus of my Level 2 practice is curriculum design that prepares students for the data-driven realities of modern biology. In BIOL340, I identified a structural limitation in the traditional practical model: data analysis was embedded late in wet labs, often without sufficient time or scaffolding for students to develop real interpretive competence.
+
+To address this, I designed a revised structure that:
+
+- **shortens wet labs** to focus on essential experimental skills, and  
+- uses reclaimed time to implement **dedicated dry labs** that focus explicitly on data analysis, interpretation, coding, and GenAI-supported workflow literacy :contentReference[oaicite:5]{index=5}.
+
+This design strengthens alignment between learning outcomes and learning activities by ensuring analytical skills are explicitly taught and practised, rather than treated as incidental.
+
+### Evidence (artefacts to embed)
+- Project design rationale and structure: *Project Outline* :contentReference[oaicite:6]{index=6}  
+- [ADD ARTEFACT] Practical sequence map (before/after)
+- [ADD ARTEFACT] Dry lab outlines / worksheets
+
+---
+
+## 2. Facilitate activities that influence and motivate student learning (Level 2)
+
+### Level 2 descriptor
+**Facilitate a wide variety of inclusive learning experiences for students** :contentReference[oaicite:7]{index=7}.
+
+### How my practice aligns
+I facilitate learning through a blend of structured practical activities and guided skill development that supports students to move from “following steps” to *scientific reasoning*. In BIOL340, this includes:
+
+- separating experimental work from analysis so students can focus fully on interpreting results (reducing cognitive overload),
+- using dry labs to build confidence with tools like R through applied biological problems, and
+- using guided examples and staged complexity to support students who have limited prior computational experience :contentReference[oaicite:8]{index=8}.
+
+This approach is designed to motivate students by making computational work meaningful and clearly linked to biological questions and employability.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] Slide deck explaining the teaching rationale (digital skills, authenticity)
+- [ADD ARTEFACT] Example “worked example” + follow-up independent task
+- [ADD ARTEFACT] Student-facing guidance for learning pathways (support links)
+
+---
+
+## 3. Support student individual development and diversity (Level 2)
+
+### Level 2 descriptor
+**Support students in their choice and navigation of formal and informal learning pathways** :contentReference[oaicite:9]{index=9}.
+
+### How my practice aligns
+A recurring challenge in third-year biology is variability in students’ quantitative and computational backgrounds. My approach supports student development by:
+
+- explicitly teaching foundational digital skills inside the curriculum (rather than assuming prior knowledge),
+- providing structured, guided learning activities that students can revisit, and
+- normalising the use of supportive tools (including GenAI) in ways that maintain ownership of learning and integrity.
+
+The BIOL340 redesign specifically addresses student transition to workforce and research expectations by embedding authentic analytical tasks and communication outputs, strengthening students’ capacity to navigate both formal learning (subject activities/assessments) and informal learning (practice, tool exploration, self-directed improvement) :contentReference[oaicite:10]{index=10}.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] “Getting started with R” support page / resource list
+- [ADD ARTEFACT] Scaffolded optional extension tasks for confident students
+- [ADD ARTEFACT] GenAI “how to use it ethically” guidance sheet
+
+---
+
+## 4. Facilitate assessment and feedback that fosters independent learning (Level 2)
+
+### Level 2 descriptor
+**Design scaffolded assessments that foster progressive learning** :contentReference[oaicite:11]{index=11}.
+
+### How my practice aligns
+My assessment design focuses on building progressive capability rather than testing isolated knowledge. In BIOL340, I reintroduced scientific writing by replacing a quiz-heavy model with assessment tasks that are linked to practical data and progressively develop:
+
+- data interpretation and analysis,
+- scientific writing and argumentation, and
+- evaluative judgement through peer review and feedback.
+
+The redesign includes:
+
+- separating analysis from wet labs and using dry labs to prepare students for assessment tasks,
+- reintroducing a formal scientific report assessed by staff and peers, and
+- using peer marking to expose students to diverse examples and strengthen their ability to judge quality against criteria :contentReference[oaicite:12]{index=12}.
+
+This structure explicitly scaffolds learning across activities and assessments, supporting independence and reflective improvement.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] Assessment briefs (scientific report + peer assessment)
+- [ADD ARTEFACT] Rubrics and feedback prompts
+- [ADD ARTEFACT] Example of how feedback informs a later task (progression map)
+
+---
+
+## 5. Integrate scholarship, research and professional activities with teaching (Level 2)
+
+### Level 2 descriptor
+**Demonstrate scholarship of teaching and learning through authorship of evaluations, reports and/or scholarly articles that showcase teaching practice** :contentReference[oaicite:13]{index=13}.
+
+### How my practice aligns
+My teaching innovation is directly informed by professional practice in bioinformatics and the changing landscape of research and industry. The BIOL340 redesign is built on the recognition that:
+
+- biological science is increasingly computational,
+- graduates need competence with data and tools, and
+- GenAI presents both a challenge to traditional assessment and an opportunity to explicitly teach ethical digital practice.
+
+My approach treats GenAI as a tool to be taught responsibly—similar to how scientists adopt new laboratory tools through training, risk mitigation, and best practice. The redesign represents an explicit attempt to align teaching with discipline evolution and employability expectations, and to develop a coherent approach that can be disseminated and adapted across subjects :contentReference[oaicite:14]{index=14}.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] Conference abstract / forum showcase (if applicable)
+- [ADD ARTEFACT] Presentation slides on GenAI + scientific writing pedagogy
+- [ADD ARTEFACT] Internal report / evaluation summary of the initiative
+
+---
+
+## 6. Evaluate teaching practice and engage in continuing professional development (Level 2)
+
+### Level 2 descriptor
+**Using evaluation data support and mentor teaching teams. Reflect upon feedback from students and colleagues… and engage in CPD** :contentReference[oaicite:15]{index=15}.
+
+### How my practice aligns
+My redesign work is grounded in reflective teaching practice. The BIOL340 changes respond to identified issues in the previous model (e.g., limited space for data interpretation learning, quiz-heavy assessment, and insufficient scaffolding for modern digital skills). The redesign plan also includes explicit intentions to monitor and refine curriculum delivery based on outcomes and feedback, reflecting an iterative approach to improvement :contentReference[oaicite:16]{index=16}.
+
+At Level 2, I also recognise evaluation as a team-based process. The project plan was developed collaboratively and is designed to support consistent learning experiences for large cohorts by clarifying structures, learning activities, and assessment expectations.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] Student feedback excerpts / thematic summary (where available)
+- [ADD ARTEFACT] Peer observation notes / teaching team reflections
+- [ADD ARTEFACT] CPD log entries (workshops, learning, implementation notes)
+
+---
+
+## 7. Demonstrate personal and professional effectiveness (Level 2)
+
+### Level 2 descriptor
+**Develop effective, resilient professional practices that enhance course management** :contentReference[oaicite:17]{index=17}.
+
+### How my practice aligns
+My teaching practice emphasises sustainable, scalable design—particularly important in large-cohort subjects. The BIOL340 redesign is designed to:
+
+- improve the efficiency and clarity of practical delivery (shorter, more focused wet labs),
+- strengthen student learning through targeted dry labs, and
+- introduce assessment structures that support quality learning outcomes while being manageable for teaching teams (e.g., dual staff/peer evaluation, structured scaffolding) :contentReference[oaicite:18]{index=18}.
+
+This reflects an approach to course management that balances educational quality, authenticity, and practicality, and supports coherent teamwork in delivery.
+
+### Evidence (artefacts to embed)
+- [ADD ARTEFACT] Demonstrator notes / delivery guides
+- [ADD ARTEFACT] Practical coordination checklist / session plan
+- [ADD ARTEFACT] Assessment workflow plan (peer + staff marking)
+
+---
+
+# Closing reflection: Why digital skills matter for biology graduates
+
+Across my teaching, I emphasise that a modern biology graduate must be able to:
+
+- engage with data confidently and critically,
+- apply computational tools to biological questions, and
+- use emerging technologies like GenAI ethically and transparently.
+
+My Level 2 teaching practice demonstrates curriculum design and assessment innovation that embeds these capabilities into core learning experiences—supporting students not just to succeed in a subject, but to develop durable skills for research, industry, and lifelong learning.
+
+---
+
+# Key evidence referenced
+
+- UOW CPD (L&T) Framework (updated 14/08/25), including Level 2 descriptors and review indicators (p. 2) :contentReference[oaicite:19]{index=19}  
+- Project Outline: Integrating Data Analysis and Computational Skills in Third-Year Cell and Molecular Biology :contentReference[oaicite:20]{index=20}  
+
+---
+
+# Appendix: Artefact index (fill in as you embed)
+
+| Framework criterion | Artefact | Type | Link |
+|---|---|---|---|
+| 1. Design & plan | BIOL340 redesign overview | PDF/Slides | [ADD LINK] |
+| 2. Facilitate learning | Dry lab worked example | PDF/HTML | [ADD LINK] |
+| 3. Support pathways | Student support resources (R/GenAI) | Page | [ADD LINK] |
+| 4. Assessment & feedback | Report + peer review rubric | PDF | [ADD LINK] |
+| 5. Scholarship | Forum / showcase presentation | Slides | [ADD LINK] |
+| 6. Evaluate & CPD | Feedback summary + reflection notes | PDF/Page | [ADD LINK] |
+| 7. Professional effectiveness | Demonstrator notes / delivery guide | PDF | [ADD LINK] |

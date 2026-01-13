@@ -1,0 +1,17 @@
+{
+  "hash": "45e3eefb6ca0bc6d4cda8365b55bf462",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Grids\"\nauthor: \"Mitchell Stares\"\nweight: 37\ndate: \"2018-11-11\"\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n\n\n\n\nSo far, our graph does not have the original ggplot grid lines because we removed them in our original graph. Before we start changing these, let's save our beautiful masterpiece to an object/variable to simplify the theme() changing.\n\n\n::: {.cell}\n\n```{.r .cell-code}\niris.scatter <- iris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5)) +\n  theme(axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank())\n```\n:::\n\n\nTo change the grid lines on your plot, it is done with the following:\n\nTheme argument | Description\n---------------|--------------------\npanel.grid.major = element_line(insert changes here) | Changes the major grid lines on the graph. Use .x or .y to change just one.  \npanel.grid.minor = element_line(insert changes here) | Changes the minor grid lines on the graph. Use .x or .y to change just one.  \n\nAgain, using the same principals of colour and size for these ones.  \n\n\n::: {.cell}\n\n```{.r .cell-code}\niris.scatter + theme(panel.grid.major = element_line(colour=\"aquamarine\", size=1), panel.grid.minor = element_line(colour=\"slategray2\", size=2)) \n```\n\n::: {.cell-output-display}\n![](6_grids_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\nJust like we did before, we can make all of these our own custom theme by directing them to an object.  \n\n\n::: {.cell}\n\n```{.r .cell-code}\nmasterpiece <- theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5), axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank(), panel.grid.major = element_line(colour=\"aquamarine\", size=1), panel.grid.minor = element_line(colour=\"slategray2\", size=2))\n```\n:::\n\n\n\nNow let's add that to our boxplot.  \n```{r]}\niris.box + masterpiece\n```\nA true work of art!",
+    "supporting": [
+      "6_grids_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

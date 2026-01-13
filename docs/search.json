@@ -1,0 +1,992 @@
+[
+  {
+    "objectID": "pages/2/Themes/6_grids.html",
+    "href": "pages/2/Themes/6_grids.html",
+    "title": "Grids",
+    "section": "",
+    "text": "So far, our graph does not have the original ggplot grid lines because we removed them in our original graph. Before we start changing these, let’s save our beautiful masterpiece to an object/variable to simplify the theme() changing.\n\niris.scatter &lt;- iris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5)) +\n  theme(axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank())\n\nTo change the grid lines on your plot, it is done with the following:\n\n\n\n\n\n\n\nTheme argument\nDescription\n\n\n\n\npanel.grid.major = element_line(insert changes here)\nChanges the major grid lines on the graph. Use .x or .y to change just one.\n\n\npanel.grid.minor = element_line(insert changes here)\nChanges the minor grid lines on the graph. Use .x or .y to change just one.\n\n\n\nAgain, using the same principals of colour and size for these ones.\n\niris.scatter + theme(panel.grid.major = element_line(colour=\"aquamarine\", size=1), panel.grid.minor = element_line(colour=\"slategray2\", size=2)) \n\n\n\n\n\n\n\n\nJust like we did before, we can make all of these our own custom theme by directing them to an object.\n\nmasterpiece &lt;- theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5), axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank(), panel.grid.major = element_line(colour=\"aquamarine\", size=1), panel.grid.minor = element_line(colour=\"slategray2\", size=2))\n\nNow let’s add that to our boxplot.\niris.box + masterpiece\nA true work of art!",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Grids"
+    ]
+  },
+  {
+    "objectID": "pages/2/Themes/3_themes.html",
+    "href": "pages/2/Themes/3_themes.html",
+    "title": "Themes",
+    "section": "",
+    "text": "The easiest way to quickly modify your graph is to add one of the preset theme() commands. I will add each of them to the graph which will replace the previous theme.\nWe can simply add items to our current graph object by adding the + sign. Keep in mind that if you dont “resave” it to the object, it wont stick around. If you want to keep a theme, either add it into the original ggplot command, or save it to the same or a new object.\n\niris.scatter + theme_bw()\n\n\n\n\n\n\n\niris.scatter + theme_classic()\n\n\n\n\n\n\n\niris.scatter + theme_dark() \n\n\n\n\n\n\n\niris.scatter + theme_gray() # The default ggplot theme\n\n\n\n\n\n\n\niris.scatter + theme_minimal()\n\n\n\n\n\n\n\niris.scatter + theme_light()\n\n\n\n\n\n\n\niris.scatter + theme_linedraw()\n\n\n\n\n\n\n\niris.scatter + theme_void()\n\n\n\n\n\n\n\n\nPretty significant changes to the graphs appearance with little effort.\nOf course, we can modify all the individual components of a theme without using one of the presets.\nThe best way to show this would be to look at the ?theme (help) window for this one. The general format for this is as follows.\n\niris.scatter &lt;- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length, colour=Species)) +\n  geom_point() +\n  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  panel.background = element_blank(), axis.line = element_line(colour = \"black\")) + \n  theme(axis.text.x = element_text(colour = \"black\", size = 12)) +  \n  theme(axis.text.y = element_text(colour = \"black\", size = 12)) +\n  theme(plot.title = element_text(color=\"blue\", size=12))\n\niris.scatter\n\n\n\n\n\n\n\n\nWithin the theme() command, we simply call the feature we want to change, followed by how we want to change it. For the panel grids and background, we call element_blank() to make it blank. Changing that to element_line() for the grids, and element_rect() for the background would change them to lines and rectangle, respectively. From there we could pick colour, size etc.\nIn the axis.text lines, we are setting the text colour to “black” and the font size to 12.\nNow obviously, this is pretty daunting. But, you dont have to specify everything. You can very easily use one of the above preset themes (e.g. theme_minimal) and change one or two other things, such as axis line colour etc.\nTo save yourself writing all of the above theme() commands everytime you do a graph, you can save your favourite custom settings to its own object and add that to your graphs. Like so:\n\nsimpletheme &lt;- theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  panel.background = element_blank(), axis.line = element_line(colour = \"black\"), axis.text.x = element_text(colour = \"black\", size = 12), axis.text.y = element_text(colour = \"black\", size = 12),plot.title = element_text(color=\"blue\", size=12))\n\n# We simply direct all of our theme arguments to an object\n\niris.scatter &lt;- iris.scatter + simpletheme # then, just add that object to our graph\n\nFor example, let’s add those custom theme settings to our boxplot we generated earlier.\n\niris.box + simpletheme\n\n\n\n\n\n\n\n\nOk, so that was alot of information that probably doesn’t make sense, so let’s break that down into its components.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Themes introduction"
+    ]
+  },
+  {
+    "objectID": "pages/2/Themes/5_axislines.html",
+    "href": "pages/2/Themes/5_axislines.html",
+    "title": "Axis lines",
+    "section": "",
+    "text": "To change the axis lines and ticks (lines above each number on an axis) use the following.\n\n\n\n\n\n\n\nTheme argument\nDescription\n\n\n\n\naxis.line = element_line(insert changes here)\nThis will change both axes lines.\n\n\naxis.line.x = element_line(insert changes here)\nThis will change just the x axis.\n\n\naxis.line.y = element_line(insert changes here)\nThis will change just the y axis.\n\n\naxis.ticks = element_line(insert changes here)\nChange both axes ticks. Use the .x or .y to change just one axis at a time.\n\n\naxis.ticks.length = element_line(insert changes here)\nChange the length of the axes ticks.\n\n\naxis.text = element_text(insert changes here)\nChange the text on the axes TICKS. Use .x or .y to change just one.\n\n\naxis.title = element_text(insert changes here)\nChange the text on the axes LABELS/TITLES. Use .x or .y to change just one.\n\n\nplot.title = element_text(insert changes here)\nChange the plot title.\n\n\n\nJust use the colour and size arguments where appropriate. I am going to add these changes as a separate theme() command, but they can be added in the same command as last time.\n\niris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5)) +\n  theme(axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank())\n\n\n\n\n\n\n\n\nBeautiful, isn’t it?\nNow you may have notice the size command acts differently for line and text. For line it is based on a multiplier of the original. So a 2 will be two times its normal size. Element_text() has size as a font size. So 2 would be tiny and equivalent to 2pt font. Alternatively, you can use size = rel(number) to scale the text relative to base R’s plotting size.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Axis lines"
+    ]
+  },
+  {
+    "objectID": "pages/2/1_ggplotgrammar.html",
+    "href": "pages/2/1_ggplotgrammar.html",
+    "title": "The Grammar of ggplot2",
+    "section": "",
+    "text": "By now you should be fairly familiar with the R environment and decently familiar with tidyverse. You should be able to perform basic data manipulations, analyses and in general, understand the general concepts of working with data in R.\nTo me personally, data visualisation is the funnest part of data science. Being able to visually communicate your findings in new and interesting ways is exciting and a joy when you have so many ways to customise your message. Data analysis is important and useful, but the fun part is definately graphing!\nFor this module, we will be working soley within the ggplot graphing environment. Before we start, I should mention - R does have its own plotting functions which are powerful and very useful.\nGGPLOT is just better :)\nTo start, we will cover the bases of what ggplot is and how to build basic graphs with some free data built into R.\n\nResources\nHere are a few websites and useful places for ggplot graphing help. Its great to see examples of graphs along with code to help.\n\nGGPLOT CHEATSHEET - Seriously, this is amazing. There are a few of these on R studios’ website for a bunch of packages. I have a few of these printed on the wall of my office. Additonally, many of these can be accessed in the Help toolbar next to tools\nGGPLOT Reference Site - The official ggplot help site\n\nData Carpentry’s ggplot guide\n\nR Graphics Cookbook - Useful guides for graphing\n\nggplot is one of the many packages installed with tidyverse, but is also an important package on its own, that can be installed or loaded by itself using library(ggplot2).\nGGplot was built as a way to implement Leland Wilkinson’s “Grammar of Graphics”. The gammar of graphics broke up data visualisation into semantic components such as scales, layers and various aesthetic features. GGplot is a implementation of this scheme into the R environment and its crazy powerful.\nFirst, make sure ggplot2 or tidyverse is installed and loaded using the library() command.\nOnce we have that loaded into our environment, we need to create our first plot window following this basic structure.\n\nplot1 &lt;- ggplot(data, aes(x = variable, y = variable)) +\n  geom_graph.type()\n\nplot1 # to view our object\n\nWe begin by creating a new object/variable of our choosing like almost everything else we do. We then use the ggplot() function to build a blank plot window.\nThe aes argument specifies what variables we want to plot in our blank window. aes stands for aesthetics, which is slightly confusing because it relates to what data we are displaying, not how we display it. It should be mentioned that the aesthetics and data can be specified on any of the geometric layers (“geoms”) and in some cases, you might have to.\nThe + geom_graph.type() will be the type of graph you want to display. The commonly used examples are:\n\nboxplot - + geom_boxplot()\nbarplot - + geom_bar()\nscatterplot - + geom_point()\n\nGeom stands for geometric, and tells R the type of geometric shape you want the data to form. You will need () closed brackets at the end of the geom_type() regardless of whether you choose to put anything inside them.\nThe next important thing is the use of additive building in ggplot. As you can see in the example, we use a + sign before adding the geom_type we want. Everything in ggplot uses these additive steps before each function. This allows you to add and change things on your graph step by step, building and viewing your graph as you go. This will make more sense as we go.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Graphics in ggplot2"
+    ]
+  },
+  {
+    "objectID": "pages/2/Bar-plots/3_tukeys.html",
+    "href": "pages/2/Bar-plots/3_tukeys.html",
+    "title": "Significant notation",
+    "section": "",
+    "text": "When presenting our results to an audience (paper or presentation) it is important to communicate our results clearly in a manner that is understandable to a wider audience. Tha main way to do so with an Analysis of Variance, is using a post-hoc test like a Tukeys Honest Significant Difference (Tukeys HSD). This will analyse the differences between the levels within a factor to distinguish which levels are significantly different from one another.\nTo jog our memory from our test, let’s run the Tukeys test from our analysis module using the HSD.test() from the agricolae package.\n\nlibrary(agricolae)\nHSD.test(weeds.aov2, \"species\", console=TRUE)\n\n\nStudy: weeds.aov2 ~ \"species\"\n\nHSD Test for flowers \n\nMean Square Error:  130.122 \n\nspecies,  means\n\n          flowers      std  r       se Min Max  Q25  Q50  Q75\nCoprosma  24.1250 11.13478 16 2.851776  13  52 17.0 21.5 28.0\nOlearia   36.7500 12.08580 16 2.851776  16  55 27.5 37.0 47.5\nPultenaea 40.5625 10.97858 16 2.851776  20  57 33.5 41.0 49.0\n\nAlpha: 0.05 ; DF Error: 42 \nCritical Value of Studentized Range: 3.435823 \n\nMinimun Significant Difference: 9.798198 \n\nTreatments with the same letter are not significantly different.\n\n          flowers groups\nPultenaea 40.5625      a\nOlearia   36.7500      a\nCoprosma  24.1250      b\n\n\nAccording to the tukeys results, Coprosma is significantly different from the others. So we will label it A and the others B.\nThere are two main ways to plot notation on a graph, a manual way using coordinates, and an automatic way. We will cover the manual way first so we can see how it works before preceeding to the easy method.\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width = 0.5)+\n  geom_text(label = c(\"A\", \"B\", \"B\"), aes(y = c(28.5, 41, 44.5), x = species), size = 6)\n\n\n\n\n\n\n\n# try including the geom_text() in your original weeds.bar code. \n\nAdding notation is done through geom_text(). We need to specify the labels (in order from left -&gt; right) along with the aesthetic coordinates on the x and y axis. The X axis we can direct it to our original x axis data (species) and it will sit in the centre of the column. The Y coordinates are the location on the Y axis the text should sit.\nThis method is very finicky but is a great method if you are looking to plot one letter/symbol on the graph. You can add multiple geom_text() commands if needed.\nThe quicker solution to this, is to use a combination of our errorbars and an additional argument called vjust (vertical adjustment).\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width = 0.5)+\n  geom_text(label = c(\"A\", \"B\", \"B\"), aes(y = mean+se, x = species),vjust = -0.5, size = 6)+ \n  ylim(0, 50)\n\n\n\n\n\n\n\n\nWe simply specify our Y coordinates as the top of our error bar (mean + se) and use the vjust (vertical ajustment) argument to move it slightly above the bar. You might have to change your ylim to display the last letter, which got cut off."
+  },
+  {
+    "objectID": "pages/2/Bar-plots/2_errorbars.html",
+    "href": "pages/2/Bar-plots/2_errorbars.html",
+    "title": "Errorbars",
+    "section": "",
+    "text": "Error bars are a simply addition to your graph, utilising their own geometric command geom_errorbar(). To add the error bars, we use the following command\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se))\n\n\n\n\n\n\n\n\nThis is suprisingly simple. All we do is specify the aesthetic (aes) where we compute our minimum and maximum y values for our bars as our mean column +/- our standard error column.\nWe can further customise our errorbars through the use of a few arguments. Lets explore those iteratively.\n\nSize\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), size = 2)\n\n\n\n\n\n\n\n\nThe size argument increases the thickness of the errorbars\n\n\nColour, linetype and transparency\nWe can also change the colour, linetype, and transparency.\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), colour = \"red\")\n\n\n\n\n\n\n\n\nColour is as straightforward as usual, just name a colour.\nFor linetype, we specify a number between 1-6 that corresponds to R’s built in linetypes. \n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), colour = \"red\", linetype = 2)\n\n\n\n\n\n\n\n\nTransparency is specified throught the alpha argument, giving a number between 0 (transparent) and 1 (solid). It’s pretty pointless for errorbars, but it can be used for many other functions.\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), size = 2, alpha = 0.5)\n\n\n\n\n\n\n\n\n\n\nWidth\nThe width argument is arguably the most important aesthetical customisation for errorbars. Width customises the width of the errorbars compared to the width of the bars.\n\nggplot(weeds.summarise, aes(x=species, y=mean)) +\n  geom_bar(stat=\"identity\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width = 0.5)\n\n\n\n\n\n\n\n\nThe default width value for errorbars is 0.9, that is 90% of the width of the bar."
+  },
+  {
+    "objectID": "pages/2/2_basicplots.html",
+    "href": "pages/2/2_basicplots.html",
+    "title": "Basic plots",
+    "section": "",
+    "text": "To start, we will use the iris dataset that is built into tidyverse/ggplot2. To view the dataset, use the View() command like so:\n\nView(iris)\n\nOnce we have this, let’s setup a basic boxplot of some of the features of iris.\nThe iris dataset is built into tidyverse/ggplot2. The dataset is a pretty famous dataset by Edgar Anderson that gives the sepal length, width and petal length and width for three species of iris (n=50).\nWe are going to begin by plotting the sepal length for each species in a basic boxplot.\n\niris.box &lt;- ggplot(iris, aes(x=Species,y=Sepal.Length)) +\n  geom_boxplot()\n\niris.box # We have to run a line with the name of the plot object to view the graph. \n\n\n\n\n\n\n\n\nSo far, pretty straight forward.\nYou will notice I saved the ggplot() graph to an object called iris.box. Because I saved the plot to an object, I have to run the object name to view the plot. This is identical to using the command print(iris.box).\n\n\n\n\n\n\nggplot graphs do no need to be saved as an object. You can run all of the commands singularly or as a group. The graph will still be produced. I personally prefer to save them to an object.\n\n\n\nNow let’s look at some others, such as a histogram.\n\niris.hist &lt;- ggplot(iris, aes(x=Sepal.Length)) +\n  geom_histogram()\n\niris.hist\n\n\n\n\n\n\n\n\nThat’s pretty ugly, but a simple addition of binwidth=“value” will fix that. Binwidth refers to the width of each bin, or bar, in the frequency histogram. A bin width of 0.5 means each bar of the histogram will be equal to 0.5 on the x axis (e.g. 4, 4.5, 5, 5.5 etc).\n\niris.hist &lt;- ggplot(iris, aes(x=Sepal.Length)) +\n  geom_histogram(binwidth = 0.5)\n\niris.hist\n\n\n\n\n\n\n\n\nNow let’s look at a scatterplot.\n\niris.scatter &lt;- ggplot(iris, aes(x=Sepal.Length,y=Petal.Length)) + \n  geom_point()\n\niris.scatter\n\n\n\n\n\n\n\n\nThe cool thing we can do with scatterplots is colour the points by a categorical feature such as Species. This is done by adding colour = “categorical variable name” in the aes brackets of the ggplot() command.\n\niris.scatter &lt;- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length, colour=Species)) +\n  geom_point()\niris.scatter\n\n\n\n\n\n\n\n\nMuch better. And it even adds a legend for us.\nNow we have this basic setup, we can start adding things to our graph. Due to the immense amount of customisations for our graphs, I will break these down in to sections as much as possible and explain as I go. We will work with the iris dataset for a while before moving to our analysed datasets.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Basic plots"
+    ]
+  },
+  {
+    "objectID": "pages/2/Scatter-plots/1_scatterplot.html",
+    "href": "pages/2/Scatter-plots/1_scatterplot.html",
+    "title": "Scatter plots",
+    "section": "",
+    "text": "For this section, we will be using the tadpoles.csv data set\n\n\n\nThe second dataset we analysed tadpole abundance in different sized ponds using a linear model/regression. Plotting linear regressions is really straightforward, but can be done a couple of different ways, depending on what you wish to accomplish.\nFirst, let’s run the basic analysis again (excluding the reeds factor).\n\ntadpoles.lm &lt;- lm(abundance ~ pondsize, data = tadpoles)\nsummary(tadpoles.lm)\n\n\nCall:\nlm(formula = abundance ~ pondsize, data = tadpoles)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-73.546 -29.752  -8.026  37.978  77.652 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)  23.8251    25.8455   0.922  0.36662   \npondsize      1.7261     0.5182   3.331  0.00303 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 49.42 on 22 degrees of freedom\nMultiple R-squared:  0.3352,    Adjusted R-squared:  0.305 \nF-statistic: 11.09 on 1 and 22 DF,  p-value: 0.003032\n\n\nFor this, we will be setting up a scatter plot (geom_point) of our points and then adding the line separately.\n\nggplot(tadpoles, aes(x=pondsize, y=abundance)) +\n  geom_point()\n\n\n\n\n\n\n\n\nThats our basic scatter plot. Simply using the geom_point() we covered breifly in the basic plots section.\nFrom here, we can customise our points using a variety of arguments within geom_point().\n\nColour\nColouring our points can be done in two ways. We can use the colour commands within our aesthetics and colour by a factor in our dataset, or, we can colour all the points within geom_point(). Lets cover the aes() commands.\n\nggplot(tadpoles, aes(x=pondsize, y=abundance, colour=reeds, shape = reeds)) +\n  geom_point()\n\n\n\n\n\n\n\n\nAs we covered in the basic plotting section, changing the colour and shape of points can be done through the use of “colour” and “shape” arguments within the aesthetics of ggplot or any geometric object (e.g. geom_point). To change the colour of these manually simply use scale_colour_manual() or scale_shape_manual() like so:\n\nggplot(tadpoles, aes(x=pondsize, y=abundance, colour=reeds, shape = reeds)) +\n  geom_point()+\n  scale_colour_manual(values = c(\"mediumspringgreen\", \"forestgreen\", \"black\"))+\n  scale_shape_manual(values = c(15, 16, 17))\n\n\n\n\n\n\n\n\nEach of the scale commands requires you to list the colours/shapes within a concatenated (c) list. This will be all most of you will ever need so simply copy those lines and replace/add values as you need.\n\nColours can be found here\n\nShapes can be found here"
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html",
+    "href": "pages/DP2/DP2_Final.html",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "",
+    "text": "In Dry Practical 1, you were introduced to the basics of handling biological data in R, using tidyverse functions and ggplot2 to visualise simple trends. That session was designed to help you become comfortable navigating RStudio, working with tabular data, and generating figures that communicate biological patterns clearly.\nIn this second dry practical, we’ll extend those skills by working with experimental data that you generated in the wet lab. Specifically, we’ll use your results from the subcellular fractionation practical, where you separated healthy and diseased cells into mitochondrial and cytosolic fractions, then measured protein concentration and enzyme activity.\nThis practical will focus on:\n\nCalculating specific enzyme activity for each sample\nComparing the mitochondrial and cytosolic fractions from healthy vs diseased cells\nUsing dplyr tools to filter, summarise, and interpret biological data\nVisualising patterns across individual and class-wide datasets\n\nBy the end of this session, you’ll have created professional-quality plots and learned how data wrangling tools in R can help you test biological hypotheses.\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nOpen R studio on your computer and create a new r script for this class. If you are confused about how to do this refer to the introduction section of the BIOL340 practical website.",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#background-and-purpose",
+    "href": "pages/DP2/DP2_Final.html#background-and-purpose",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "",
+    "text": "In Dry Practical 1, you were introduced to the basics of handling biological data in R, using tidyverse functions and ggplot2 to visualise simple trends. That session was designed to help you become comfortable navigating RStudio, working with tabular data, and generating figures that communicate biological patterns clearly.\nIn this second dry practical, we’ll extend those skills by working with experimental data that you generated in the wet lab. Specifically, we’ll use your results from the subcellular fractionation practical, where you separated healthy and diseased cells into mitochondrial and cytosolic fractions, then measured protein concentration and enzyme activity.\nThis practical will focus on:\n\nCalculating specific enzyme activity for each sample\nComparing the mitochondrial and cytosolic fractions from healthy vs diseased cells\nUsing dplyr tools to filter, summarise, and interpret biological data\nVisualising patterns across individual and class-wide datasets\n\nBy the end of this session, you’ll have created professional-quality plots and learned how data wrangling tools in R can help you test biological hypotheses.\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nOpen R studio on your computer and create a new r script for this class. If you are confused about how to do this refer to the introduction section of the BIOL340 practical website.",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#visualizing-data-and-installing-and-loading-packages",
+    "href": "pages/DP2/DP2_Final.html#visualizing-data-and-installing-and-loading-packages",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Visualizing Data and Installing and Loading Packages",
+    "text": "Visualizing Data and Installing and Loading Packages\nR can make many types of plots. Let’s plot our nucleus sizes using ggplot2, which is included in the tidyverse.\nIf you haven’t installed the tidyverse package yet, you can do so via copying and running:\n\ninstall.packages(\"tidyverse\")\n\nWe also have to load the library by copying and running this line of code:\n\nlibrary(tidyverse)  # Loads ggplot2, dplyr, tidyr, and more\n\nWe are now set up to start looking at our data from Wet Lab 3",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#experiment-reminder",
+    "href": "pages/DP2/DP2_Final.html#experiment-reminder",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Experiment reminder",
+    "text": "Experiment reminder\nTo remind you of what you completed during wet lab 3 and what data we will be dealing with today we have the below experimental workflow. \nYou should have two types of experimental data.\n\nThe results of the bradford assay that will allow us to work out the protein concentration of each sample. This is important for calculating the specific activity of Citrate Synthase in each sample.\nThe Citrate Synthase activity assay data, which is in the form of absorbance over time. We will use this to calculate a rate of activity.\nLoad the Class Dataset\n\n\nThis dataset has: 1) Protein concentration from the Bradford assay, 2) Absorbance readings every 10 seconds for each sample, 3) The reaction rate already calculated\n\n\n\n\n\n\n\nNote\n\n\n\nTask: Load the class dataset and view the column names.\n\n\n\ndata &lt;- read_csv(\"frac_data.csv\")\nhead(data)\n\n# A tibble: 6 × 22\n  GROUP  Sample    `0`   `10`   `20`   `30`   `40`  `50`  `60`  `70`  `80`  `90`\n  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 G1 & … Negat…  0.001  0.001  0.002  0.002  0.002 0.002 0.002 0.002 0.002 0.002\n2 G1 & … Healt…  0.003  0.011  0.016  0.019  0.022 0.025 0.027 0.028 0.029 0.03 \n3 G1 & … Healt…  0      0.016  0.031  0.048  0.066 0.083 0.101 0.118 0.135 0.152\n4 G1 & … Disea… -0.012 -0.01  -0.007 -0.004 -0.002 0     0.002 0.005 0.007 0.009\n5 G1 & … Disea…  0      0.008  0.016  0.024  0.033 0.042 0.051 0.059 0.068 0.076\n6 G1 & … Posit…  0.178  0.408  0.498  0.544  0.58  0.61  0.637 0.663 0.688 0.708\n# ℹ 10 more variables: `100` &lt;dbl&gt;, `110` &lt;dbl&gt;, `120` &lt;dbl&gt;,\n#   `rate of change` &lt;dbl&gt;, `concentration change` &lt;dbl&gt;,\n#   `amount TNB/s (M)` &lt;dbl&gt;, `amount TNB/s (nM)` &lt;dbl&gt;,\n#   `amount TNB/min (nM)` &lt;dbl&gt;, `protein concentration` &lt;dbl&gt;,\n#   `protein amount` &lt;dbl&gt;",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#plot-the-absorbance-over-time",
+    "href": "pages/DP2/DP2_Final.html#plot-the-absorbance-over-time",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Plot the Absorbance Over Time",
+    "text": "Plot the Absorbance Over Time\nThis shows how absorbance (A412) changes during the reaction. It helps us understand how fast the reaction is happening.\n\n\n\n\n\n\nNote\n\n\n\nTask: Make a long version of the data and plot absorbance vs time.\n\n\n\ndata_long &lt;- data %&gt;%\n  pivot_longer(cols = c(`0`:`120`), names_to = \"time\", values_to = \"absorbance\") %&gt;%\n  mutate(time = as.numeric(time))\n\nggplot(data_long, aes(x = time, y = absorbance, colour = Sample)) +\n  geom_point(alpha = 0.6, size = 2) +\n  geom_smooth(method ='lm') +\n  labs(title = \"Absorbance Over Time\",\n       x = \"Time (s)\",\n       y = \"Absorbance\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\nWhat does this tell you about the rate of the reactions for the different sample types?",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#calculation-help-and-determining-specific-enzyme-activity",
+    "href": "pages/DP2/DP2_Final.html#calculation-help-and-determining-specific-enzyme-activity",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Calculation help and determining specific enzyme activity",
+    "text": "Calculation help and determining specific enzyme activity\nOne of the key goals of the wet lab was to measure citrate synthase activity, a marker for mitochondrial function. However, raw absorbance rates don’t mean much on their own—we need to normalise them to protein content to make meaningful comparisons.\nWe calculate specific activity as follows:\nSpecific activity = Amount TNB / min / mg protein\n\nWe can use the mutate() function to do some of the maths for us on the data set as a whole. First we need to work out the rate, which we have completed for you based on the line equation y = mx + b, where m = rate of change.\nOnce we know the rate of change we can then work our change in concentration over time by using the beer-lambert law or A = ϵ × l × c, we know our absorbance A, and our path length l = 1. The extinction co-efficient (e) for TNB (412) is e = 13600 M-1 cm-1. So here we just need to rearrange the equation such that it equals A/e = c. In other words we just divide our absorbance values by 13600\n\n\ndata &lt;- data %&gt;%\n  mutate(`concentration change(ΔC/s)` = `rate of change` / 13600)\n\n\nWe can then convert this to an amount (in mole) of TNB produced/min. Use A = C * V (note: 1 ml = 0.001 L)\n\n\ndata &lt;- data %&gt;%\n  mutate(`amount TNB/s(M)` = `concentration change(ΔC/s)` * 0.001)\n\n\nTo get to nanomole nM we just times this by 10^9\n\n\ndata &lt;- data %&gt;%\n  mutate(`amount TNB/s(nM)` = `amount TNB/s(M)` * 10^9)\n\n\nWe can then convert this to amount/min rather than seconds by multiplying by 60\n\n\ndata &lt;- data %&gt;%\n  mutate(`amount TNB/min(nM))` = `amount TNB/s(nM)` * 60)\n\n\nNow to get to specific activity we need to tie this amount value back to the protein concentration in our samples. This we calculated using a standard curve as mg/mL. So to get to amount in mg we need to times by the volume added, which in our case was 50 uL or 0.05 mL.\n\n\ndata &lt;- data %&gt;%\n  mutate(`protein amount` = as.numeric(`protein concentration`) * 0.05)\n\n\nFinally we can devide dividing your final Amount TNB(nm) data by the Protein amount (mg) column. This means your new column will be Amount TNB/min/mg.\n\n\ndata &lt;- data %&gt;%\n  mutate(specific_activity = `amount TNB/s(nM)` / `protein amount`)\n\nHere the code is dividing your final Amount TNB/min data by the Protein amount (mg) column. This means your new column will be Amount TNB/min/mg.\n\n\n\n\n\n\nNote\n\n\n\nTask: Using the steps above calculate specific activity for the class data.",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#class-data-analysis-specific-activity-of-citrate-synthase",
+    "href": "pages/DP2/DP2_Final.html#class-data-analysis-specific-activity-of-citrate-synthase",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Class Data Analysis: Specific Activity of Citrate Synthase",
+    "text": "Class Data Analysis: Specific Activity of Citrate Synthase\nNow that you’ve calculated specific activity, we can move on to analysing the class-wide dataset. This combined data allows us to evaluate trends across all groups and gain a broader perspective on variation.",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#make-a-bar-plot-of-class-results",
+    "href": "pages/DP2/DP2_Final.html#make-a-bar-plot-of-class-results",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Make a Bar Plot of Class Results",
+    "text": "Make a Bar Plot of Class Results\nThis plot shows how enzyme activity changes between samples in the class dataset.\n\nggplot(data, aes(x = Sample, y = specific_activity, color = Sample)) +\n  geom_boxplot() +\n  labs(title = \"Citrate Synthase Activity by Sample (Class Data)\",\n       x = 'Sample',\n       y = \"Specific Activity (nmol/min/mg)\") +\n  theme_minimal() +\n  theme(axis.text.x = element_blank(),\n        axis.ticks.x = element_blank())\n\n\n\n\n\n\n\n\n\nWhich samples had the highest activity?",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#compare-groups-using-faceting",
+    "href": "pages/DP2/DP2_Final.html#compare-groups-using-faceting",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Compare Groups Using Faceting",
+    "text": "Compare Groups Using Faceting\nIn R we have the ability to create a lot of graphs very quickly using something called faceting. Faceting creates a separate plot panel for each category in a grouping variable—this makes it easier to compare groups side-by-side without crowding the same graph.\nIn this case, we can use facet_wrap(~ GROUP) to generate one boxplot per group. Each panel will show the different sample types (cytosol vs mitochondria) within that group. This helps us quickly spot patterns across the class, like whether healthy samples consistently show higher activity than diseased ones.\n\nggplot(data, aes(x = Sample, y = specific_activity, color = Sample)) +\n  geom_boxplot() +\n  labs(title = \"Citrate Synthase Activity by Sample (Faceted by GROUP)\",\n       x = \"Sample\",\n       y = \"Specific Activity (nmol/min/mg)\") +\n  theme_minimal() +\n  theme(axis.text.x = element_blank(),\n        axis.ticks.x = element_blank()) +\n  facet_wrap(~ GROUP)\n\n\n\n\n\n\n\n\nWe can facet in all sort so different ways, here in the below code we change our plot so we have every group togeather and facet by sample instead.\n\nggplot(data, aes(x = GROUP, y = specific_activity)) +\n  geom_boxplot() +\n  labs(title = \"Citrate Synthase Activity by Sample (Faceted by SAMPLE)\",\n       x = \"Sample\",\n       y = \"Specific Activity (nmol/min/mg)\") +\n  theme_minimal() +\n  theme(axis.text.x = element_blank(),\n        axis.ticks.x = element_blank()) +\n  facet_wrap(~ Sample)",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#compare-healthy-vs-diseased-cells",
+    "href": "pages/DP2/DP2_Final.html#compare-healthy-vs-diseased-cells",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Compare Healthy vs Diseased Cells",
+    "text": "Compare Healthy vs Diseased Cells\nGroup the class data by sample type (healthy or diseased) and fraction (cytosol or mitochondria) to get averages.\n\n\n\n\n\n\nNote\n\n\n\nTask: Make a table showing mean and standard deviation for each sample type across all groups.\n\n\n\ndata %&gt;%\n  group_by(Sample) %&gt;%\n  summarise(mean = mean(specific_activity), sd = sd(specific_activity))\n\n# A tibble: 6 × 3\n  Sample                                   mean     sd\n  &lt;chr&gt;                                   &lt;dbl&gt;  &lt;dbl&gt;\n1 Diseased cells - cytosolic fraction      1.47  0.337\n2 Diseased cells - mitochondrial fraction  7.20  2.15 \n3 Healthy cells - cytosolic fraction       2.10  0.645\n4 Healthy cells - mitochondrial fraction  13.3   4.09 \n5 Negative control                        25.2  15.2  \n6 Positive control                        29.0   9.80 \n\n\n\nQuestion: What sample had the highest enzyme activity?\n\n\nQuestion: What does this show about mitochondrial function?\n\n\nQuestion: Can you detect an effect of disease?",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP2/DP2_Final.html#summary",
+    "href": "pages/DP2/DP2_Final.html#summary",
+    "title": "Dry Prac 2 — Subcellular Fractionation Analysis",
+    "section": "Summary",
+    "text": "Summary\nBy working with your own experimental data and combining it with class-wide results, you’ve learned how to:\n\nImport and explore real experimental datasets\nCalculate and interpret specific enzyme activity\nUse R to summarise biological variation\nVisualise group-level trends using scatter plots and boxplots\nQuickly analyse trends across data by using faceting\n\nThis approach not only gives you hands-on experience with data science tools but also helps you understand how bioinformatics pipelines are used in real molecular biology research—from raw numbers to biological insight.",
+    "crumbs": [
+      "Dry Prac 2",
+      "Dry Prac 2 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html",
+    "href": "pages/DP3/DP3.html",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "Below are four unlabeled scientific abstracts describing the same experiment: measuring citrate synthase activity in subcellular fractions of healthy and diseased cell lines.\nEach abstract is written to align with one of the four rubric categories: Outstanding, Excellent, Fair, and Developing.\nAll abstracts are approximately six sentences long and presented in random order.\n\n\n\n\n\n\nTask Instructions\n\n\n\n\nCarefully read each abstract.\nUse the provided rubric to evaluate each one.\nScore them independently from 1 (Developing) to 4 (Outstanding).\nWrite brief notes explaining the score for each abstract.\n\n\n\n\n\n\n\n\n\nCitrate synthase activity was investigated in healthy and diseased mammalian cell lines by measuring enzymatic function in cytosolic and mitochondrial fractions. Cells were lysed and separated using differential centrifugation, and activity was measured using a spectrophotometric assay. The mitochondrial fractions consistently showed higher activity, confirming the expected localization. Diseased cells exhibited lower activity overall, especially in the mitochondrial fraction. These results suggest mitochondrial function is compromised in the diseased condition. The experiment provides insight into cellular metabolic changes associated with disease.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\nWe tested citrate synthase activity in different parts of the cell. Healthy and diseased cells were used in the study. We broke the cells up and spun them to get different parts, like mitochondria and cytosol. Then we measured enzyme activity with a color test. There were some differences between the samples. It looks like mitochondria might be involved in this, but it’s not totally clear from the results.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\nThe purpose of this experiment was to analyze the specific activity of citrate synthase in subcellular fractions of two mammalian cell lines. Healthy and diseased cells were lysed and processed to separate mitochondria and cytosol using centrifugation. Enzyme activity was measured using a colorimetric assay and normalized to total protein content. Mitochondrial fractions had greater activity, and diseased cells showed lower activity in both compartments. These findings support the hypothesis that mitochondrial dysfunction contributes to disease. Clear trends were observed, although further validation and controls would strengthen the results.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\nIn this experiment, we analyzed citrate synthase activity in different subcellular fractions of healthy and diseased cell lines. Cells were disrupted and fractionated via centrifugation into cytosolic and mitochondrial compartments. We quantified enzyme activity using a spectrophotometric method based on TNB production and calculated specific activity using protein concentration data. Results showed clear differences in activity between the two fractions, with mitochondrial activity being highest. Notably, diseased cells demonstrated significantly reduced activity in both fractions. These results strongly support a hypothesis of mitochondrial enzyme impairment in disease and reinforce the method’s effectiveness for subcellular analysis.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\nThis experiment aimed to investigate citrate synthase activity in cell fractions from healthy and diseased cells. Cells were prepared and divided into cytosolic and mitochondrial fractions using standard lab procedures. Enzyme activity was assessed with a colorimetric method, and we compared levels across the fractions and cell types. While mitochondrial activity appeared higher, details about the data or significance were limited. The abstract touches on all sections but lacks depth in interpreting results and establishing relevance.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\n\n\n\n\n\n\nGenAI Prompt for Self-Assessment\n\n\n\nUse the following prompt with ChatGPT or another generative AI tool:\n\nYou are an expert in higher education assessment. Below are four student-written abstracts for a biochemistry lab. Each one is meant to represent one of four rubric categories: Outstanding, Excellent, Fair, and Developing. Please assign a category to each abstract and explain your reasoning based on writing clarity, scientific voice, structure, and detail. Here are the abstracts: [Insert Abstracts Here].",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract-1",
+    "href": "pages/DP3/DP3.html#abstract-1",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "Citrate synthase activity was investigated in healthy and diseased mammalian cell lines by measuring enzymatic function in cytosolic and mitochondrial fractions. Cells were lysed and separated using differential centrifugation, and activity was measured using a spectrophotometric assay. The mitochondrial fractions consistently showed higher activity, confirming the expected localization. Diseased cells exhibited lower activity overall, especially in the mitochondrial fraction. These results suggest mitochondrial function is compromised in the diseased condition. The experiment provides insight into cellular metabolic changes associated with disease.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract-2",
+    "href": "pages/DP3/DP3.html#abstract-2",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "We tested citrate synthase activity in different parts of the cell. Healthy and diseased cells were used in the study. We broke the cells up and spun them to get different parts, like mitochondria and cytosol. Then we measured enzyme activity with a color test. There were some differences between the samples. It looks like mitochondria might be involved in this, but it’s not totally clear from the results.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract-3",
+    "href": "pages/DP3/DP3.html#abstract-3",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "The purpose of this experiment was to analyze the specific activity of citrate synthase in subcellular fractions of two mammalian cell lines. Healthy and diseased cells were lysed and processed to separate mitochondria and cytosol using centrifugation. Enzyme activity was measured using a colorimetric assay and normalized to total protein content. Mitochondrial fractions had greater activity, and diseased cells showed lower activity in both compartments. These findings support the hypothesis that mitochondrial dysfunction contributes to disease. Clear trends were observed, although further validation and controls would strengthen the results.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract-4",
+    "href": "pages/DP3/DP3.html#abstract-4",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "In this experiment, we analyzed citrate synthase activity in different subcellular fractions of healthy and diseased cell lines. Cells were disrupted and fractionated via centrifugation into cytosolic and mitochondrial compartments. We quantified enzyme activity using a spectrophotometric method based on TNB production and calculated specific activity using protein concentration data. Results showed clear differences in activity between the two fractions, with mitochondrial activity being highest. Notably, diseased cells demonstrated significantly reduced activity in both fractions. These results strongly support a hypothesis of mitochondrial enzyme impairment in disease and reinforce the method’s effectiveness for subcellular analysis.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract-5",
+    "href": "pages/DP3/DP3.html#abstract-5",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "This experiment aimed to investigate citrate synthase activity in cell fractions from healthy and diseased cells. Cells were prepared and divided into cytosolic and mitochondrial fractions using standard lab procedures. Enzyme activity was assessed with a colorimetric method, and we compared levels across the fractions and cell types. While mitochondrial activity appeared higher, details about the data or significance were limited. The abstract touches on all sections but lacks depth in interpreting results and establishing relevance.\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#test-your-results",
+    "href": "pages/DP3/DP3.html#test-your-results",
+    "title": "DP3:Peer Review",
+    "section": "",
+    "text": "GenAI Prompt for Self-Assessment\n\n\n\nUse the following prompt with ChatGPT or another generative AI tool:\n\nYou are an expert in higher education assessment. Below are four student-written abstracts for a biochemistry lab. Each one is meant to represent one of four rubric categories: Outstanding, Excellent, Fair, and Developing. Please assign a category to each abstract and explain your reasoning based on writing clarity, scientific voice, structure, and detail. Here are the abstracts: [Insert Abstracts Here].",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#abstract",
+    "href": "pages/DP3/DP3.html#abstract",
+    "title": "DP3:Peer Review",
+    "section": "Abstract",
+    "text": "Abstract\nCitrate synthase SA was quantified in MT and CYT subfractions isolated from immortalized mammalian CLs of divergent physiological states (i.e., HL and DL).\nFractionation was executed via DC and analyzed through TNB-based spectrophotometric methodologies.\nComparative SA metrics were demonstrated to be variably reduced across conditions, though significance thresholds were not consistently upheld.\nInterpretation was limited by inconsistent normalization to TP content and variability in the enzymatic assay kinetics.\nIt is inferred that mitochondrial biogenesis or bioenergetic perturbation may be implicated, although further ELISA and qPCR corroboration would be recommended.\n\nWhat rubric level best fits this abstract?\n – Select rubric level – Outstanding Excellent Fair Developing  Check Answer\n\n\n\n\n\n\nAbstract grade explaination\n\n\n\n\n\n\n\nProblem Area\nWhat’s Wrong\n\n\n\n\nPassive voice\nObscures who did what; lacks clarity and accountability\n\n\nExcessive jargon & acronyms\nUses unexplained abbreviations: SA, MT, CYT, CLs, HL/DL, DC, TP, ELISA, qPCR\n\n\nTense inconsistency\nShifts from past (“was quantified”) to present (“is inferred”)\n\n\nSuperficial complexity\nComplex phrasing covers weak experimental interpretation\n\n\nLack of clarity\nThe results and implications are muddled or speculative",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#use-genai-to-reflect-and-revise",
+    "href": "pages/DP3/DP3.html#use-genai-to-reflect-and-revise",
+    "title": "DP3:Peer Review",
+    "section": "Use GenAI to Reflect and Revise",
+    "text": "Use GenAI to Reflect and Revise\n\n\n\n\n\n\nRequired Follow-up Task\n\n\n\nIf your answer was incorrect or if you’re unsure why this abstract is difficult to evaluate, copy and paste the prompt below into ChatGPT or another GenAI tool:\n\nYou are an expert in scientific communication and higher education assessment.\nI am learning how to identify weaknesses in scientific abstracts, especially those that sound complex but are not clear.\nBelow is an abstract I was given. Please review it and identify specific problems in clarity, structure, grammar, or scientific communication.\nThen suggest how I could revise it to improve readability and better match an “Excellent” or “Outstanding” level according to a university rubric.\n\nAbstract:\n&gt; Citrate synthase SA was quantified in MT and CYT subfractions isolated from immortalized mammalian CLs of divergent physiological states…",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP3/DP3.html#now-apply-what-you-have-learnt-by-completing-formal-peer-reviews-of-your-fellow-students-scientific-reports.-you-must-complete-one-review-before-leaving.",
+    "href": "pages/DP3/DP3.html#now-apply-what-you-have-learnt-by-completing-formal-peer-reviews-of-your-fellow-students-scientific-reports.-you-must-complete-one-review-before-leaving.",
+    "title": "DP3:Peer Review",
+    "section": "Now apply what you have learnt by completing formal peer reviews of your fellow students scientific reports. You must complete one review before leaving.",
+    "text": "Now apply what you have learnt by completing formal peer reviews of your fellow students scientific reports. You must complete one review before leaving.",
+    "crumbs": [
+      "Dry Prac 3",
+      "Dry Prac 3 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html",
+    "href": "pages/DP1/DP1_Final.html",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "",
+    "text": "In this dry prac, we will learn how to use the ggplot2 and tidyverse packages to create publication-quality bar and scatter plots from the data you generated in Wet Lab 1 & 2. Along the way, we will practice data manipulation, such as removing background absorbance and reshaping data for analysis.\nR is a powerful tool for analyzing data, creating visualizations, and performing statistical tests. In cell biology, you can use R to analyze experimental results, such as cell growth rates, gene expression levels, or protein abundance.\nLet’s dive into the basics of R, starting with something fun: exploring cells and their data!\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nOpen R studio on your computer and create a new r script for this class. If you are confused about how to do this refer to the introduction section of the BIOL340 practical website.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#how-to-read-this-guide",
+    "href": "pages/DP1/DP1_Final.html#how-to-read-this-guide",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "How to Read This Guide",
+    "text": "How to Read This Guide\nIn the instructions below, there will be chunks of code for you to read and copy into RStudio. The code chunks look like this:\n\n#Just a poor empty chunk with no code\n\nAnything following a # in an R code chunk is a comment, which means R will ignore it. These comments are there to help explain what the code is doing.\n\nWe encourage you to copy and paste the code we provide in these blocks into R studio on your computer.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#getting-started",
+    "href": "pages/DP1/DP1_Final.html#getting-started",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nWhy R?\nR is like the mitochondria of data analysis—it’s the powerhouse! It can:\n\nAnalyze large datasets (like transcriptomics data).\nCreate stunning visualizations (like protein localization heatmaps).\nPerform complex statistical tests (like comparing cell survival rates).\nAutomate repetitive tasks for better reproducibility.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#how-to-write-code-in-r",
+    "href": "pages/DP1/DP1_Final.html#how-to-write-code-in-r",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "How to Write Code in R",
+    "text": "How to Write Code in R\nYou write commands (called functions) in the console or a script in RStudio. Below each code chunk, there may be output (often preceded by # if you’re looking at raw code). Let’s start with a simple one.\nTry running this yourself in RStudio! You can either copy and paste the code below or type it out manually. I recommend copying for the rest of this guide as it will make it harder to make mistakes, spelling is very important with code as the computer will take everything you write very literally.\nWe can then run this code using the run button in the top right corner.\n\nOr by pressing control + enter on your keyboard.\nWhen you run this code in R, you should see the result, 4, printed beneath.\n\n# This calculates a simple sum\n2 + 2\n\n[1] 4\n\n\nIf you get 4, you’ve written and executed your first piece of R code. Now things get exciting.\n\n\n\n\n\n\nTest your understanding\n\n\n\nCan you use any other mathematical symbols here? Test it out.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#working-with-variables",
+    "href": "pages/DP1/DP1_Final.html#working-with-variables",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Working with Variables",
+    "text": "Working with Variables\nVariables are like labeled containers for your data. These are important because we can use them to store all sorts of things in R. Lets store our calculation as the variable calc we do this by writing out the variable name, then using a &lt;- symbol then typing what we want to store. Copy the below and test it out for yourself.\nWe can also check what is stored in a variable by just typing its name and running the code. Let’s write calc again and see what we have stored. :\n\n\n\n\n\n\nTest your understanding\n\n\n\nSpelling and capitalization are really important. If we captilise the “C” in calc what will happen?\n\n\n\n# Size of the nucleus\ncalc &lt;- 2 + 2  # in micrometers\n\ncalc\n\n[1] 4\n\n\nIt’s also possible to store a list of things as a variable. We do this by writing out the list proceeded by a ‘c’ (for combine), and then seperate every value with a comma. As in the below where we store a list of cool bugs. Because we are using words here(or strings in computer talk) we will use quotations so the computer knows we want it to store exactly the letters we provide it.\nYou’ll notice that i do not use a space between the words ‘cool’ and ‘bugs’, in general spaces are not read well by your computer, it doesn’t know what to do with them and it will cause your code to fail.\nIt is best practice to never use spaces in any of your file names or code if possible.\n\n#List Nik's favourite bugs\ncool_bugs&lt;- c('flies', 'katydids', 'beetles')\n\n#if we list the variable again remeber it will tell us what it contains. \ncool_bugs\n\n[1] \"flies\"    \"katydids\" \"beetles\" \n\n\n\n\n\n\n\n\nTest your understanding\n\n\n\nAdd in two of your favorite bugs into the cool_bugs variable. Then run it to make sure it works.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#fun-with-functions",
+    "href": "pages/DP1/DP1_Final.html#fun-with-functions",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Fun with functions",
+    "text": "Fun with functions\nFunctions are one of the most powerful tools in R. They allow us to perform tasks without having to write the same code over and over. A function takes an input, does something with it, and then gives back an output. You’ve already used one function without realizing it— +, which is the addition function!\nFor example, let’s use the function sqrt() to calculate the square root of our calc variable.\n\nsqrt(calc)  # This finds the square root of 4\n\n[1] 2\n\n\nMany functions take arguments that you can customize. For example, the round() function rounds numbers to a specified number of decimal places:\n\nround(3.14159, digits = 2)  # Rounds to 2 decimal places\n\n[1] 3.14\n\n\nWe will use a lot of different functions to do powerful things in our data analysis!\n\n\n\n\n\n\nTest your understanding\n\n\n\nCalculate the square root of your calc variable then round it to 4 decimal places.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#visualizing-data-and-installing-and-loading-packages",
+    "href": "pages/DP1/DP1_Final.html#visualizing-data-and-installing-and-loading-packages",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Visualizing Data and Installing and Loading Packages",
+    "text": "Visualizing Data and Installing and Loading Packages\nR can make many types of plots. Let’s plot our nucleus sizes using ggplot2, which is included in the tidyverse.\nIf you haven’t installed the tidyverse package yet, you can do so via copying and running:\n\ninstall.packages(\"tidyverse\")\n\nWe also have to load the library by copying and running this line of code:\n\nlibrary(tidyverse)  # Loads ggplot2, dplyr, tidyr, and more\n\nWe are now set up to start looking at our data from Wet Lab 1",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#making-a-boxplot",
+    "href": "pages/DP1/DP1_Final.html#making-a-boxplot",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Making a Boxplot",
+    "text": "Making a Boxplot\nNow we can analyse this data in interesting ways using ggplot2 a package specifically for graphing included in tidyverse. Feel free to play around with labels, colours and themes.\nA boxplot helps compare data distributions across categories.\nThe below packge function ggplot() required a few things first we give it our data variable also known as the data frame ggplot(Class_data). Then we need to tell it what we actually want plotted from this data set, or the asthetics of the graph, this is shortened to list aes(), i.e. ggplot(Class_data, aes(x = x-axis, y = y axis). In the below we also tell it to treat the column cell_concentration in our data as a numeric factor this just means it will plot it correctly.\nWe also will add a geom to our plot, this is short for a geometric object - which basically means dots, lines, curves or any other thing we might like to plot. For now we will add a boxplot geom using geom_boxplot. &gt;Data scientists are not very creative when it comes to naming things, but this means with a bit of thinking, googling or AI searching we can pretty quickly work out what a function or option is doing.\n\np &lt;- ggplot(Class_data, aes(x = treatment, y = as.numeric(cell_concentration))) +\n  geom_boxplot() +\n  theme_minimal()\n\np\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTest your understanding\n\n\n\nIf you are curious, try changing the aesthetics for the y axis to just be y = cell_concentration to see how it tries to plot the data. What is going on?\n\n\nWe can also tidy up this graph and improve how it looks by using options under labels() which allows us to add axes and figure labels. We can also use theme() which allows us to manipulate different visuals in the graph, in this instance I will use theme_minimal which is a theme included with ggplot, but there are a huge number of customisations you can do by manipulating options within theme(). Observe the below changes.\n\n#coloured boxplot\np &lt;- ggplot(Class_data, aes(x = treatment, y = as.numeric(cell_concentration), color = treatment)) +\n  geom_boxplot() +\n  labs(\n    title = \"Concentration of viable vs. treatment\",\n    x = \"treatment\",\n    y = \"Cell concentration\"\n  ) +\n  theme_minimal()\n# Display the plot\np",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#question-1",
+    "href": "pages/DP1/DP1_Final.html#question-1",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Question 1",
+    "text": "Question 1\n\nWhat changed between the first and second box plots you created? How is this reflected in the code?",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#activity-1",
+    "href": "pages/DP1/DP1_Final.html#activity-1",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Activity 1",
+    "text": "Activity 1\n\nMake a custom graph with interesting aesthetics. Use generative AI (e.g., ChatGPT or Copilot) to get ideas on what to change (colors, theme, legend placement, etc.). You can copy and paste your code into co-pilot and chatGTP and ask for it to change things based on what you would like to see.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#question-2",
+    "href": "pages/DP1/DP1_Final.html#question-2",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Question 2",
+    "text": "Question 2\n\nReflect: What do you think a barrier to analysis the Excel processed data in R will be? What do you think the advantages of using R could be?",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#thinking-outside-the-cell-reading-and-formatting-your-data",
+    "href": "pages/DP1/DP1_Final.html#thinking-outside-the-cell-reading-and-formatting-your-data",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Thinking outside the cell, reading and formatting your data",
+    "text": "Thinking outside the cell, reading and formatting your data\nSo far you have been working with your data in cells, using the tools available in Excel and the tables provided in your prac manual. When it comes to importing data into R we have to think a little differently as we no longer work with the data visually using a Graphical User Interface (i.e. a GUI).\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nFirst we need to convert our excel data from a spreadsheet (or .xls) file to a comma seperated text file (or csv.).\nOpen the class data from wetlab 2 and open it in Excel. You can now use save as in Excel and choose the option to save as a comma separated file.\nThis should save your data with the file extension .csv. Now open the data in Visual Studio Code on your computer, you will see that all our ‘nice’ formatting we did to make the data easier to understand actually makes it very confusing for the computer to interpret what each data point means.\n\n\nWe need to simplify things so that the software can distinguish between our different variables.\nI.e. we need to make it clear what each cell represents in terms of treatment, cell concentration and absorbance. We should also remove our background from our absorbance as well.\nThe easiest way to do this is to make each of these variables the headings of the columns in your data, then input the information for each data point. This is also sometimes referred to as “long format” data. For todays dry prac, we have done this for you.\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nDownload the plate data .csv filea for both assays from moodle. This data has already been formatted into “long format” for you.\nOpen the data for both assays in R and store them as seperate variables using the code below. Remember to change the location in read.csv() to where the file is stored on your computer.\n\n\n\nplate_data_cAM &lt;- read.csv(\"~/Library/CloudStorage/OneDrive-Personal/Research/Teaching/Biol340_981/2025/Practicals and Prac manual/Dry practicals/DP_1_data_analysis/corrected_class_data_cAM.csv\", row.names = 1, check.names = FALSE)\n\nplate_data_MTS &lt;- read.csv(\"~/Library/CloudStorage/OneDrive-Personal/Research/Teaching/Biol340_981/2025/Practicals and Prac manual/Dry practicals/DP_1_data_analysis/corrected_class_data_MTS.csv\", row.names = 1, check.names = FALSE)\n\n\n\nhead(plate_data_cAM)\n\n  Well Absorbance Cell_Type Dilution\n1   A1  45634.083   Healthy  2000000\n2   A2  27520.083   Healthy  1000000\n3   A3  15916.083   Healthy   500000\n4   A4  13197.083   Healthy   250000\n5   A5   9155.083   Healthy   125000\n6   A6   6470.083   Healthy    62500\n\nhead(plate_data_MTS)\n\n  Well Absorbance Cell_Type Dilution GROUP ID\n1   A1    2.49175   Healthy  2000000  G1 & G2\n2   A2    1.96275   Healthy  1000000  G1 & G2\n3   A3    1.23175   Healthy   500000  G1 & G2\n4   A4    0.81075   Healthy   250000  G1 & G2\n5   A5    0.26875   Healthy   125000  G1 & G2\n6   A6    0.14275   Healthy    62500  G1 & G2",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#question-3",
+    "href": "pages/DP1/DP1_Final.html#question-3",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Question 3",
+    "text": "Question 3\n\nWhat can you notice is different between how your data was formatted in excel compared to the data we have prepared for you to import into R? Why might this be important.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#plotting-the-results",
+    "href": "pages/DP1/DP1_Final.html#plotting-the-results",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Plotting the Results",
+    "text": "Plotting the Results\nNow lets make a different type of plot. Let’s create a scatter plot of *the calcein-AM using ggplot2 to visualize how Adjusted Absorbance changes with Cell Concentration.\nIn the below plot: - geom_point() adds scatter plot points. - labs() adds titles and axis labels. - theme_minimal() is a clean, modern theme that removes a lot of unnecessary formating.\n\n\n\n\n\n\nNote\n\n\n\nYou will notice that we have some options within geom_point() play around with them and see what happens. Why not check other options you could include here by googling or asking AI. You can do some pretty crazy things with custom points or by using jitter.\n\n\n\n# Scatter plot of Adjusted Absorbance vs. Dilution\n# Colored by Cell_Type\n\nggplot(plate_data_cAM, aes(x = Dilution, y = Absorbance)) +\n  geom_point(alpha = 0.6, size = 2) +\n  labs(\n    title = \"Standard Curve of Absorbance vs Cell Concentration\",\n    x = \"Cell Concentration (cells/mL)\",\n    y = \"Adjusted Absorbance\",\n    color = \"Cell Type\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\nOur plot now has points! But it would also be great to colour by the cell line type.\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nBased on the code you made for boxplots above, how would you colour the data in this plot by cell type?\n\n\n\nAdding a trendline\nOur plot could also be improved by adding in a trendline to visualise the data. We can do this using the function geom_smooth(). Here we are going to apply a linear model or ‘lm’ as our method because we want a straight line. We will also set the option se or standard error to = FALSE\n\n# Scatter plot of Adjusted Absorbance vs. Dilution\n# Colored by Cell_Type\n\nggplot(plate_data_cAM, aes(x = Dilution, y = Absorbance, color = Cell_Type)) +\n  geom_point(alpha = 0.6, size = 2) +\n  geom_smooth(method ='lm', se = FALSE) +\n  labs(\n    title = \"Standard Curve of Absorbance vs Cell Concentration\",\n    x = \"Cell Concentration (cells/mL)\",\n    y = \"Adjusted Absorbance\",\n    color = \"Cell Type\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTest your understanding\n\n\n\nHave a look (using google or AI) at some of the other types of methods you can use to add a line geom to your plots. One to get you started is method = \"loess\"\n\n\n\n\nLog Scale Example\nOur plot looks pretty squashed in the left hand side (lower concentrations). Let’s fix that by making it a log graph. This is very easy to do!\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nLet’s add in a lione of code for scale_x_log10(). Don’t forget to put a + at the end so that the computer reads it as part of you graph function. You will notice I also changed the geom for the line below to dashed, because why not. Feel free to change it back or look at other options.\n\n\n\nggplot(plate_data_cAM, aes(x = Dilution, y = Absorbance, color = Cell_Type)) +\n  geom_point(alpha = 0.6, size = 2) +\n  geom_smooth(method = \"lm\", se = TRUE, linetype = \"dashed\") +\n  scale_x_log10() +\n  labs(\n    title = \"Standard Curve of Absorbance vs Cell Concentration (Log Scale)\",\n    x = \"Cell Concentration (cells/mL)\",\n    y = \"Adjusted Absorbance\",\n    color = \"Cell Type\"\n  ) +\n  theme_minimal()",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#estimating-the-linear-range",
+    "href": "pages/DP1/DP1_Final.html#estimating-the-linear-range",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Estimating the Linear Range",
+    "text": "Estimating the Linear Range\nWe can also further improve our standard curves by finding the linear portion of the trendline to determine the sensitivity range of the assays. Let’s do this by filtering our data for specific dilutions using the function filter().\n\n\n\n\n\n\nACTION REQUIRED\n\n\n\nCopy the below code and change the filtering range to something suitable for your data.\n\nlinear_data_cAM &lt;- plate_data_cAM %&gt;%\n  filter(Dilution &gt;= 1000 & Dilution &lt;= 500000)\n\n\n\nNow let’s try reploting our graph using the new linear_data_cAM variable.\n\n# Plot linear region\nggplot(linear_data_cAM, aes(x = Dilution, y = Absorbance, color = Cell_Type)) +\n  geom_point(alpha = 0.6, size = 2) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(\n    title = \"Linear Region of Standard Curve\",\n    x = \"Cell Concentration (cells/mL)\",\n    y = \"Adjusted Absorbance\",\n    color = \"Cell Type\"\n  ) +\n  theme_minimal()",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#activity-2",
+    "href": "pages/DP1/DP1_Final.html#activity-2",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Activity 2",
+    "text": "Activity 2\n\nCustomize your plot to improve its appearance. - Adjust point size and color - Modify or remove legends - Evaluate whether you need to show all data labels or tick marks - Explore other themes (e.g., theme_bw(), theme_classic()). Feel free to look at the ggplot2 cheat sheet available on the dry prac website, we have also provided extra information for plotting under “extra help with graphics”",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#activity-3",
+    "href": "pages/DP1/DP1_Final.html#activity-3",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Activity 3",
+    "text": "Activity 3\n\nRepeat this plot for the MTS dataset. This should be simple as you will only need to change what variable is plotted by code you already have! The code should remain the same. This is one powerful aspect of R, reproducibility!",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#exporting-plots",
+    "href": "pages/DP1/DP1_Final.html#exporting-plots",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Exporting Plots",
+    "text": "Exporting Plots\nIn RStudio, use the Plots pane (bottom-right) and click Export to save your plots as an image (PNG, JPEG) or PDF. You can also programmatically export using ggsave().\nExample:\n\nggsave(\"myplot.png\", plot = p, width = 6, height = 4)",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#activity-4",
+    "href": "pages/DP1/DP1_Final.html#activity-4",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Activity 4",
+    "text": "Activity 4\n\nExport your final R-generated figures for the MTS and Calcein-AM assays as PNG files. Try setting the file dimensions to 600×400.",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#question-4",
+    "href": "pages/DP1/DP1_Final.html#question-4",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Question 4",
+    "text": "Question 4\n\nWhere do these files save on your computer? Why is that location used?",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP1/DP1_Final.html#question-5",
+    "href": "pages/DP1/DP1_Final.html#question-5",
+    "title": "Dry Prac 1 — Data analysis in R",
+    "section": "Question 5",
+    "text": "Question 5\n\nWrite a brief comparison of the two assays you performed. Which was faster, more reproducible, or more sensitive?",
+    "crumbs": [
+      "Dry Prac 1",
+      "Dry Prac 1 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/1/2_mutate.html",
+    "href": "pages/1/2_mutate.html",
+    "title": "The Mutate Function",
+    "section": "",
+    "text": "One of the most common data manipulations is adding a new column to your dataset. This is great for transforming data, while also keeping the original. This could be used to combine multiple columns into one or perform mathematical calculations involving multiple columns with the results in a separate column.\nWe will start out with a few simple methods in base R, and then move to the dplyr method.\n\n##Log Transformation##\n\nweeds$log_flowers &lt;- log(weeds$flowers) # Base R\n\nweeds &lt;- mutate(weeds, log_flowers = log(flowers)) # Dplyr\n\n# Each of these creates a new column which is the log of the flowers column.\n\n## Basic math functions##\n\nweeds_mutate &lt;- mutate(weeds, flowers2 = flowers*2) \n# Simple multiplication of the flowers column by 2\n\nweeds_mutate &lt;- mutate(weeds_mutate, flowers_combined = flowers + flowers2) \n# This is a useless example but its just to show you how to combine multiple columns. \n\nweeds_mutate &lt;- mutate(weeds_mutate, binary = soil == \"sandstone\") \n# Using boolean logic to create a column called \"binary\" where soil is exactly (hence double ='s) sandstone. \n\nweeds_mutate &lt;- mutate(weeds, flowers2 = flowers*2,\n                      binary = soil == \"sandstone\") \n# You can also perform the functions multiple times on the same data within one line. \n\nThe arguments of mutate() are simply the name of the data frame followed by any number of expressions that create new variables.\nYou will notice throughout the mutate() commands that we have performed functions, creating new columns, while preserving the original. If you wish to drop/remove the original column, simply use the transmute() command.",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Mutate function"
+    ]
+  },
+  {
+    "objectID": "pages/1/7_summarise.html",
+    "href": "pages/1/7_summarise.html",
+    "title": "The Summarise Function",
+    "section": "",
+    "text": "This is an extremely useful function that lets you create different summaries of columns. You can also nest other functions within it to apply them to your columns.\n\nsum_data &lt;- summarise(weeds, mean(flowers))  # We'll start simple. Generates the mean of the flower column\n\nsum_data &lt;- summarise(group_by(weeds, species), mean(flowers)) \n# Using the group_by() function within summarise lets you get summaries for groups, in this case \"species\"\n\nsum_data &lt;- summarise(group_by(weeds,species, soil), mean(flowers), sd(flowers), se=sd(flowers/sqrt(n())))\n# Grouped by with species & soil, generating mean, standard deviation & standard error of flowers\n\nThe last example generates the mean, sd and se for each factor combination in our dataset. This is pretty useful, particularly for generating bar graphs.\nHowever, its a little complex and can be in a much nicer format.",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Summarise function"
+    ]
+  },
+  {
+    "objectID": "pages/1/3_filter.html",
+    "href": "pages/1/3_filter.html",
+    "title": "The Filter Function",
+    "section": "",
+    "text": "The filter() command is used to remove rows from your data. This can be useful for removing zeros or “no data/NA’s”, or for restricting certain variables in a dataset for an analysis.\nThis follows the similar syntax as mutate() whereby we specify what dataset we want to filter, followed by how we want to filter.\n\n#The following examples will just keep overwriting the new object \"weeds_filtered\"\n\nweeds_filtered &lt;- filter(weeds, weeds == \"native\") \n# Gives us only the rows which are exactly \"native\" in the weeds column. \n\nweeds_filtered &lt;- filter(weeds, weeds != \"weed\") \n# This gives us the same result as their are only two levels of that column. The != means \"not equal to\"\n\nweeds_filtered &lt;- filter(weeds ,flowers &gt; 20) \n# Flowers greater than 20 m3\n\nSo far, we have covered renaming columns, adding new columns and filtering by rows. The next two commands are focused on selecting specific columns and creating new data tables.",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Filter function"
+    ]
+  },
+  {
+    "objectID": "pages/1/4_select.html",
+    "href": "pages/1/4_select.html",
+    "title": "The Select Function",
+    "section": "",
+    "text": "The select() function is used to select specific columns within your data and save them as a new data frame. You can use this if you have a large dataset and only want to use a few of the columns, to keep it simple and tidy. Or, you may want to take a column or two from multiple different datasets and combine them.\n\nweeds_select &lt;- select(weeds, soil) \n\nThis simply creates the weeds_select dataset, seleting one column - “soil”. As with most tidyverse functions we need to specify the dataset immediately after writing the select function. From here, its simple changes to do use select in new ways\n\nweeds_select &lt;- select(weeds,c(soil, species)) # select two columns, \"soil\" and \"species\"\n\nweeds_select &lt;- select(weeds,c(2:4)) # select columns using numbers. In this case, select columns 2 through to 4.\n\nweeds_select &lt;- select(weeds, c(soil:flowers)) # select columns \"soil\" through to \"flowers\"\n\nweeds_select &lt;- select(weeds, -soil) # remove \"soil\"\n# similar syntax applys for removing multiple columns, just place a - infront e.g. select(weeds, -c(2:4))\n\nweeds_select &lt;- select(weeds, starts_with(\"s\")) # select any column whose name starts with S. \n\nThere are many more like this above example, like “ends_with”, “contains” and “matches” all which refer to the column names.\n\n\n\n\n\n\nuse the help window ?select for more useful functions with select()",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Select function"
+    ]
+  },
+  {
+    "objectID": "pages/1/1_packages.html",
+    "href": "pages/1/1_packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "Now that you have setup your R environment and read in your first data set, we can begin to modify and add to our data as necessary.\nNow for the majority of this module, we will be working with a package called Tidyverse. Packages are collections of data, R functions and complied code to add extra features outside of the general base R environment. Packages are central to expanding the possibilities of R. The ability to do advanced graphing, GIS, complicated analyses, multivariate analyses etc. are all due to contributed packages.\nTidyverse is a unique case as it is a collection of R packages that all use similar coding syntax\n\nTo install a package into R there are two options:\nOption 1 is to select the packages tab in the help/viewer window & click the install button.\n\nThen type the package name in the packages box (note: ensure that it is installing from Repository/CRAN)\n\nOption 2 is to use the following code, replacing the “tidyverse” with the package of your choice. This should be used in the console, rather than the script window as you only need to install the package once.\n\ninstall.packages(\"tidyverse\")\n\nOnce you have installed tidyverse, simply load it into your current workspace with the following command (in your script)\n\nlibrary(tidyverse)\n\n\n\n\n\n\n\nIn general, it is good practice to place the library() commands for your whole document at the top before anything else. This allows people reading your code to load in any packages they will need at the beginning before anything else.\n\n\n\nFor example, here is the first few lines of one of my own scripts:\n\nThis shows the reader of my code what packages need to be installed to run my analysis. I also write notes to myself to remind myself what specific packages are for. Once you start accumulating packages, its hard to remember what each one does. I find this particularly useful for packages I only use for a particular function (such as the agricolae package which I use for tukeys letter reports).",
+    "crumbs": [
+      "Pre-Lab - Data exploration",
+      "Packages"
+    ]
+  },
+  {
+    "objectID": "pages/introduction/4_notebooks.html",
+    "href": "pages/introduction/4_notebooks.html",
+    "title": "Notebooks and Markdown",
+    "section": "",
+    "text": "The first step when opening a new R studio environment or project is creating a script or notebook for working in. Scripts are basic text files where all code is executable. Writing non-code in a script requires the use of #’s (which can look messy and confusing) like so:\n\nread.csv(\"datafile.csv\") \n# this code reads a csv (data) file into R. The command read.csv requires brackets with the filepath to the file in quotations. \n# in this code, none of the #'s will run. so if I # the read.csv command, it will not run. like so:\n# read.csv(\"datafile.csv\")\n\nA whole document of the above example can get messy and hard to understand.\nIn a notebook, we separate normal text from code by inserting “code chunks” (insert &gt; R in the top right of the window). Chunks are specialised areas in the notebook for code only. Chunks separate code from text, making it easier to write notes and read. These tutorials have been written in a notebook.\n\n\n\n\n\n\n\nTo create a notebook or script, simply use the pulldown menus file &gt; new file and select either a script, markdown or notebook one. Then save the document by hitting the disk icon (or file &gt; save)\n\nR studio will prompt you to install some packages to use a notebook. Do so and then read the text in the notebook. Once you understand, then clear everything below the “output:” — area.\n\nAs stated above, click the insert pulldown menu in the script window and click R to insert a code chunk. All code in a notebook must be written in a chunk\n\n\n\n\n\nIMPORTANT!\n\nWhen working in a project, wherever you save your project will become the default “directory”. R will look here for files first. If you want to set your working directory elsewhere, use the below code.\n\n\n# Only if you have not created a project\n\nsetwd(\"Drive:/Folder1/Folder2\")\n\n# insert your folders path in the brackets\n# this will tell R to look here for files and \"generally\" save things here as well.\n# e.g. C:/Users/Mitch/Documents/R/\n\n\n\n\n\n\n\nAfter writing your code, you can click run, run selected line(s), run current chunk or press Ctrl + Enter on the line your cursor is on\n\n\n\nGet used to this, you will do this A LOT",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "Notbooks in R studio"
+    ]
+  },
+  {
+    "objectID": "pages/introduction/03_Creating-a-project.html",
+    "href": "pages/introduction/03_Creating-a-project.html",
+    "title": "Creating a project",
+    "section": "",
+    "text": "Now that we have our folder setup, lets move into R studio and create our project.\nIn R, a project file stores your current Rstudio working environment in a file within your file system. This means, if you finish your work for the day halfway through an analysis, you can open up your project file the next day and continue straight from where you left off. The other major benefit is that a project file sets your default working directory. This means, when you need to open a file, you only need to do so from the place of your project file. This will make sense in a moment.\n\nCreating your project\n\n\n\n\n\n\nTo create a project, click file &gt; new project and select existing directory\n\n\n\n\n\n\n\n\n\n\nThen, browse to your new file system we just created and save the project into the base/root of that directory.\n\n\n\nThe real advantage to using project files is simplifying file opening and saving. We will cover this in more detail in the next page, but essentially, when reading data into R we normally have to specify the entire filepath\n\nsurveydata &lt;- read.csv(\"C:/Users/Mitch/Documents/surveydata.csv\")\n\nor, set a working directory\n\nsetwd(\"C:/Users/Mitch/Documents\")\nsurveydata &lt;- read.csv(\"surveydata.csv\")\n\nThe creation of a project cuts out this step by setting our working directory. This means, anytime we want to open a file, we just need to specify the folders within our project directory. So using our new filing system, we would just need to specify the following:\n\nsurveydata &lt;- read.csv(\"Data/surveydata.csv\")\n\nIf you have multiple projects, or want to close the current one, simply click the project name in the top right of R studio",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "Creating a project"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "",
+    "text": "I am a Lecturer in Bioinformatics, and my teaching is informed by the realities of contemporary biological research and industry practice. Across my teaching, I emphasise that digital skills are essential for modern biology graduates, spanning:\n\ndata analysis and visualisation (e.g., working with real biological datasets using modern tools), and\n\nethical, transparent use of generative AI (GenAI) as an emerging workplace capability.\n\nThis portfolio is written for CPD (L&T) Level 2, aligned explicitly to the UOW CPD (L&T) Framework (updated 14/08/25) and its Level 2 descriptors and review indicators (p. 2) :contentReferenceoaicite:0.\nA central example underpinning this portfolio is my curriculum redesign work in BIOL340 (Cell and Molecular Biology), where I have developed a coherent plan to restructure practical teaching to better support research- and industry-relevant capabilities in data interpretation, computational thinking, and scientific communication :contentReferenceoaicite:1."
+  },
+  {
+    "objectID": "pages/introduction/02_Setting-up-your-workspace.html",
+    "href": "pages/introduction/02_Setting-up-your-workspace.html",
+    "title": "Setting up your workspace",
+    "section": "",
+    "text": "There are very quick ways to open R and begin coding, however, having an organised, well-structured working directory in your computer can save you hours of hassle and make your code much easier to share. As biology and data science are becoming increasingly complex many are turning to computer intensive, coding based software (like you!). With this movement in data science and open access, having our code reproducible, transparent and understandable is key. So why not start off like that.",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "Setting up your workspace"
+    ]
+  },
+  {
+    "objectID": "pages/introduction/02_Setting-up-your-workspace.html#file-system",
+    "href": "pages/introduction/02_Setting-up-your-workspace.html#file-system",
+    "title": "Setting up your workspace",
+    "section": "File system",
+    "text": "File system\nBefore we jump into R, we are going to create a clean and managable folder system.\n\n\n\n\n\n\nCreate a new folder in a location of your choosing (e.g. My Documents or Desktop) called R-tutorials\n\n\n\n\nThis can be named anything you like, but try to keep it relevant and understandable (for future you).\n\n\n\n\n\n\nIn this new folder, create a series of new folders called:\n- data\n- doc\n- figs\n- output\n- R\n\n\n\nHere is the basic outline for these folders:\n\n\n\nThe data folder if where you store your raw/input data\n\n\nThe doc folder is where you store the manuscript for the project\n\n\nThe figs folder is where all of your figures will be stored from the analyses\n\n\nThe output folder is where you keep any intermediate datasets generated by your analysis, result reports etc.\n\n\nThe R folder is pretty self-explanatory but it is where we will store all of our R scripts, notebooks etc.\n\n\nNow, let’s move on to the next step. ::::",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "Setting up your workspace"
+    ]
+  },
+  {
+    "objectID": "pages/introduction/01_R-studio-and-the-coding-environment.html",
+    "href": "pages/introduction/01_R-studio-and-the-coding-environment.html",
+    "title": "R Studio & Coding Environment",
+    "section": "",
+    "text": "This module will provide an introduction into the R statisitical environment, going through the basics of data analysis and graphing for publication quality results. By the end of this module, you should be able to:\n\nUnderstand and use the R studio working environment\nImport and manipulate data files\nUndertake linear (ANOVA, regression) and generalised linear (logistic regression) models and associated assumptions/comparisons\nUndertake basic multivariate techniques (PCA, MDS)\nConstruct bar plots and scatterplots in ggplot\n\n\n\nR is a language and environment for statistical computing and graphics. R is free/open source software and as a result, has a community of dedicated statisticans, coders and developers increasing the capabilities and usability of the platform. R primarily runs as a command-line program.\nThis is a big entry barrier to many starting to learn R, so most people have turned to “R Studio”.\n\n\n\nBase R\n\n\n\n\n\nSince R is free and open source, it is a program and skill that can be carried with you across many institutions and jobs and is for many, the single solution for statistical analysis, graphing and even GIS/spatial analysis. Programs like JMP, SPSS and ARCGIS cost 100s if not 1000s of dollars and are quickly outdated by new versions.\nHowever, the biggest uses of R come from its sharability and openness. Collaborating and sharing data analysis with R requires only the script and raw data. All data manipulations are done within R, requiring no editing or manipulating of your raw excel data.\n\n\n\n\n\n\nThe R Studio Environment\n\n\nR studio “reskins” the standard R environment, giving space for script writing, help, graphics output and tracking of data files. Due to the ease of working in R studio, thats what we will be using. R studio can provide an array of functions from statistical analysis and graphing, GIS/spatial analysis, presentations, document preparation (all of these tutorials are written in R) and even novel functions like interacive graphs and tweeting.\n\n\n\nR studio is separated into 4 panels:\n\nThe top-left panel (blue) is the editor (or script window) where you can view and write your R script. This is a saveable document of code. Running code is as simple as Ctrl+Enter on a line of code or pressing the run button in the top-right of this window.\nThe bottom-left (red) is the console. This is the standard R environment where you can run code directly, or view the output of your script as you run it.\nThe top-right (green) is your workspace. This lists each “object” as you create them through your analyses. Clicking a data-frame object will allow you to view it.\nThe bottom-left (black) has lists of files and packages as well as the help window (quickly access by typing ? before any command) and plots which shows any graphical output.\n\nNow we have an idea of what R is, it is time to install R & R Studio onto your computer.\n\nInstall Instructions\n1. Click Here to visit the R webpage and select one of the Australian mirrors to download (CSIRO, University of Melbourne etc.)\n2. Select your version (Windows or Mac), then download the base subdirectory\n3. Once installed, visit R studio to download R studio desktop.\n\nOnce both of those are installed, you can now proceed to open up Rstudio",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "R studio and the coding environment"
+    ]
+  },
+  {
+    "objectID": "pages/introduction/01_R-studio-and-the-coding-environment.html#introduction",
+    "href": "pages/introduction/01_R-studio-and-the-coding-environment.html#introduction",
+    "title": "R Studio & Coding Environment",
+    "section": "",
+    "text": "This module will provide an introduction into the R statisitical environment, going through the basics of data analysis and graphing for publication quality results. By the end of this module, you should be able to:\n\nUnderstand and use the R studio working environment\nImport and manipulate data files\nUndertake linear (ANOVA, regression) and generalised linear (logistic regression) models and associated assumptions/comparisons\nUndertake basic multivariate techniques (PCA, MDS)\nConstruct bar plots and scatterplots in ggplot\n\n\n\nR is a language and environment for statistical computing and graphics. R is free/open source software and as a result, has a community of dedicated statisticans, coders and developers increasing the capabilities and usability of the platform. R primarily runs as a command-line program.\nThis is a big entry barrier to many starting to learn R, so most people have turned to “R Studio”.\n\n\n\nBase R\n\n\n\n\n\nSince R is free and open source, it is a program and skill that can be carried with you across many institutions and jobs and is for many, the single solution for statistical analysis, graphing and even GIS/spatial analysis. Programs like JMP, SPSS and ARCGIS cost 100s if not 1000s of dollars and are quickly outdated by new versions.\nHowever, the biggest uses of R come from its sharability and openness. Collaborating and sharing data analysis with R requires only the script and raw data. All data manipulations are done within R, requiring no editing or manipulating of your raw excel data.\n\n\n\n\n\n\nThe R Studio Environment\n\n\nR studio “reskins” the standard R environment, giving space for script writing, help, graphics output and tracking of data files. Due to the ease of working in R studio, thats what we will be using. R studio can provide an array of functions from statistical analysis and graphing, GIS/spatial analysis, presentations, document preparation (all of these tutorials are written in R) and even novel functions like interacive graphs and tweeting.\n\n\n\nR studio is separated into 4 panels:\n\nThe top-left panel (blue) is the editor (or script window) where you can view and write your R script. This is a saveable document of code. Running code is as simple as Ctrl+Enter on a line of code or pressing the run button in the top-right of this window.\nThe bottom-left (red) is the console. This is the standard R environment where you can run code directly, or view the output of your script as you run it.\nThe top-right (green) is your workspace. This lists each “object” as you create them through your analyses. Clicking a data-frame object will allow you to view it.\nThe bottom-left (black) has lists of files and packages as well as the help window (quickly access by typing ? before any command) and plots which shows any graphical output.\n\nNow we have an idea of what R is, it is time to install R & R Studio onto your computer.\n\nInstall Instructions\n1. Click Here to visit the R webpage and select one of the Australian mirrors to download (CSIRO, University of Melbourne etc.)\n2. Select your version (Windows or Mac), then download the base subdirectory\n3. Once installed, visit R studio to download R studio desktop.\n\nOnce both of those are installed, you can now proceed to open up Rstudio",
+    "crumbs": [
+      "Pre-Lab - Introduction",
+      "R studio and the coding environment"
+    ]
+  },
+  {
+    "objectID": "pages/1/8_pipe.html",
+    "href": "pages/1/8_pipe.html",
+    "title": "The Pipe Function",
+    "section": "",
+    "text": "This lets you run multiple different functions on one dataset without having to use the intermediate steps you would have to use in base R.\nYou start with the data you want to apply the functions to, followed by a pipe %&gt;%. After each pipe you must go to the next line.\nThis is useful for large messy functions with multiple nested parts. It separates everything out and makes it easier to follow.\nA pipe is simply a &gt; nested within two percentage, %, symbols. The keyboard shortcut for this is Ctrl + SHIFT + M\n\nsum_data &lt;- weeds %&gt;% \n  group_by(species, soil) %&gt;% \n  summarise(max(flowers))\n\nYou simply start with the data you want to apply the functions to, followed by a pipe. After each pipe you must go to the next line (sorta).\nIn this example, we grouped the data by species and soil, then performed the summarise function to generate the max number for each combination\n\n\n\n\n\n\nYou will notice, that because we specified the data in the first line, we did not have to specify the data in the other lines, only the columns\n\n\n\n\nnew_data &lt;- weeds %&gt;% \n  mutate(binary = soil == \"sandstone\") %&gt;% \n  filter(weeds == \"native\")\n\nAs you can see, we can do this with most of the functions we have already learnt. This above example will generate a binary outcome (true/false) for soil with TRUE as “sandstone”. Followed by filtering for “native” weeds. This will generate a a dataset with native weeds that have a true/false outcome based on soil.\nPiping is incredibly useful and much easier to read. It is a function I keep forgetting to use, until I look at my code later on, full of regrets. It shortens and simplifies code alot.",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Pipe function"
+    ]
+  },
+  {
+    "objectID": "pages/1/3_columns.html",
+    "href": "pages/1/3_columns.html",
+    "title": "Columns",
+    "section": "",
+    "text": "Another important aspect of R coding syntax is refering to specific columns. This is done by using a $ sign after specifying our dataset and then calling the column. Like so:\n\nhead(weeds$flowers.m3) # This says to run the head() command but only on the flowers.m3 column\n\n[1] 14 17 23 26 35 45\n\n\nTry this with some of the other commands above. Note: Some of them will not work and will show NULL. This is because these are designed to view aspects of the data frame (e.g. names() )\nNow we know how to refer to a column, we can fix any issues with importing incorrect data\nPretend for a moment our data was input incorrectly:\n\nweeds$species&lt;-factor(weeds$species)\n\nThis would simply save the command factor() on the column species to our weeds object.\nIf we wanted an ordered factor, e.g. small &lt; medium &lt; large we can use the following\n\n## example dataset ##\nsizes &lt;- factor(c(\"small\", \"large\", \"large\", \"small\", \"medium\", \"medium\")) # creating a single column factor with 3 levels\nsizes\n\n[1] small  large  large  small  medium medium\nLevels: large medium small\n\n\nHere we have just created a new example dataset which consists of a single column, containing the words: small, large and medium in a random order.\nWe can order these into a logical order, so R will know that medium is bigger than small and large is bigger than medium\n\nsizes &lt;- ordered(sizes, levels = c(\"small\", \"medium\", \"large\")) # ordering levels from small through to large.\n# Note: I did not need to specify column as this is a single column dataset. \nsizes # Now the factor is ordered.\n\n[1] small  large  large  small  medium medium\nLevels: small &lt; medium &lt; large\n\n\nWe can then do this with our weeds dataset, ordering them in a nonsensical order.\n\nweeds$species&lt;-ordered(weeds$species, levels=c(\"Pultenaea\", \"Olearia\", \"Coprosma\"))\n\nThis is useful when the dataset you are working with has an ordered factor.\nThe main use for this is in graphing\nBy default, R will always sort in alphabetical order, which can be a pain when graphing. If you want ordered factors, or want to present factors along an X axis in a more logical order then the ordered() command or even factor() command where you specify levels is a good option.\n\n\n\n\n\n\nI recommend using the factor() command and specifying the levels using the same syntax as the ordered() command unless your factor is truely ordered. This way we just sort the factor the way we want, but are not messing with the way R views our variable (as an ordinal variable rather than a logically ordered factor).\n\n\n\nIf you want to change something to a continuous (numeric, integer etc.) its a little more complicated, but in general R shouldn’t mess this up too often. A quick google search or ?numeric will help answer this.",
+    "crumbs": [
+      "Pre-Lab - Data exploration",
+      "Columns"
+    ]
+  },
+  {
+    "objectID": "pages/1/5_joins.html",
+    "href": "pages/1/5_joins.html",
+    "title": "Joining Data",
+    "section": "",
+    "text": "One of the most frequent data manipulations for working within R is joining multiple data sets together. The most common example of this is combining species abundance (or some other variable of interest) with external sources on the environmental conditions, such as BOM data (temperature, precipitation etc.) or GPS data.\nTo do most statistical analyses, data needs to be in the same data frame. So joining the datasets is an “easy” way to do so outside of excel.\n\n\n\n\n\n\nFor this exercise, we will be working with the BIOL365 Frog Data to combine the species matrix with environmental data.\nDownload the “frogs.csv” and “frog_environmental.csv”” files and read them in to R without the row.names argument\n\n\n\n\nfrogsp&lt;-read.csv(\"frogs.csv\", header=TRUE)\nenviro&lt;-read.csv(\"frog_environmental.csv\", header=TRUE)\n\nFor a complete join of both datasets, when there are the same number of rows in the exact same order, we can use the bind_cols() function.\n\nfrogcombine &lt;- bind_cols(frogsp, enviro) # In this example the \"site\" column has been added twice\n\nThere is a bind_rows() that will add rows to the bottom of a dataset, using the same syntax.\nWhile bind_cols() and bind_rows() are “cool”, they are limited in their usefulness. I find the most useful function is left_join().\n\nfrogjoin &lt;- left_join(frogsp, enviro, by=\"Site\") # This will join two datasets by a similar column (Site). \n\nThis will join the second dataset (enviro) to the first data set based on the shared column. right_join() will do the opposite, joining frogsp to enviro. Its pretty useless, just use left_join() remember to always put the data frame you want to keep first.\n\n# We can use the dim() to view the dimensions of the data\ndim(frogsp) # 11 columns\n\n[1] 42 11\n\ndim(enviro) # 16 columns\n\n[1] 42 16\n\ndim(frogjoin) # 26 colums (11 + 16 minus the 1 in common)\n\n[1] 42 26\n\n\nBoth of these examples so far have required the same rows for each dataset. Sometimes we might have more information in one dataset then we do in the other. For this dataset we don’t have this issue, so lets quickly create the issue to demonstrate.\nWe will simply use the filter() command to filter for rows that contain a value in the “Temp” column. We have 4 rows that have an NA in “Temp” so we will use a != (not equal to) to select all rows that are not equal to NA\n\nenviro_filter &lt;- filter(enviro, Temp != \"NA\") # This removes sites 14, 15, 35 & 36\ndim(enviro_filter)\n\n[1] 38 16\n\n# Now we can try the two new join types\n\nfroginner &lt;- inner_join(frogsp, enviro_filter, by=\"Site\") # Join data. Retain only rows that occur in both data sets\ndim(froginner) # 38 rows\n\n[1] 38 26\n\nfrogfull &lt;- full_join(frogsp, enviro_filter, by=\"Site\") # Join data. Retain all values, all rows\ndim(frogfull)\n\n[1] 42 26\n\n\nYou can also use semi_join() to combine all rows that have a match in the second dataset, or anti_join() to combine all rows that do not match have a match in the second dataset (this ones a little weird).\nI still find myself using left_join 90% of the time though."
+  },
+  {
+    "objectID": "pages/1/2_viewingdata.html",
+    "href": "pages/1/2_viewingdata.html",
+    "title": "Viewing your data",
+    "section": "",
+    "text": "Now we have become acquainted with our working directories and the R environment, its time to explore our newely imported data. For this, we will be using the weeds dataset. Ensure your data is loaded in and then either use the View() command:\n\nweeds &lt;- read.csv(\"weeds.csv\")\nView(weeds)\n# This will open up a new tab to view your data\n\nor click the variable name in the environment window.\n\nThis should bring up a separate tab in Rstudio which you should be able to see the 4 columns (weeds, soil, species & flowers.m3).\nNow we can see our data, we can investigate the way R has input our data. The best thing to do is to ensure your categorical variables are categorical, and our continuous are continuous, much like we do in programs like JMP.\n\nIn JMP, we have the icons to identify categorical/nominal, ordinal or continuous. In R, all we do is run a single line of code to view the same thing across the different columns.\n\nstr(weeds)\n\n'data.frame':   48 obs. of  4 variables:\n $ weeds     : chr  \"weed\" \"weed\" \"weed\" \"weed\" ...\n $ soil      : chr  \"sandstone\" \"sandstone\" \"sandstone\" \"sandstone\" ...\n $ species   : chr  \"Coprosma\" \"Coprosma\" \"Coprosma\" \"Coprosma\" ...\n $ flowers.m3: int  14 17 23 26 35 45 36 28 28 39 ...\n\n# str stands for \"structure\" and will tell us the formats of each data column, as well as the number of levels when we have a factor (categorical) column\n\nstr() also shows us the number of levels we have in a factor. So if we put in a bad dataset with different capitalisations or misspellings on factor levels, we can identify here how many we want vs. how many we have. Its a quick and easy way to assess your data.\nAs you can see in the weeds example, we have weeds, soil & species as factors (categorical) and flowers.m3 as an integer (one of many continuous data types, in this case, whole numbers).\nWe will follow up on how to fix an incorrect column shortly\nOther data viewing commands can be used to view certain aspects of your data without bringing up the entire data set in a new tab. These are as follows:\n\nhead(weeds) # This will show the top few rows of your data so you can check it without loading the entire table\n\n  weeds      soil   species flowers.m3\n1  weed sandstone  Coprosma         14\n2  weed sandstone  Coprosma         17\n3  weed sandstone  Coprosma         23\n4  weed sandstone  Coprosma         26\n5  weed sandstone Pultenaea         35\n6  weed sandstone Pultenaea         45\n\ntail(weeds) # The same as head() but shows the bottom rows\n\n    weeds  soil   species flowers.m3\n43 native shale Pultenaea         49\n44 native shale Pultenaea         20\n45 native shale   Olearia         32\n46 native shale   Olearia         51\n47 native shale   Olearia         47\n48 native shale   Olearia         55\n\ndim(weeds) # This gives you the number of rows and columns\n\n[1] 48  4\n\n# You can also use nrow(weeds) or ncol(weeds) to get them separately\n\nnames(weeds) # Gives you the column names. \n\n[1] \"weeds\"      \"soil\"       \"species\"    \"flowers.m3\"\n\n# I use this when I want the exact name for a column when I am writing analyses (you will see later how useful this can be)\n\nsummary(weeds) # Gives you summary statistics for each column\n\n    weeds               soil             species            flowers.m3   \n Length:48          Length:48          Length:48          Min.   :13.00  \n Class :character   Class :character   Class :character   1st Qu.:22.50  \n Mode  :character   Mode  :character   Mode  :character   Median :33.00  \n                                                          Mean   :33.81  \n                                                          3rd Qu.:45.50  \n                                                          Max.   :57.00  \n\n# This will also come in handy later for statistical analysis \n\nAs you can see, there are many ways to view data within R. Some of these are useful for huge datasets (&gt; 10k rows) as the view() command can put strain on your computer. Using head() or tail() to view aspects of the data is useful as it reduces how much is displayed.\n::: callout After reading in dataset, use the summary() command with the “insecticide”” dataset to answer the following questions:\nQuestion: What is the minimum value for species richness? :::\n{{% expand Answer %}} 1 {{% /expand %}}\n\n\n\n\n\n\nQuestion: What is the maximum value for species richness?\n\n\n\n{{% expand Answer %}} 20 {{% /expand %}}",
+    "crumbs": [
+      "Pre-Lab - Data exploration",
+      "Viewing Data"
+    ]
+  },
+  {
+    "objectID": "pages/1/1_rename.html",
+    "href": "pages/1/1_rename.html",
+    "title": "The Rename Function",
+    "section": "",
+    "text": "You will often need to rename data you enter or obtain from others, as R converts any spaces to fullstops and people tend to capitilise most words. The rename() function allows us to simply rename a column name within our data frame.\n\nPersonally, this is my favourite function in R as I hate captials, fullstops and other annoying column name problems that slow down coding or generate errors. Trust me, when you spend an hour trying to fix a line of code only to find a single capital letter is missing, you will understand.\nTo do this with dplyr (a tidyverse package) we simply use the following command:\n\nweeds &lt;- rename(weeds, flowers = flowers.m3)\n# In the brackets we need to specify our data frame (weeds) followed by a second argument specifying the name we want for our column = the name we already have.\n# Again, if you run this by itself it will not save to your data frame, unless you direct it to your data frame variable using the &lt;- \n\nPretty simple and straightforward.\nIf you want to rename multiple columns, this is a pretty simple addition. For demonstrating purposes, I am going to rename all the columns of weeds to nonsensical crap.\n\ngrocerylist &lt;- rename(weeds, coopers = \"flowers\", asahi = \"species\", vb = \"soil\", littlecreatures = \"weeds\")\n# to specify multiple variables/columns, we simply add a comma after the first rename and keep going.",
+    "crumbs": [
+      "Pre-Lab 2 - Data manipulation",
+      "The Rename function"
+    ]
+  },
+  {
+    "objectID": "pages/supplementary/cheetsheet.html",
+    "href": "pages/supplementary/cheetsheet.html",
+    "title": "ggplot_cheatsheet",
+    "section": "",
+    "text": "#Graphing cheat sheets\nPosit, the company that marks Rstudio has created some really fantastic resources to help leverage the most out of ggplot2. Access cheatsheet documents for ggplot2. They are available here.\nIn particular I recommend looking at the PDF available on this website. PDF link.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Additional ggplot2 support"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html",
+    "href": "pages/DP4/DP4_clean.html",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "🧭 Mode: In pairs, bring your scientific report and be ready to collaborate.\n\nThis session will guide you through using GenAI to improve your scientific writing and reflect on how AI compares to human feedback.\n\n\n\nBefore you begin:\n\nOpen a new Microsoft Word document to record your answers.\nHave your draft scientific report ready (ideally with comments from a peer)\nAccess a GenAI tool like Copilot (or other approved platform)\nUse Microsoft Word or Google Docs with tracked changes enabled\n\n\n\n\n\n\n\nLaunch Copilot\n\n\n\nUse the link below to open Microsoft Copilot in a new tab. You’ll need to be logged in with your UOW or institutional account.\n👉 Launch Microsoft Copilot\n\n⚠️ Make sure to copy/paste your prompts and results into your worksheet as you go!\n\n\n\n\n\n\n\nChoose a paragraph from your own writing and paste it in your notes. Now try using the below types of prompts.\n\n\n\nPrompt: “Please rewrite the following paragraph to be more concise and clear, suitable for a scientific audience.”\n\nExample AI Output:\n“The experiment investigated the effect of temperature on enzyme activity. Results showed a steady increase in activity up to 37°C, after which it declined rapidly, suggesting denaturation.”\n\n\n\n\n\nPrompt: “Rewrite the paragraph in a way that explains the concept clearly to someone without a science background.”\n\nExample AI Output:\n“We tested how heat affects enzymes—the tiny machines inside cells. They worked faster when it was warm, but too much heat made them break down.”\n\nNow try your own prompts and note the results using the below guide:\nPrompt 1 (concise/scientific):\nAI Output 1:\n\nPrompt 2 (general audience):\n\nAI Output 2:\n\n\n\n\n\n\nShare your prompts and output with the group next to you, and use the following checklist to evaluate AI responses:\n\nPreserved scientific meaning\n\nImproved clarity or tone\n\nRemoved critical information\n\nIntroduced an error or hallucination\n\nWas suitable for the intended audience\n\nWhich output was better and why?\n\nDid anything surprise or confuse you?\n\n\n\n\n\nScenario:\nA student pastes their full assignment into ChatGPT, accepts the rewritten version, and submits it without reading it. The AI fabricated citations and misunderstood the conclusion.\nDiscussion Questions:\n\nWhat are the risks in this scenario?\n\nWhen is it okay to use AI in writing? When is it not?\n\nEthical checklist you can apply and think about when using these tools:\n\nI used AI to assist, not replace my work\n\nI reviewed and edited all AI-generated text\n\nI remain the author of my submission\n\n\n\n\n\n\nChoose one paragraph as a group and go through these steps:\nOriginal Paragraph:\n…\nRevision Prompt Used:\n…\nAI Output:\n…\nFinal Human-Edited Version:\n…\nWhat we changed and why:\n…\n\n\n\n\nRecord your most effective prompt from your work today and its benefit.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese prompts will be stored across the class and act as a shared vault for the class.\nBest Prompt:\n…\nWhat it helped improve:\n…\n\n\n\n\nToday I learned:\n…\nOne thing I’ll do differently in my writing is:\n…\nOne thing to remember when using AI:\n…\n\nFinal Thought: AI is a tool — you are the scientist. Own your writing, use tools wisely, and always verify what you say!",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#getting-started",
+    "href": "pages/DP4/DP4_clean.html#getting-started",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Before you begin:\n\nOpen a new Microsoft Word document to record your answers.\nHave your draft scientific report ready (ideally with comments from a peer)\nAccess a GenAI tool like Copilot (or other approved platform)\nUse Microsoft Word or Google Docs with tracked changes enabled\n\n\n\n\n\n\n\nLaunch Copilot\n\n\n\nUse the link below to open Microsoft Copilot in a new tab. You’ll need to be logged in with your UOW or institutional account.\n👉 Launch Microsoft Copilot\n\n⚠️ Make sure to copy/paste your prompts and results into your worksheet as you go!",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#activity-1-prompt-design-output-exploration",
+    "href": "pages/DP4/DP4_clean.html#activity-1-prompt-design-output-exploration",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Choose a paragraph from your own writing and paste it in your notes. Now try using the below types of prompts.\n\n\n\nPrompt: “Please rewrite the following paragraph to be more concise and clear, suitable for a scientific audience.”\n\nExample AI Output:\n“The experiment investigated the effect of temperature on enzyme activity. Results showed a steady increase in activity up to 37°C, after which it declined rapidly, suggesting denaturation.”\n\n\n\n\n\nPrompt: “Rewrite the paragraph in a way that explains the concept clearly to someone without a science background.”\n\nExample AI Output:\n“We tested how heat affects enzymes—the tiny machines inside cells. They worked faster when it was warm, but too much heat made them break down.”\n\nNow try your own prompts and note the results using the below guide:\nPrompt 1 (concise/scientific):\nAI Output 1:\n\nPrompt 2 (general audience):\n\nAI Output 2:",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#activity-2-compare-evaluate",
+    "href": "pages/DP4/DP4_clean.html#activity-2-compare-evaluate",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Share your prompts and output with the group next to you, and use the following checklist to evaluate AI responses:\n\nPreserved scientific meaning\n\nImproved clarity or tone\n\nRemoved critical information\n\nIntroduced an error or hallucination\n\nWas suitable for the intended audience\n\nWhich output was better and why?\n\nDid anything surprise or confuse you?",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#activity-3-ethics-in-action",
+    "href": "pages/DP4/DP4_clean.html#activity-3-ethics-in-action",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Scenario:\nA student pastes their full assignment into ChatGPT, accepts the rewritten version, and submits it without reading it. The AI fabricated citations and misunderstood the conclusion.\nDiscussion Questions:\n\nWhat are the risks in this scenario?\n\nWhen is it okay to use AI in writing? When is it not?\n\nEthical checklist you can apply and think about when using these tools:\n\nI used AI to assist, not replace my work\n\nI reviewed and edited all AI-generated text\n\nI remain the author of my submission",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#activity-4-collaborative-rewrite",
+    "href": "pages/DP4/DP4_clean.html#activity-4-collaborative-rewrite",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Choose one paragraph as a group and go through these steps:\nOriginal Paragraph:\n…\nRevision Prompt Used:\n…\nAI Output:\n…\nFinal Human-Edited Version:\n…\nWhat we changed and why:\n…",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#prompt-vault",
+    "href": "pages/DP4/DP4_clean.html#prompt-vault",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Record your most effective prompt from your work today and its benefit.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese prompts will be stored across the class and act as a shared vault for the class.\nBest Prompt:\n…\nWhat it helped improve:\n…",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#class-reflection",
+    "href": "pages/DP4/DP4_clean.html#class-reflection",
+    "title": "AI Reflection & Writing Lab",
+    "section": "",
+    "text": "Today I learned:\n…\nOne thing I’ll do differently in my writing is:\n…\nOne thing to remember when using AI:\n…\n\nFinal Thought: AI is a tool — you are the scientist. Own your writing, use tools wisely, and always verify what you say!",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#step-1-human-feedback-summary",
+    "href": "pages/DP4/DP4_clean.html#step-1-human-feedback-summary",
+    "title": "AI Reflection & Writing Lab",
+    "section": "🔹 Step 1: Human Feedback Summary",
+    "text": "🔹 Step 1: Human Feedback Summary\n\n🔎 What were the key points of feedback?\n\nList 1–3 points of feedback you received on your report. Be specific.\n\n\n1.\n2.\n3.\n\n\n\n📌 How will you address this feedback?\n\nDescribe one way you’ll apply this feedback to your report.\n\n\nNote down your action plan",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#step-2-revising-with-genai",
+    "href": "pages/DP4/DP4_clean.html#step-2-revising-with-genai",
+    "title": "AI Reflection & Writing Lab",
+    "section": "🔹 Step 2: Revising with GenAI",
+    "text": "🔹 Step 2: Revising with GenAI\n\n\n\n\n\n\nPrompt Engineering Guide\n\n\n\nYou will now use four types of prompts with Microsoft Copilot to revise your scientific report. Each prompt serves a different purpose and helps you interact with AI in more effective ways. Understanding how and why these prompts work differently is an important part of responsibly using GenAI tools.\nUse the Pro Forma to guide your progress. For each prompt type, copy the AI’s output into your worksheet and then reflect on how it helped improve your work—or if it didn’t help, explain why. This reflection is just as important as the output.\n\n\n🧠 Context Prompt (who the AI is)\nThis prompt sets the “role” or “persona” of the AI—you’re telling it who it should pretend to be. For example:\n&gt; “You are a biology lecturer marking third-year scientific reports.”\nThis helps the AI tailor its feedback in a way that’s appropriate for your audience, tone, and discipline. By setting context, you’re more likely to receive feedback that aligns with academic expectations in biology, such as clarity, structure, and use of evidence.\n\n\n\n🔧 “Do for me” Prompt\nThis is a direct instruction where you ask the AI to perform a task on your behalf. For example:\n&gt; “Rewrite this paragraph to be more concise.”\n&gt; “Add a stronger topic sentence to this paragraph.”\nThis prompt is about delegation—you’re giving the AI a task and seeing how well it can help streamline or improve your writing. It’s useful when you know what needs to be fixed but want help doing it efficiently. However, it is very important to evaluate the result critically to ensure it is correct, does not plagiarise and is of an appropriate scientific standard.\n\n\n\n🔍 “Evaluate” Prompt\nIn this prompt, you’re asking the AI to critique or assess a section of your writing. For example:\n&gt; “What are the strengths and weaknesses of this paragraph?”\n&gt; “Does this argument make logical sense?”\nThis approach encourages metacognition—thinking about your own thinking. It helps you view your writing from another perspective, identify gaps, and reflect on your structure and clarity. In scientific writing, this skill is crucial for presenting arguments and evidence effectively.\n\n\n\n🎓 “Teach Me” Prompt\nThis prompt is used to deepen your understanding. You’re asking the AI to explain a concept or technique. For example:\n&gt; “Explain what makes a good scientific discussion section.”\n&gt; “Why is passive voice often discouraged in scientific writing?”\nThis type of prompt supports learning and skill-building. It’s helpful when you’re unsure about a rule or principle in scientific communication and want to strengthen your knowledge. Rather than fixing the text for you, the AI helps you understand how to make good writing choices.\n\n\n\n\n2.1 Contextualise the AI\n\nWrite a prompt that tells Copilot who it is (e.g., “You are an expert editor of a scientific journal…”)\n\n\nNote down your prompt\n\n\n\n2.2 ‘Do for me’ Prompt\n\nShare a prompt you used to get Copilot to rewrite or revise a section for you.\n\n\nNote down your prompt\n\n\nHow did you use the Copilot output to change your report?\n\n\nNote description of change\n\n\n\n2.3 ‘Evaluate’ Prompt\n\nAsk Copilot to review a section. What prompt did you use?\n\n\nNote down your prompt\n\n\nWhat change did you make based on Copilot’s evaluation?\n\n\nNote description of change\n\n\n\n2.4 ‘Teach me’ Prompt\n\nShare a “teach me” prompt you used with Copilot (e.g., “How can I improve clarity in my methods section?”)\n\n\nNote down your prompt\n\n\nWhat did you learn from Copilot’s response?\n\n\nNote key takeaway",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#part-3-reflection",
+    "href": "pages/DP4/DP4_clean.html#part-3-reflection",
+    "title": "AI Reflection & Writing Lab",
+    "section": "🔹 Part 3: Reflection",
+    "text": "🔹 Part 3: Reflection\nFollowing the Pro Forma answer each question below in 100–150 words. The total reflection should not exceed 600 words\n\n3.1 Compare AI & Human Feedback\n\nHow did Copilot feedback compare with the feedback from your peer?\n\n\nNote down your response…\n\n\n\n3.2 Most Effective Prompt\n\nWhich type of Copilot prompt helped most? Why?\n\n\nNote down your response…\n\n\n\n3.3 Impact on Your Writing\n\nDid using Copilot change how you approach writing or editing?\n\n\nNote down your response…\n\n\n\n3.4 AI Pros & Cons\n\nWhat are the benefits and risks of using GenAI like Copilot in science writing?\n\n\nNote down your response…",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/DP4/DP4_clean.html#final-checklist",
+    "href": "pages/DP4/DP4_clean.html#final-checklist",
+    "title": "AI Reflection & Writing Lab",
+    "section": "📦 Final Checklist",
+    "text": "📦 Final Checklist\n\nBefore submitting:\n✅ Tracked changes enabled in your revised report\n✅ Completed Pro Forma with feedback summary, prompts, and reflection\n✅ Screenshots or transcripts of Copilot interactions in Appendix\n\n📤 Upload to Moodle by Monday 26th of May, 11:59pm",
+    "crumbs": [
+      "Dry Prac 4",
+      "Dry Prac 4 Notes"
+    ]
+  },
+  {
+    "objectID": "pages/2/Scatter-plots/3_logisticregression.html",
+    "href": "pages/2/Scatter-plots/3_logisticregression.html",
+    "title": "Logistic regression",
+    "section": "",
+    "text": "For this section, we will be using the nestpredation.csv data set\n\n\n\nIn our third dataset, we analysed the nest predation dataset using a generalised linear model with a binomial distribution, also known as a Logistic Regression.\nIn this scenario, our data is measuring whether a nest was attacked or not in areas of different shrubcover. When we analyse this using a GLM, it is calculating the probability of a nest being attacked, given different values of shrubcover. As such, we need to plot this in a similar manner.\nFirst let’s demonstrate what happens when we don’t take the binomial distribution into account.\n\nggplot(nest, aes(x=shrubcover, y=nestattacked)) + \n  geom_point()\n\n\n\n\n\n\n\n\nNotice how it has plotted the points at either 0 or 1 for each of the corresponding shrubcover values. This does not tell us anything about the likelihood of a nest being attacked given a value of shrubcover.\nThere are multiple methods for producing this plot. The one we will be using generates the relationship between our variables in the code itself.\n\nggplot(nest,aes(x=shrubcover, y=nestattacked)) +\n  geom_smooth(method = glm, method.args= list(family=\"binomial\"))\n\n\n\n\n\n\n\n\nThis method utilises the geom_smooth() function we were using for our linear model. This time we specify the glm relationship in the method argument, instead of lm. We also need to include a second argument called method.args which stands for method arguments, or, additional arguments for the method we have specified. We need to include this so we can inform our code that our distribution (family) is binomial. By including this, we produce our probability curve\nAs before, we can edit all of the things we did with the linear line because we are using the same command geom_smooth(). Like removing our errorbars.\n\nggplot(nest,aes(x=shrubcover, y=nestattacked)) +\n  geom_point()+\n  geom_smooth(method = glm, method.args= list(family=\"binomial\"), se=FALSE)"
+  },
+  {
+    "objectID": "pages/2/Scatter-plots/2_plottinglines.html",
+    "href": "pages/2/Scatter-plots/2_plottinglines.html",
+    "title": "Linear Lines",
+    "section": "",
+    "text": "To produce a line on our graph, the easiest solution is using geom_smooth(method=lm). geom_smooth() by default will produce a loess smooth through our graph with confidence intervals. Since we have run a linear model, we specify the method of the geometric shape to fit that of a linear model (lm).\n\nggplot(tadpoles, aes(x=pondsize, y=abundance)) +\n  geom_point(alpha = 0.5)+\n  geom_smooth(method=lm)\n\n\n\n\n\n\n\n\nmethod=lm tells the smooth line to plot a linear relationship between the variables in the graph environment. You will see it automatically plots confidence intervals and colours the line blue. By default it will only extend to the range of our data, which is good. Both of these can be changed with the following:\n\nggplot(tadpoles, aes(x=pondsize, y=abundance)) +\n  geom_point(alpha = 0.5)+\n  geom_smooth(method=lm, se = FALSE, fullrange = TRUE)\n\n\n\n\n\n\n\n\nse = FALSE will turn off the standard error/confidence intervals for the line. This is set to true by default.\nfullrange = TRUE will extrapolate the line to the fullrange of the x & y axes. This should only be used it you are confident in what you are doing, as it does extrapolate data outside of what you collected.\n\nColour and line type\nColouring the the line follows the same principles as points and bars. colour = will colour the line itself, while fill = will colour the ribbon/confidence intervals.\n\nggplot(tadpoles, aes(x=pondsize, y=abundance)) +\n  geom_point(alpha = 0.5)+\n  geom_smooth(method=lm, colour = \"red\", fill = \"mediumpurple1\")\n\n\n\n\n\n\n\n\nWe can also change the line type using linetype = and specifying one of the 6 line types.\n\n\nggplot(tadpoles, aes(x=pondsize, y=abundance)) +\n  geom_point(alpha = 0.5)+\n  geom_smooth(method=lm, colour = \"red\", linetype = 2)\n\n\n\n\n\n\n\n\n\n\nMultiple Lines\nWe can also plot multiple lines using the colour argument within the aesthetics (aes) of our graph and colour by a factor.\n\nggplot(tadpoles, aes(x=pondsize, y=abundance, colour = reeds)) +\n  geom_point(alpha = 0.5)+\n  geom_smooth(method=lm) \n\n\n\n\n\n\n\n\nThis time, we plot three lines by using the reeds factor. You can change the colouring and shape of each of the lines using the same commands as with points and bars.\n\n\n\n\n\n\nYou dont need to specify the aesthetic variables in the ggplot command, you can do so in each separate geom line by using aes(). This means you can produce three lines using colour in geom_smooth, but keep the points normal in geom_point. This is the same across all ggplot graphs\n\n\n\nThis is an example of that point.\n\nggplot(tadpoles) +\n  geom_point(aes(x=pondsize, y=abundance))+\n  geom_smooth(aes(x=pondsize, y=abundance, colour = reeds), method=lm) \n\n\n\n\n\n\n\n\nYou can see in this example, that the points are black, while the three lines are coloured by reeds."
+  },
+  {
+    "objectID": "pages/2/Bar-plots/1_barplots.html",
+    "href": "pages/2/Bar-plots/1_barplots.html",
+    "title": "Basic bar plots",
+    "section": "",
+    "text": "For this section, we will be using the weeds dataset where we performed a two-factor ANOVA\n\n\n\nFor a quick reminder:\n\nweeds.aov2 &lt;- aov(flowers ~ species * soil, data = weeds)\nanova(weeds.aov2)\n\nAnalysis of Variance Table\n\nResponse: flowers\n             Df Sum Sq Mean Sq F value    Pr(&gt;F)    \nspecies       2 2368.6 1184.31  9.1016 0.0005203 ***\nsoil          1  238.5  238.52  1.8331 0.1830080    \nspecies:soil  2  155.0   77.52  0.5958 0.5557366    \nResiduals    42 5465.1  130.12                      \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nFrom this, only Species was significant. For this dataset with a continuous Y and categorical X we would plot a bargraph.\nThere are three main ways to display a bar/column graph, geom_col(), geom_bar() and stat_summary(). I will cover each of them in some depth, showing the benefits to each. Here is a quick breakdown to begin.\n\n\n\n\n\n\n\n\nPlot\nPro\nCon\n\n\n\n\ngeom_col()\nSimple and effective, defaults to displaying data as is\nErrorbars are finicky\n\n\ngeom_bar()\nErrorbars work well, displays sample size/counts by default\nRequires a single argument to match geom_col\n\n\nstat_summary()\nQuick calculation of mean, used across all geometric types\nDifficult to code and errorbars just flat out dont work\n\n\n\nI find best way to generate the bargraph properly, is to use the summarise() command to generate our means and standard errors before plotting. This extra step saves alot of hassle and you can copy this code across any dataset, changing the column names. We can generate these within ggplot, but it leads to complications (see stat_summary() below).\n\nweeds.summarise &lt;- weeds %&gt;% group_by(species) %&gt;%\n  summarise(mean = mean(flowers), se=sd(flowers)/sqrt(n()))\n\nThis is a quick way to generate our mean and se for flowers for each species. Now, we can graph our results in a bargraph.\n\nggplot(weeds.summarise, aes(x=species, y=mean, fill=species)) +\n  geom_col()\n\n\n\n\n\n\n\n\nThis will generate a pretty basic graph. You will notice that I used fill instead of colour. If you use colour on a column/bar graph it will colour the outline. Using fill will fill the entire bar according to the species.\nWe used geom_col() to generate a column graph. You can use geom_bar() but it requires a stat = argument. If you use geom_bar(), stat = “identity” use the numbers in the mean column of our data, displaying data as it is in the data frame, rather than counting the number of cases in each X position (its default state).\nI personally use geom_bar() as I find it easier to do errorbars later. Future pages use geom_bar()\n\nggplot(weeds.summarise, aes(x=species, y=mean, fill=species)) +\n  geom_bar(stat=\"identity\")\n\n\n\n\n\n\n\n\nRegardless of what way you graph this, they look the same. For now, let’s work with geom_bar(). Let’s fix up the graph as much as we want, until we are happy.\n\nweeds.bar &lt;- ggplot(weeds.summarise, aes(x=species, y=mean, fill=species))+\n  geom_bar(stat=\"identity\", show.legend=F, colour=\"black\")+\n  labs(x=\"Weed Species\", y= expression(Flowers~(m^3)))+\n  theme(panel.background = element_blank(), panel.grid = element_blank(), axis.line = element_line(colour = \"black\", size=1), axis.text = element_text(colour=\"lightsteelblue4\", size=12), axis.title = element_text(colour=\"steelblue\", size=14, face=\"bold\"))+\n  scale_fill_manual(values = c(\"lightblue\", \"steelblue\", \"darkslateblue\"))\nweeds.bar\n\n\n\n\n\n\n\n\nSo, now we have our graph in a “nicer” format, we can see that there are some cruical points of information missing from this graph. Most notably, the errorbars and letters or some other notation that denotes statistical differences between the levels (i.e. Tukeys HSD results).\n\n\n\n\n\n\nTo remove the legend like I have, include the show.legend argument in your geom_bar() command and set it to false. e.g. geom_bar(stat=\"identity\", show.legend=F)"
+  },
+  {
+    "objectID": "pages/2/Bar-plots/5_finalising.html",
+    "href": "pages/2/Bar-plots/5_finalising.html",
+    "title": "Finalising our Barplot",
+    "section": "",
+    "text": "Thats the general process for setting up a column graph for ANOVA data. It can take some time, but we get alot of freedom in how we present this.\nLet’s spruce up our graph to a finalised form, before we save it to an image file.\n\nweeds.bar &lt;- ggplot(weeds.summarise, aes(x=species, y=mean, fill=species))+\n  geom_bar(stat=\"identity\", show.legend=F, colour=\"black\")+\n  labs(x=\"Weed Species\", y= expression(Flowers~(m^3)))+\n  theme(panel.background = element_blank(), panel.grid = element_blank(), axis.line = element_line(colour = \"black\", size=1), axis.text = element_text(colour=\"lightsteelblue4\", size=12), axis.title = element_text(colour=\"steelblue\", size=14, face=\"bold\"))+\n  scale_fill_manual(values = c(\"lightblue\", \"steelblue\", \"darkslateblue\"))+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width=0.5)+\n  geom_text(label = c(\"A\", \"B\", \"B\"), aes(y=mean+se, x=species), vjust=-0.5, size=6) +\n  ylim(0, 50)\n\nweeds.bar\n\n\n\n\n\n\n\n\nOnce we are satisfied with our final product, we can save it as a image file to our current working directory. Simply plot the graph again, by calling the object name, then use the ggsave() command like so.\n\nweeds.bar #producing the graph again\n\nggsave(\"weeds_bargraph.png\") # specify the name and filetype (.jpeg, .png, .tif etc.). You can also specify the width and heigh of your final image\n\nggsave() will save the last plot you produced into your current working directory. You need to specify the name (in my case “weeds_bargraph”) and the filetype (.jpeg in my example). By default, it should save a 7 cm x 7cm image. If you want to change that, use the width = or height = arguments, like so. For higher resolution images, try .tif\n\nggsave(\"weeds_bargraph.jpeg\", width=9, height=7)\n\nI wanted a slightly wider figure but it’s personal preference. For very large or faceted graphs, you will need to change the width and height.\nAnd there we have it! We have produced and saved our own graph. This may have seemed daughting or a long process, but it’s very methodical once you get used to it. For an easier time, just use one of the preset theme commands like theme_minimal() to do all the aesthetical work for you :)"
+  },
+  {
+    "objectID": "pages/2/Bar-plots/4_barplot2.html",
+    "href": "pages/2/Bar-plots/4_barplot2.html",
+    "title": "Bar graphs - part 2",
+    "section": "",
+    "text": "In the last examples, we plotted a single column graph with errorbars and significant notation. To plot multiple columns, for example a soil by species interaction, is quite simple.\nFirstly, we will run our summarise command, adding the soil column into our group_by() command to generate the means and standard error for the soil, species combinations.\n\nweeds.summarise2 &lt;- weeds %&gt;% group_by(species, soil) %&gt;%\n  summarise(mean = mean(flowers), se=sd(flowers)/sqrt(n()))\n\nWe plot multiple columns by specifying one column in our x axis, and filling/colouring by another. ggplot also plots our legend automatically, which is handy.\n\nggplot(weeds.summarise2, aes(x=soil, y=mean, fill=species)) +\n  geom_bar(stat=\"identity\")\n\n\n\n\n\n\n\n\nHowever, you can see the bar graph has stacked the species ontop of one another. To fix this, include the position=\"dodge\" argument in your geom_bar(), like so.\n\nggplot(weeds.summarise2, aes(x=soil, y=mean, fill=species)) + \n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\n\nHorizontal bar graphs\nSometimes, a vertical bargraph just doesn’t cut it.\n\nggplot(weeds.summarise2, aes(x=soil, y=mean, fill=species)) + \n  geom_bar(stat=\"identity\", position=\"dodge\")+\n  coord_flip()\n\n\n\n\n\n\n\n\nBy using coord_flip() we can rotate the entire graph into its side, displaying our bar graph horizontally instead of vertically. This will work for pretty much every ggplot graph.\n\n\nErrorbars\nWhen plotting multiple errorbars, much like with standard bars, the default structure is to “stack” the bars in a single column. We can alter the position of errorbars through the use of the “position” argument.\nAltering the position of errorbars in bar graphs has given me alot of headaches over the years. This gets more finicky the more complex your graph is, so I hope the below solution fixes all of your future problems :)\nFor this example, I am using our “interaction” bargraph to demonstrate.\n\nggplot(weeds.summarise2, aes(x=soil, y=mean, fill=species)) +\n  geom_bar(stat=\"identity\", position=\"dodge\")+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width = 0.5, position=position_dodge(0.9))\n\n\n\n\n\n\n\n\nTo alter the position of our errorbars we include the position=position_dodge(0.9) argument to match our original position=\"dodge\" in our bar line. You will notice these two arguments have different values and syntax. The standard position=\"dodge\" does work for the errorbars, but I have had very mixed results. The position=position_dodge(0.9) is slightly more annoying, but tends to work alot more. The 0.9 value is the default for the errorbars and refers to the distance between the middle errorbar and the left and/or right errobars when dodged. If your errobar comes out a little “funky”, modify this value."
+  },
+  {
+    "objectID": "pages/2/Themes/7_axislabels.html",
+    "href": "pages/2/Themes/7_axislabels.html",
+    "title": "Axis labels",
+    "section": "",
+    "text": "If we want to change the axis labels themselves, this is done using the labs() command.\n\niris.scatter &lt;- iris.scatter + labs(x = \"Sepal Length (cm)\", y = \"Petal Length (cm)\")\n\niris.scatter\n\n\n\n\n\n\n\n\nIf we wish to add a title to our plot (not overly common in publications) we can use the following.\n\niris.scatter &lt;- iris.scatter + labs(title= \"Relationship between petal and sepal length\") \n\niris.scatter\n\n\n\n\n\n\n\n\nAfter trying to use these labs() commands you will start to realise it hates anything slightly symbolic (subscript, superscript, degrees etc.). To fix this is simple, but clumsy in how its executed. The following code uses the expression() argument to solve these issues.\nI have written a x-axis label that does not make sense, in an effort to display the most common issues. These are a few of my own, so they do not make any sense with the given graph.\n\niris.scatter &lt;- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length, colour=Species)) +\n  geom_point() +\n  labs(x = expression(Sepal~Length[cm]), y = expression(Petal~Length^cm))+\n  labs(title = expression(Sepal~by~Petal~at~\"20\"*degree*C))\niris.scatter\n\n\n\n\n\n\n\n\nThis example, while nonsensical, demonstrates some of the major quirks with the expression() argument/command.\nAcross all of the expression arguments, we specify a space between characters/words by using a tilde ~. In our x axis, we specify a subscript (lower) by using square brackets []. Anything inside these will be placed below the preceeding character. Similarly, we specify superscript by using the caret ^ to denote power. Anything placed after will be placed above the preceeding character.\nIn the title line, (note that I had to place the title on a separate line…ggplot is precious sometimes) we see quotations around the 20. This is because expression does not appreciate anything starting with a number. The next thing is the use of both “degree” and the asterix __*__. The asterix is used when we need to write something like “degree” or “pi” to specify a symbol, but when we want it to be next to something, like a C for degree*C.\nI hope this helps understand the clumsy execution of complex axis labels.",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Axis labels"
+    ]
+  },
+  {
+    "objectID": "pages/2/Themes/8_properexamples.html",
+    "href": "pages/2/Themes/8_properexamples.html",
+    "title": "Proper examples",
+    "section": "",
+    "text": "## Setting up the graph environment ##\niris.scatter.proper &lt;- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length, colour=Species, shape=Species)) + geom_point()\n\n## Making our theme ##\nplottheme &lt;- theme(panel.background = element_rect(fill=\"ghostwhite\"),\n                   legend.background = element_blank(),\n                   legend.key = element_rect(fill=\"ghostwhite\"),\n                   axis.line = element_line(colour=\"black\", size=1),\n                   axis.ticks = element_blank(),\n                   axis.title = element_text(colour=\"royalblue3\", size=14),\n                   plot.title = element_text(face=\"bold\", colour=\"steelblue4\", size=16),\n                   legend.title = element_text(colour=\"royalblue3\", size=14),\n                   legend.text = element_text(face=\"italic\", colour=\"steelblue4\", size=10),\n                   axis.text = element_text(colour=\"steelblue4\", size=12),\n                   panel.grid.major = element_line(colour=\"gray80\"),\n                   panel.grid.minor = element_blank())\n\n## Applying the theme, adding some labels and changing some colours ##\niris.scatter.proper &lt;- iris.scatter.proper + plottheme +\n  labs(x=\"Sepal Length (cm)\", y=\"Petal Length (cm)\", title=\"Relationship between Sepal Length and Petal Length\") +\n  scale_colour_manual(values = c(\"mediumorchid1\", \"mediumorchid3\", \"mediumorchid4\"))\n\n## Displaying our graph ##\niris.scatter.proper\n\n\n\n\n\n\n\n\nPretty cool example of changing things around for the “better”. You might notice a few extra things I have changed in this graph.\nIn the aes() section at the start, I introduced the shape command which changes the shape for each level of a factor. Doing this alongside colour= allows us to change the colour and symbol of the points themselves.\nFurther down, I then changed the colour of the points using scale_colour_manual() and adding the colour values for the levels in order. There are many different ways you can do this, but I find this works the best. There are scale_manual commands for fill, group, shape etc.\nIn the theme() section, I covered most things we have done so far but added an additional argument to legend.text and plot.title. This is the face argument which allows us to add italics, bold or others to our text.\n\nI will add more to this page as I produce and discover cool graphs",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Examples"
+    ]
+  },
+  {
+    "objectID": "pages/2/Themes/4_gridsbackground.html",
+    "href": "pages/2/Themes/4_gridsbackground.html",
+    "title": "Background",
+    "section": "",
+    "text": "The plot and legend background colours can be changed using the following:\n\n\n\n\n\n\n\nTheme argument\nDescription\n\n\n\n\npanel.background = element_rect(insert changes here)\nThis changes the background of the main plot itself. We need element_rect() as it is a rectangle geometric object.\n\n\nlegend.background = element_rect(insert changes here)\nThis will change the main area of the legend.\n\n\nlegend.key = element_rect(insert changes here)\nThis will change the small boxes that each of the factors levels are identified with.\n\n\n\nFor all arguments, you can replace the element_rect(), element_line() etc. with element_blank() to remove it.\nWithin each of the element_rect() we can change various things. The most common ones are:\n\n\n\n\n\n\n\nElement argument\nDescription\n\n\n\n\nfill = “colour”\nThis will change the overall colour of the object.\n\n\ncolour = “colour”\nThis will change the outline of the rectangle.\n\n\nsize = number\nThis will change the size/thickness of font and lines.\n\n\n\nEach of the “colour” arguments can be a specified a number of ways. The most common way is using one of the MANY predefined colours within R. A quick run down of these can be found here. For any of these, just put the name as it is spelt in that guide in quotations.\n\niris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5))",
+    "crumbs": [
+      "Extra help with Graphics",
+      "Themes a customisation in ggplot2",
+      "Backgrounds"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#design-and-plan-effective-learning-experiences-level-2",
+    "href": "index.html#design-and-plan-effective-learning-experiences-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "1. Design and plan effective learning experiences (Level 2)",
+    "text": "1. Design and plan effective learning experiences (Level 2)\n\nLevel 2 descriptor\nEffectively design curriculum demonstrating integration across the degree :contentReferenceoaicite:4.\n\n\nHow my practice aligns\nA major focus of my Level 2 practice is curriculum design that prepares students for the data-driven realities of modern biology. In BIOL340, I identified a structural limitation in the traditional practical model: data analysis was embedded late in wet labs, often without sufficient time or scaffolding for students to develop real interpretive competence.\nTo address this, I designed a revised structure that:\n\nshortens wet labs to focus on essential experimental skills, and\n\nuses reclaimed time to implement dedicated dry labs that focus explicitly on data analysis, interpretation, coding, and GenAI-supported workflow literacy :contentReferenceoaicite:5.\n\nThis design strengthens alignment between learning outcomes and learning activities by ensuring analytical skills are explicitly taught and practised, rather than treated as incidental.\n\n\nEvidence (artefacts to embed)\n\nProject design rationale and structure: Project Outline :contentReferenceoaicite:6\n\n[ADD ARTEFACT] Practical sequence map (before/after)\n[ADD ARTEFACT] Dry lab outlines / worksheets"
+  },
+  {
+    "objectID": "index.html#facilitate-activities-that-influence-and-motivate-student-learning-level-2",
+    "href": "index.html#facilitate-activities-that-influence-and-motivate-student-learning-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "2. Facilitate activities that influence and motivate student learning (Level 2)",
+    "text": "2. Facilitate activities that influence and motivate student learning (Level 2)\n\nLevel 2 descriptor\nFacilitate a wide variety of inclusive learning experiences for students :contentReferenceoaicite:7.\n\n\nHow my practice aligns\nI facilitate learning through a blend of structured practical activities and guided skill development that supports students to move from “following steps” to scientific reasoning. In BIOL340, this includes:\n\nseparating experimental work from analysis so students can focus fully on interpreting results (reducing cognitive overload),\nusing dry labs to build confidence with tools like R through applied biological problems, and\nusing guided examples and staged complexity to support students who have limited prior computational experience :contentReferenceoaicite:8.\n\nThis approach is designed to motivate students by making computational work meaningful and clearly linked to biological questions and employability.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] Slide deck explaining the teaching rationale (digital skills, authenticity)\n[ADD ARTEFACT] Example “worked example” + follow-up independent task\n[ADD ARTEFACT] Student-facing guidance for learning pathways (support links)"
+  },
+  {
+    "objectID": "index.html#support-student-individual-development-and-diversity-level-2",
+    "href": "index.html#support-student-individual-development-and-diversity-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "3. Support student individual development and diversity (Level 2)",
+    "text": "3. Support student individual development and diversity (Level 2)\n\nLevel 2 descriptor\nSupport students in their choice and navigation of formal and informal learning pathways :contentReferenceoaicite:9.\n\n\nHow my practice aligns\nA recurring challenge in third-year biology is variability in students’ quantitative and computational backgrounds. My approach supports student development by:\n\nexplicitly teaching foundational digital skills inside the curriculum (rather than assuming prior knowledge),\nproviding structured, guided learning activities that students can revisit, and\nnormalising the use of supportive tools (including GenAI) in ways that maintain ownership of learning and integrity.\n\nThe BIOL340 redesign specifically addresses student transition to workforce and research expectations by embedding authentic analytical tasks and communication outputs, strengthening students’ capacity to navigate both formal learning (subject activities/assessments) and informal learning (practice, tool exploration, self-directed improvement) :contentReferenceoaicite:10.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] “Getting started with R” support page / resource list\n[ADD ARTEFACT] Scaffolded optional extension tasks for confident students\n[ADD ARTEFACT] GenAI “how to use it ethically” guidance sheet"
+  },
+  {
+    "objectID": "index.html#facilitate-assessment-and-feedback-that-fosters-independent-learning-level-2",
+    "href": "index.html#facilitate-assessment-and-feedback-that-fosters-independent-learning-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "4. Facilitate assessment and feedback that fosters independent learning (Level 2)",
+    "text": "4. Facilitate assessment and feedback that fosters independent learning (Level 2)\n\nLevel 2 descriptor\nDesign scaffolded assessments that foster progressive learning :contentReferenceoaicite:11.\n\n\nHow my practice aligns\nMy assessment design focuses on building progressive capability rather than testing isolated knowledge. In BIOL340, I reintroduced scientific writing by replacing a quiz-heavy model with assessment tasks that are linked to practical data and progressively develop:\n\ndata interpretation and analysis,\nscientific writing and argumentation, and\nevaluative judgement through peer review and feedback.\n\nThe redesign includes:\n\nseparating analysis from wet labs and using dry labs to prepare students for assessment tasks,\nreintroducing a formal scientific report assessed by staff and peers, and\nusing peer marking to expose students to diverse examples and strengthen their ability to judge quality against criteria :contentReferenceoaicite:12.\n\nThis structure explicitly scaffolds learning across activities and assessments, supporting independence and reflective improvement.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] Assessment briefs (scientific report + peer assessment)\n[ADD ARTEFACT] Rubrics and feedback prompts\n[ADD ARTEFACT] Example of how feedback informs a later task (progression map)"
+  },
+  {
+    "objectID": "index.html#integrate-scholarship-research-and-professional-activities-with-teaching-level-2",
+    "href": "index.html#integrate-scholarship-research-and-professional-activities-with-teaching-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "5. Integrate scholarship, research and professional activities with teaching (Level 2)",
+    "text": "5. Integrate scholarship, research and professional activities with teaching (Level 2)\n\nLevel 2 descriptor\nDemonstrate scholarship of teaching and learning through authorship of evaluations, reports and/or scholarly articles that showcase teaching practice :contentReferenceoaicite:13.\n\n\nHow my practice aligns\nMy teaching innovation is directly informed by professional practice in bioinformatics and the changing landscape of research and industry. The BIOL340 redesign is built on the recognition that:\n\nbiological science is increasingly computational,\ngraduates need competence with data and tools, and\nGenAI presents both a challenge to traditional assessment and an opportunity to explicitly teach ethical digital practice.\n\nMy approach treats GenAI as a tool to be taught responsibly—similar to how scientists adopt new laboratory tools through training, risk mitigation, and best practice. The redesign represents an explicit attempt to align teaching with discipline evolution and employability expectations, and to develop a coherent approach that can be disseminated and adapted across subjects :contentReferenceoaicite:14.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] Conference abstract / forum showcase (if applicable)\n[ADD ARTEFACT] Presentation slides on GenAI + scientific writing pedagogy\n[ADD ARTEFACT] Internal report / evaluation summary of the initiative"
+  },
+  {
+    "objectID": "index.html#evaluate-teaching-practice-and-engage-in-continuing-professional-development-level-2",
+    "href": "index.html#evaluate-teaching-practice-and-engage-in-continuing-professional-development-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "6. Evaluate teaching practice and engage in continuing professional development (Level 2)",
+    "text": "6. Evaluate teaching practice and engage in continuing professional development (Level 2)\n\nLevel 2 descriptor\nUsing evaluation data support and mentor teaching teams. Reflect upon feedback from students and colleagues… and engage in CPD :contentReferenceoaicite:15.\n\n\nHow my practice aligns\nMy redesign work is grounded in reflective teaching practice. The BIOL340 changes respond to identified issues in the previous model (e.g., limited space for data interpretation learning, quiz-heavy assessment, and insufficient scaffolding for modern digital skills). The redesign plan also includes explicit intentions to monitor and refine curriculum delivery based on outcomes and feedback, reflecting an iterative approach to improvement :contentReferenceoaicite:16.\nAt Level 2, I also recognise evaluation as a team-based process. The project plan was developed collaboratively and is designed to support consistent learning experiences for large cohorts by clarifying structures, learning activities, and assessment expectations.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] Student feedback excerpts / thematic summary (where available)\n[ADD ARTEFACT] Peer observation notes / teaching team reflections\n[ADD ARTEFACT] CPD log entries (workshops, learning, implementation notes)"
+  },
+  {
+    "objectID": "index.html#demonstrate-personal-and-professional-effectiveness-level-2",
+    "href": "index.html#demonstrate-personal-and-professional-effectiveness-level-2",
+    "title": "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology",
+    "section": "7. Demonstrate personal and professional effectiveness (Level 2)",
+    "text": "7. Demonstrate personal and professional effectiveness (Level 2)\n\nLevel 2 descriptor\nDevelop effective, resilient professional practices that enhance course management :contentReferenceoaicite:17.\n\n\nHow my practice aligns\nMy teaching practice emphasises sustainable, scalable design—particularly important in large-cohort subjects. The BIOL340 redesign is designed to:\n\nimprove the efficiency and clarity of practical delivery (shorter, more focused wet labs),\nstrengthen student learning through targeted dry labs, and\nintroduce assessment structures that support quality learning outcomes while being manageable for teaching teams (e.g., dual staff/peer evaluation, structured scaffolding) :contentReferenceoaicite:18.\n\nThis reflects an approach to course management that balances educational quality, authenticity, and practicality, and supports coherent teamwork in delivery.\n\n\nEvidence (artefacts to embed)\n\n[ADD ARTEFACT] Demonstrator notes / delivery guides\n[ADD ARTEFACT] Practical coordination checklist / session plan\n[ADD ARTEFACT] Assessment workflow plan (peer + staff marking)"
+  }
+]

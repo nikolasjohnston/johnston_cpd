@@ -1,0 +1,17 @@
+{
+  "hash": "d92dd3b033048292bc0b87e7cc9f9d17",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Background\"\nauthor: \"Mitchell Stares\"\nweight: 36\ndate: \"2018-11-11\"\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n\n\n\n\nThe plot and legend background colours can be changed using the following:  \n\nTheme argument                                       | Description  \n-----------------------------------------------------|---------------------------------------------  \npanel.background = element_rect(insert changes here) |This changes the background of the main plot itself. We need element_rect() as it is a rectangle geometric object.   \nlegend.background = element_rect(insert changes here) |This will change the main area of the legend.  \nlegend.key = element_rect(insert changes here) |This will change the small boxes that each of the factors levels are identified with.  \n\nFor all arguments, you can replace the element_rect(), element_line() etc. with element_blank() to remove it.  \n\nWithin each of the element_rect() we can change various things. The most common ones are:\n\nElement argument | Description  \n-----------------|--------------------------\nfill = \"colour\" | This will change the overall colour of the object.  \ncolour = \"colour\" | This will change the outline of the rectangle.  \nsize = number | This will change the size/thickness of font and lines.  \n\nEach of the \"colour\" arguments can be a specified a number of ways. The most common way is using one of the MANY predefined colours within R. A quick run down of these can be found [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf). For any of these, just put the name as it is spelt in that guide in quotations.  \n\n\n::: {.cell}\n\n```{.r .cell-code}\niris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5)) \n```\n\n::: {.cell-output-display}\n![](4_gridsbackground_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "4_gridsbackground_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

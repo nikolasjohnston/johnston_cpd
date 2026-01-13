@@ -1,0 +1,15 @@
+{
+  "hash": "41ea8cf6723bd457b01006064d47d172",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Summarise Function\"\ndescription: \"Use summary functions such as mean and standard deviation on a column\"\nauthor: \"Mitchell Stares\"\nweight: 16\ndate: '2018-11-10'\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\nThis is an extremely useful function that lets you create different summaries of columns. You can also nest other functions within it to apply them to your columns. \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsum_data <- summarise(weeds, mean(flowers))  # We'll start simple. Generates the mean of the flower column\n\nsum_data <- summarise(group_by(weeds, species), mean(flowers)) \n# Using the group_by() function within summarise lets you get summaries for groups, in this case \"species\"\n\nsum_data <- summarise(group_by(weeds,species, soil), mean(flowers), sd(flowers), se=sd(flowers/sqrt(n())))\n# Grouped by with species & soil, generating mean, standard deviation & standard error of flowers\n```\n:::\n\n\n\n\nThe last example generates the mean, sd and se for each factor combination in our dataset. This is pretty useful, particularly for generating bar graphs.  \n\nHowever, its a little complex and can be in a much nicer format.  \n\n::: callout\nUse the `summarise()` function on the \"insecticide\"\" dataset to answer the following question  \n**Question: In the large fragment, what is the median species richness**\n:::\n\n{{% expand Answer %}}\n**12**\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

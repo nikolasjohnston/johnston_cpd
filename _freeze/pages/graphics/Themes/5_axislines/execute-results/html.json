@@ -1,0 +1,17 @@
+{
+  "hash": "43de686646f5434471065049b40cf37e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Axis lines\"\nauthor: \"Mitchell Stares\"\nweight: 36\ndate: \"2018-11-11\"\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n\n\n\n\nTo change the axis lines and ticks (lines above each number on an axis) use the following.  \n\nTheme argument | Description\n---------------|--------------\naxis.line = element_line(insert changes here) | This will change both axes lines.  \naxis.line.x = element_line(insert changes here) | This will change just the x axis.  \naxis.line.y = element_line(insert changes here) |This will change just the y axis.  \naxis.ticks = element_line(insert changes here) | Change both axes ticks. Use the .x or .y to change just one axis at a time.  \naxis.ticks.length = element_line(insert changes here) | Change the length of the axes ticks.  \naxis.text = element_text(insert changes here) | Change the text on the axes TICKS. Use .x or .y to change just one.  \naxis.title = element_text(insert changes here) | Change the text on the axes LABELS/TITLES. Use .x or .y to change just one.  \nplot.title = element_text(insert changes here) | Change the plot title.  \n\nJust use the colour and size arguments where appropriate. I am going to add these changes as a separate `theme()` command, but they can be added in the same command as last time.  \n\n\n::: {.cell}\n\n```{.r .cell-code}\niris.scatter + theme(panel.background = element_rect(fill=\"lavender\", colour=\"red\"), legend.background = element_rect(fill=\"lavender\", colour=\"yellow\", size=1), legend.key = element_rect(fill = \"gray50\", colour = \"green\", size = 0.5)) +\n  theme(axis.line.x = element_line(colour = \"skyblue\", size=2), axis.line.y = element_line(colour=\"deeppink\", size = 2), axis.title.x = element_text(colour=\"forestgreen\", size=14), axis.title.y = element_text(colour = \"gold\", size=8), axis.ticks = element_blank())\n```\n\n::: {.cell-output-display}\n![](5_axislines_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\nBeautiful, isn't it?\n\nNow you may have notice the size command acts differently for line and text. For line it is based on a multiplier of the original. So a 2 will be two times its normal size. Element_text() has size as a font size. So 2 would be tiny and equivalent to 2pt font.\nAlternatively, you can use size = rel(number) to scale the text relative to base R's plotting size.",
+    "supporting": [
+      "5_axislines_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

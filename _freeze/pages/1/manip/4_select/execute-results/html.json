@@ -1,0 +1,15 @@
+{
+  "hash": "1e750df162e9d6a5e1dceb12ecc84d3e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Select Function\"\ndescription: \"Select specific columns from one dataset to create another or remove columns from your dataset\"\nweight: 13\ndate: '2018-11-09'\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\nThe `select()` function is used to select specific columns within your data and save them as a new data frame. You can use this if you have a large dataset and only want to use a few of the columns, to keep it simple and tidy. Or, you may want to take a column or two from multiple different datasets and combine them. \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nweeds_select <- select(weeds, soil) \n```\n:::\n\n\n\nThis simply creates the weeds_select dataset, seleting one column - \"soil\". As with most tidyverse functions we need to specify the dataset immediately after writing the select function. From here, its simple changes to do use select in new ways  \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nweeds_select <- select(weeds,c(soil, species)) # select two columns, \"soil\" and \"species\"\n\nweeds_select <- select(weeds,c(2:4)) # select columns using numbers. In this case, select columns 2 through to 4.\n\nweeds_select <- select(weeds, c(soil:flowers)) # select columns \"soil\" through to \"flowers\"\n\nweeds_select <- select(weeds, -soil) # remove \"soil\"\n# similar syntax applys for removing multiple columns, just place a - infront e.g. select(weeds, -c(2:4))\n\nweeds_select <- select(weeds, starts_with(\"s\")) # select any column whose name starts with S. \n```\n:::\n\n\n\nThere are many more like this above example, like \"ends_with\", \"contains\" and \"matches\" all which refer to the column names.  \n\n::: callout\nuse the help window `?select` for more useful functions with `select()`\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

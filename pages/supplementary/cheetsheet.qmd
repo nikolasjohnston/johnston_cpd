@@ -1,0 +1,9 @@
+---
+title: "ggplot_cheatsheet"
+---
+
+#Graphing cheat sheets
+
+Posit, the company that marks Rstudio has created some really fantastic resources to help leverage the most out of ggplot2. Access cheatsheet documents for ggplot2. They are available [here](https://rstudio.github.io/cheatsheets/html/data-visualization.html).
+
+In particular I recommend looking at the PDF available on this website. [PDF link](https://rstudio.github.io/cheatsheets/data-visualization.pdf).

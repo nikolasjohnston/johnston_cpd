@@ -1,0 +1,15 @@
+{
+  "hash": "5e7c5238d0501f9613ab1f5d6439db3a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Filter Function\"\ndescription: \"Filter out data based on logical criteria. E.g. Remove any values < 10\"\nauthor: \"Mitchell Stares\"\ndate: '2018-11-09'\nweight: 12\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\nThe `filter()` command is used to remove rows from your data. This can be useful for removing zeros or \"no data/NA's\", or for restricting certain variables in a dataset for an analysis.\n\nThis follows the similar syntax as `mutate()` whereby we specify what dataset we want to filter, followed by how we want to filter.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n#The following examples will just keep overwriting the new object \"weeds_filtered\"\n\nweeds_filtered <- filter(weeds, weeds == \"native\") \n# Gives us only the rows which are exactly \"native\" in the weeds column. \n\nweeds_filtered <- filter(weeds, weeds != \"weed\") \n# This gives us the same result as their are only two levels of that column. The != means \"not equal to\"\n\nweeds_filtered <- filter(weeds ,flowers > 20) \n# Flowers greater than 20 m3\n```\n:::\n\n\n\n\n\nSo far, we have covered renaming columns, adding new columns and filtering by rows. The next two commands are focused on selecting specific columns and creating new data tables.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

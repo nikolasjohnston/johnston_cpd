@@ -1,0 +1,15 @@
+{
+  "hash": "0fd1cf037a6e8fb40259ae4a64c8df3d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Pipe Function\"\ndescription: \"Link multiple tidyverse functions together in a single processing step\"\nauthor: \"Mitchell Stares\"\nweight: 17\ndate: '2018-11-10'\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\nThis lets you run multiple different functions on one dataset without having to use the intermediate steps you would have to use in base R.\\\nYou start with the data you want to apply the functions to, followed by a pipe **%\\>%**. After each pipe you must go to the next line.\n\nThis is useful for large messy functions with multiple nested parts. It separates everything out and makes it easier to follow.\n\nA pipe is simply a **\\>** nested within two percentage, **%**, symbols. The keyboard shortcut for this is **Ctrl** + **SHIFT** + **M**\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsum_data <- weeds %>% \n  group_by(species, soil) %>% \n  summarise(max(flowers))\n```\n:::\n\n\n\n\nYou simply start with the data you want to apply the functions to, followed by a pipe. After each pipe you must go to the next line (sorta).\\\nIn this example, we grouped the data by species and soil, then performed the summarise function to generate the max number for each combination\n\n::: callout\n**You will notice, that because we specified the data in the first line, we did not have to specify the data in the other lines, only the columns**\n:::\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nnew_data <- weeds %>% \n  mutate(binary = soil == \"sandstone\") %>% \n  filter(weeds == \"native\")\n```\n:::\n\n\n\n\nAs you can see, we can do this with most of the functions we have already learnt. This above example will generate a binary outcome (true/false) for soil with TRUE as \"sandstone\". Followed by filtering for \"native\" weeds. This will generate a a dataset with native weeds that have a true/false outcome based on soil.\n\nPiping is incredibly useful and much easier to read. It is a function I keep forgetting to use, until I look at my code later on, full of regrets. It shortens and simplifies code alot.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

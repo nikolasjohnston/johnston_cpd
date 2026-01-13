@@ -1,0 +1,328 @@
+---
+title: "AI Reflection & Writing Lab"
+author: "Dr Nikolas Johnston, University of Wollongong"
+date: "March, 2025"
+format:
+  html:
+    from: markdown+emoji
+---
+
+# GenAI Reflection & Scientific Writing Lab
+
+> **:compass: Mode**: In pairs, bring your scientific report and be ready to collaborate.
+
+This session will guide you through using GenAI to improve your scientific writing and reflect on how AI compares to human feedback.
+
+------------------------------------------------------------------------
+
+## Getting Started {.callout-note}
+
+Before you begin:
+
+-   Open a new Microsoft Word document to record your answers.
+-   Have your draft scientific report ready (ideally with comments from a peer)
+-   Access a GenAI tool like **Copilot** (or other approved platform)
+-   Use Microsoft Word or Google Docs with **tracked changes enabled**
+
+::: {.callout-important title="Launch Copilot"}
+Use the link below to open Microsoft Copilot in a new tab. You'll need to be logged in with your UOW or institutional account.
+
+:point_right: [Launch Microsoft Copilot](https://copilot.microsoft.com/)
+
+> :warning: Make sure to **copy/paste your prompts and results** into your worksheet as you go!
+:::
+
+------------------------------------------------------------------------
+
+## :sparkles: Activity 1: Prompt Design & Output Exploration
+
+Choose a paragraph from your own writing and paste it in your notes. Now try using the below types of prompts.
+
+### :speech_balloon: Example Prompt 1 – Clarity & Conciseness
+
+> **Prompt:** "Please rewrite the following paragraph to be more concise and clear, suitable for a scientific audience."
+
+**Example AI Output:**\
+"The experiment investigated the effect of temperature on enzyme activity. Results showed a steady increase in activity up to 37°C, after which it declined rapidly, suggesting denaturation."
+
+------------------------------------------------------------------------
+
+### :speech_balloon: Example Prompt 2 – Tone for a General Audience
+
+> **Prompt:** "Rewrite the paragraph in a way that explains the concept clearly to someone without a science background."
+
+**Example AI Output:**\
+"We tested how heat affects enzymes—the tiny machines inside cells. They worked faster when it was warm, but too much heat made them break down."
+
+------------------------------------------------------------------------
+
+**Now try your own prompts and note the results using the below guide:**
+
+**Prompt 1 (concise/scientific):**
+
+**AI Output 1:**\
+
+**Prompt 2 (general audience):**\
+
+**AI Output 2:**\
+
+------------------------------------------------------------------------
+
+## :bar_chart: Activity 2: Compare & Evaluate
+
+Share your prompts and output with the group next to you, and use the following checklist to evaluate AI responses:
+
+-   [ ] Preserved scientific meaning\
+-   [ ] Improved clarity or tone\
+-   [ ] Removed critical information\
+-   [ ] Introduced an error or hallucination\
+-   [ ] Was suitable for the intended audience
+
+[**Which output was better and why?**]{style="color:red"}\
+
+[**Did anything surprise or confuse you?**]{style="color:red"}\
+
+------------------------------------------------------------------------
+
+## :brain: Activity 3: Ethics in Action
+
+**Scenario:**\
+A student pastes their full assignment into ChatGPT, accepts the rewritten version, and submits it without reading it. The AI fabricated citations and misunderstood the conclusion.
+
+**Discussion Questions:**
+
+-   [What are the risks in this scenario?]{style="color:red"}\
+-   [When is it okay to use AI in writing? When is it not?]{style="color:red"}
+
+**Ethical checklist you can apply and think about when using these tools:**
+
+-   [ ] I used AI to assist, not replace my work\
+-   [ ] I reviewed and edited all AI-generated text\
+-   [ ] I remain the author of my submission\
+
+------------------------------------------------------------------------
+
+## :repeat: Activity 4: Collaborative Rewrite
+
+Choose one paragraph as a group and go through these steps:
+
+**Original Paragraph:**\
+...
+
+**Revision Prompt Used:**\
+...
+
+**AI Output:**\
+...
+
+**Final Human-Edited Version:**\
+...
+
+**What we changed and why:**\
+...
+
+------------------------------------------------------------------------
+
+## Prompt Vault
+
+Record your most effective prompt from your work today and its benefit.
+
+::::: {.padlet-embed style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"}
+<p style="padding:0;margin:0">
+
+<iframe src="https://padlet.com/embed/91492p0ab0lx1fyl" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0">
+
+</iframe>
+
+</p>
+
+:::: {style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"}
+<a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank">
+
+::: {style="display:flex;align-items:center;"}
+<img src="https://padlet.net/embeds/made_with_padlet_2022.png" alt="Made with Padlet" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none"/>
+:::
+
+</a>
+::::
+:::::
+
+These prompts will be stored across the class and act as a shared vault for the class.
+
+[**Best Prompt:**]{style="color:red"}\
+...
+
+[**What it helped improve:**]{style="color:red"}\
+...
+
+------------------------------------------------------------------------
+
+## Class Reflection
+
+[**Today I learned:**]{style="color:red"}\
+...
+
+[**One thing I’ll do differently in my writing is:**]{style="color:red"}\
+...
+
+[**One thing to remember when using AI:**]{style="color:red"}\
+...
+
+> **Final Thought**: AI is a tool — you are the scientist. Own your writing, use tools wisely, and always verify what you say!
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# Assessment 5 walkthrough
+
+::: {.callout-important title="Download required"}
+Download the Assessment 5 Pro Forma from the Biol340 Moodle page. The below will step you through what is required.
+:::
+
+## :small_blue_diamond: Step 1: Human Feedback Summary
+
+### :mag_right: What were the key points of feedback?
+
+> *List 1–3 points of feedback you received on your report. Be specific.*
+
+-   [ ] 1.
+-   [ ] 2.
+-   [ ] 3.
+
+### :pushpin: How will you address this feedback?
+
+> *Describe one way you'll apply this feedback to your report.*
+
+-   [ ] Note down your action plan
+
+------------------------------------------------------------------------
+
+## :small_blue_diamond: Step 2: Revising with GenAI
+
+::: {.callout-tip title="Prompt Engineering Guide"}
+You will now use **four types of prompts** with Microsoft Copilot to revise your scientific report. Each prompt serves a different purpose and helps you interact with AI in more effective ways. Understanding how and why these prompts work differently is an important part of responsibly using GenAI tools.
+
+Use the **Pro Forma** to guide your progress. For each prompt type, copy the AI’s output into your worksheet and then **reflect on how it helped improve your work**—or if it didn’t help, explain why. This reflection is just as important as the output.
+
+------------------------------------------------------------------------
+
+### :brain: Context Prompt (who the AI is)
+
+This prompt sets the "role" or "persona" of the AI—you're telling it who it should pretend to be. For example:
+
+\> *"You are a biology lecturer marking third-year scientific reports."*
+
+This helps the AI tailor its feedback in a way that's appropriate for your audience, tone, and discipline. By setting context, you're more likely to receive feedback that aligns with academic expectations in biology, such as clarity, structure, and use of evidence.
+
+------------------------------------------------------------------------
+
+### :wrench: “Do for me” Prompt
+
+This is a direct instruction where you ask the AI to perform a task on your behalf. For example:\
+\> *“Rewrite this paragraph to be more concise.”*\
+\> *“Add a stronger topic sentence to this paragraph.”*
+
+This prompt is about **delegation**—you’re giving the AI a task and seeing how well it can help streamline or improve your writing. It's useful when you know what needs to be fixed but want help doing it efficiently. However, it is very important to evaluate the result critically to ensure it is correct, does not plagiarise and is of an appropriate scientific standard.
+
+------------------------------------------------------------------------
+
+### :mag: “Evaluate” Prompt
+
+In this prompt, you’re asking the AI to **critique or assess** a section of your writing. For example:\
+\> *“What are the strengths and weaknesses of this paragraph?”*\
+\> *“Does this argument make logical sense?”*
+
+This approach encourages **metacognition**—thinking about your own thinking. It helps you view your writing from another perspective, identify gaps, and reflect on your structure and clarity. In scientific writing, this skill is crucial for presenting arguments and evidence effectively.
+
+------------------------------------------------------------------------
+
+### :mortar_board: “Teach Me” Prompt
+
+This prompt is used to deepen your understanding. You’re asking the AI to explain a concept or technique. For example:
+
+\> *“Explain what makes a good scientific discussion section.”*\
+\> *“Why is passive voice often discouraged in scientific writing?”*
+
+This type of prompt supports **learning and skill-building**. It’s helpful when you're unsure about a rule or principle in scientific communication and want to strengthen your knowledge. Rather than fixing the text for you, the AI helps you understand how to make good writing choices.
+:::
+
+### 2.1 Contextualise the AI
+
+> *Write a prompt that tells Copilot who it is (e.g., "You are an expert editor of a scientific journal...")*
+
+-   [ ] Note down your prompt
+
+### 2.2 'Do for me' Prompt
+
+> *Share a prompt you used to get Copilot to rewrite or revise a section for you.*
+
+-   [ ] Note down your prompt
+
+> *How did you use the Copilot output to change your report?*
+
+-   [ ] Note description of change
+
+### 2.3 'Evaluate' Prompt
+
+> *Ask Copilot to review a section. What prompt did you use?*
+
+-   [ ] Note down your prompt
+
+> *What change did you make based on Copilot’s evaluation?*
+
+-   [ ] Note description of change
+
+### 2.4 'Teach me' Prompt
+
+> *Share a "teach me" prompt you used with Copilot (e.g., "How can I improve clarity in my methods section?")*
+
+-   [ ] Note down your prompt
+
+> *What did you learn from Copilot’s response?*
+
+-   [ ] Note key takeaway
+
+------------------------------------------------------------------------
+
+## :small_blue_diamond: Part 3: Reflection
+
+Following the Pro Forma answer each question below in 100–150 words. The total reflection should not exceed 600 words
+
+### 3.1 Compare AI & Human Feedback
+
+> *How did Copilot feedback compare with the feedback from your peer?*
+
+-   [ ] Note down your response...
+
+### 3.2 Most Effective Prompt
+
+> *Which type of Copilot prompt helped most? Why?*
+
+-   [ ] Note down your response...
+
+### 3.3 Impact on Your Writing
+
+> *Did using Copilot change how you approach writing or editing?*
+
+-   [ ] Note down your response...
+
+### 3.4 AI Pros & Cons
+
+> *What are the benefits and risks of using GenAI like Copilot in science writing?*
+
+-   [ ] Note down your response...
+
+------------------------------------------------------------------------
+
+## :package: Final Checklist
+
+> Before submitting:
+>
+> :white_check_mark: Tracked changes enabled in your revised report\
+> :white_check_mark: Completed Pro Forma with feedback summary, prompts, and reflection\
+> :white_check_mark: Screenshots or transcripts of Copilot interactions in Appendix
+
+:outbox_tray: **Upload to Moodle by Monday 26th of May, 11:59pm**
+
+------------------------------------------------------------------------

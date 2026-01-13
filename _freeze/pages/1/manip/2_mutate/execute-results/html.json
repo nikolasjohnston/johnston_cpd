@@ -1,0 +1,15 @@
+{
+  "hash": "c3c9ad5b9317483efb17f80481c7c861",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Mutate Function\"\ndescription: \"Create new columns using mathematical or logical calculations of other columns\"\nweight: 11\ndate: '2018-10-26'\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\nOne of the most common data manipulations is adding a new column to your dataset. This is great for transforming data, while also keeping the original. This could be used to combine multiple columns into one or perform mathematical calculations involving multiple columns with the results in a separate column.  \n\nWe will start out with a few simple methods in base R, and then move to the dplyr method.  \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n##Log Transformation##\n\nweeds$log_flowers <- log(weeds$flowers) # Base R\n\nweeds <- mutate(weeds, log_flowers = log(flowers)) # Dplyr\n\n# Each of these creates a new column which is the log of the flowers column.\n\n## Basic math functions##\n\nweeds_mutate <- mutate(weeds, flowers2 = flowers*2) \n# Simple multiplication of the flowers column by 2\n\nweeds_mutate <- mutate(weeds_mutate, flowers_combined = flowers + flowers2) \n# This is a useless example but its just to show you how to combine multiple columns. \n\nweeds_mutate <- mutate(weeds_mutate, binary = soil == \"sandstone\") \n# Using boolean logic to create a column called \"binary\" where soil is exactly (hence double ='s) sandstone. \n\nweeds_mutate <- mutate(weeds, flowers2 = flowers*2,\n                      binary = soil == \"sandstone\") \n# You can also perform the functions multiple times on the same data within one line. \n```\n:::\n\n\n\n\nThe arguments of `mutate()` are simply the name of the data frame followed by any number of expressions that create new variables.  \n\nYou will notice throughout the `mutate()` commands that we have performed functions, creating new columns, while preserving the original. If you wish to drop/remove the original column, simply use the `transmute()` command.\n\n::: callout\n**Use the Mutate() command on the insecticide dataset to answer the following question**  \n**Question: What is the square of the number in the last row of species.richness (row 42)?**\n:::\n\n{{% expand Answer %}}\n**225**\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

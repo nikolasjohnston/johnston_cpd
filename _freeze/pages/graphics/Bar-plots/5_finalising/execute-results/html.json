@@ -1,0 +1,17 @@
+{
+  "hash": "5894e8ae61568947fe44d2c99ea43992",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Finalising our Barplot\"\nauthor: \"Mitchell Stares\"\nweight: 45\ndate: \"2018-11-13\"\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n\n\n\n\nThats the general process for setting up a column graph for ANOVA data. It can take some time, but we get alot of freedom in how we present this.\n\nLet's spruce up our graph to a finalised form, before we save it to an image file. \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nweeds.bar <- ggplot(weeds.summarise, aes(x=species, y=mean, fill=species))+\n  geom_bar(stat=\"identity\", show.legend=F, colour=\"black\")+\n  labs(x=\"Weed Species\", y= expression(Flowers~(m^3)))+\n  theme(panel.background = element_blank(), panel.grid = element_blank(), axis.line = element_line(colour = \"black\", size=1), axis.text = element_text(colour=\"lightsteelblue4\", size=12), axis.title = element_text(colour=\"steelblue\", size=14, face=\"bold\"))+\n  scale_fill_manual(values = c(\"lightblue\", \"steelblue\", \"darkslateblue\"))+\n  geom_errorbar(aes(ymin = mean-se, ymax = mean+se), width=0.5)+\n  geom_text(label = c(\"A\", \"B\", \"B\"), aes(y=mean+se, x=species), vjust=-0.5, size=6) +\n  ylim(0, 50)\n\nweeds.bar\n```\n\n::: {.cell-output-display}\n![](5_finalising_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\nOnce we are satisfied with our final product, we can save it as a image file to our current working directory. Simply plot the graph again, by calling the object name, then use the `ggsave()` command like so.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nweeds.bar #producing the graph again\n\nggsave(\"weeds_bargraph.png\") # specify the name and filetype (.jpeg, .png, .tif etc.). You can also specify the width and heigh of your final image\n```\n:::\n\n\n\n`ggsave()` will save the last plot you produced into your current working directory. You need to specify the name (in my case “weeds_bargraph”) and the filetype (.jpeg in my example). By default, it should save a 7 cm x 7cm image. If you want to change that, use the `width =` or `height =` arguments, like so. For higher resolution images, try **.tif**\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggsave(\"weeds_bargraph.jpeg\", width=9, height=7)\n```\n:::\n\n\n\nI wanted a slightly wider figure but it’s personal preference. \nFor very large or faceted graphs, you will need to change the width and height. \n\nAnd there we have it! We have produced and saved our own graph. This may have seemed daughting or a long process, but it's very methodical once you get used to it. For an easier time, just use one of the preset theme commands like `theme_minimal()` to do all the aesthetical work for you :)\n",
+    "supporting": [
+      "5_finalising_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

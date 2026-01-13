@@ -1,22 +1,31 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   page-navigation: true
-  title: "BIOL340 - Autumn 2025"
-  description: "Homepage for BIOL340 Dry Pracs, University of Wollongong, Autumn 2025."
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      
+  title: "Nikolas P. Johnston"
+  description: "Homepage for N Johnston CPD."
+  site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
+
+  repo-url: https://github.com/nikolasjohnston/ohnston_cpd
+  repo-actions: [edit, issue]
+  
   open-graph: true
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2025, Nikolas Johnston"
-    background: "#960e0c"
+    left: "&copy; Copyright 2026, Nikolas Johnston"
+    background: primary
+
+  navbar: 
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+
+
 format:
   html:
     theme:
@@ -26,30 +35,7 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    
-include-in-header:
-
-  text: |
-    <style type="text/css">
-    .quarto-reader-toggle .bi::before, .quarto-color-scheme-toggle .bi::before {
-      display: flex;
-      height: 2rem;
-      width: 2rem;
-      gap: 0.5rem;
-      background-size: 2rem 2rem;
-      font-size: 1rem;
-      font-family: sans-serif;
-      display: inline-block;
-    }
-
-    .quarto-reader-toggle::before, .quarto-color-scheme-toggle::before {
-        content: "Dark Mode";
-        display: flex;
-        font-size: 1rem;
-        gap: 0.5rem;
-        font-family: Atkinson Hyperlegible, sans-serif;
-    </style>
-    
 freeze: auto
 
 editor: visual
+

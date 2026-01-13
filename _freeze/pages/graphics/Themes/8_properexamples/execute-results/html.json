@@ -1,0 +1,17 @@
+{
+  "hash": "a5bb2e693f7e6de2f4751330819d21d1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Proper examples\"\nauthor: \"Mitchell Stares\"\nweight: 39\ndate: \"2018-11-11\"\noutput: blogdown::html_page\neditor_options:\n  chunk_output_type: console\n---\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n## Setting up the graph environment ##\niris.scatter.proper <- ggplot(iris, aes(x=Sepal.Length, y=Petal.Length, colour=Species, shape=Species)) + geom_point()\n\n## Making our theme ##\nplottheme <- theme(panel.background = element_rect(fill=\"ghostwhite\"),\n                   legend.background = element_blank(),\n                   legend.key = element_rect(fill=\"ghostwhite\"),\n                   axis.line = element_line(colour=\"black\", size=1),\n                   axis.ticks = element_blank(),\n                   axis.title = element_text(colour=\"royalblue3\", size=14),\n                   plot.title = element_text(face=\"bold\", colour=\"steelblue4\", size=16),\n                   legend.title = element_text(colour=\"royalblue3\", size=14),\n                   legend.text = element_text(face=\"italic\", colour=\"steelblue4\", size=10),\n                   axis.text = element_text(colour=\"steelblue4\", size=12),\n                   panel.grid.major = element_line(colour=\"gray80\"),\n                   panel.grid.minor = element_blank())\n\n## Applying the theme, adding some labels and changing some colours ##\niris.scatter.proper <- iris.scatter.proper + plottheme +\n  labs(x=\"Sepal Length (cm)\", y=\"Petal Length (cm)\", title=\"Relationship between Sepal Length and Petal Length\") +\n  scale_colour_manual(values = c(\"mediumorchid1\", \"mediumorchid3\", \"mediumorchid4\"))\n\n## Displaying our graph ##\niris.scatter.proper\n```\n\n::: {.cell-output-display}\n![](8_properexamples_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\nPretty cool example of changing things around for the \"better\". You might notice a few extra things I have changed in this graph.\n\nIn the `aes()` section at the start, I introduced the shape command which changes the shape for each level of a factor. Doing this alongside colour= allows us to change the colour and symbol of the points themselves.  \nFurther down, I then changed the colour of the points using `scale_colour_manual()` and adding the colour values for the levels in order. There are many different ways you can do this, but I find this works the best. There are scale_manual commands for fill, group, shape etc. \n\nIn the `theme()` section, I covered most things we have done so far but added an additional argument to legend.text and plot.title. This is the face argument which allows us to add italics, bold or others to our text.\n\n#### I will add more to this page as I produce and discover cool graphs",
+    "supporting": [
+      "8_properexamples_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
