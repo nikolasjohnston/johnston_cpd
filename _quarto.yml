@@ -8,7 +8,7 @@ website:
   description: "Homepage for N Johnston CPD."
   site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
 
-  repo-url: https://github.com/nikolasjohnston/ohnston_cpd
+  repo-url: https://github.com/nikolasjohnston/johnston_cpd
   repo-actions: [edit, issue]
   
   open-graph: true
