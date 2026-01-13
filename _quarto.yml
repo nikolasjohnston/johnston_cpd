@@ -21,6 +21,7 @@ website:
   navbar: 
     background: primary
     search: true
+    pinned: true
     left:
       - text: "Home"
         href: index.qmd
@@ -29,9 +30,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, theme.scss]
-      dark: [cosmo, theme-dark.scss]
-    mainfont: "Atkinson Hyperlegible"
+      light: [journal]
+      dark: [journal, 'theme-dark.scss']
     code-copy: true
     code-overflow: wrap
     toc: true

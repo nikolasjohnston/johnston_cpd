@@ -6,8 +6,8 @@ format:
   html:
     toc: true
     toc-depth: 3
+    toc-expand: 2
     number-sections: false
-    theme: cosmo
     code-fold: true
     code-tools: true
 execute:
