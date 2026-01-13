@@ -1,0 +1,75 @@
+---
+title: "Qualifier 5: Demonstrate Scholarship of Teaching and Learning"
+---
+
+::: {.qualifier-badge}
+Qualifier 5 · Scholarship of T&L
+:::
+
+My engagement with the scholarship of teaching and learning is focused on the intersection of assessment design, generative AI in higher education, and computational skills development in biology. I have pursued this scholarship through funded projects, conference presentations, collaborative research, and the development of practical frameworks that contribute to both institutional practice and the broader higher education sector.
+
+---
+
+## Learning and Teaching Grant: Redesigning Assessment in BIOL340
+
+I was awarded a **UOW Learning and Teaching grant** to support the redesign of assessment in BIOL340 (Cell and Molecular Biology). This project focused on transitioning the subject from a quiz-only assessment structure to an authentic, multi-stage model that integrates scientific report writing, peer review, and structured engagement with generative AI. The grant supported the development and evaluation of this approach, which has since become a central feature of the subject and informed my broader scholarship on AI-responsive assessment design.
+
+---
+
+## The Generative AI Risk Index (GARI) Framework
+
+In collaboration with the School of Science (SSCI) AI Working Group, I co-developed a **four-dimensional risk assessment framework** for evaluating generative AI-related risks in higher education assessment.
+
+The **GARI framework** conceptualises assessment risk as the balance between:
+
+- **Exposure dimensions** — task susceptibility and delivery mode
+- **Mitigation dimensions** — authenticity/personalisation and guidance/education
+
+This work emerged from a systematic, school-wide analysis of all assessments conducted through the SSCI AI Working Group, involving both subject outline review and subject coordinator interviews. The framework was piloted across 2025 assessments within the School of Science, producing composite risk profiles that enable educators to identify vulnerabilities and target redesign efforts.
+
+A scholarly paper is currently in preparation for submission to a peer-reviewed journal, framing the work within assessment validity theory, constructive alignment, and risk-based assurance approaches. The paper positions the GARI framework as a practical, educator-facing tool that addresses a significant gap in the literature — the absence of structured, operational tools for evaluating GenAI-related assessment risks in relation to learning outcome assurance.
+
+I have also presented this framework at the university level through:
+
+- **SSCI L&T planning days** — to guide assessment redesign at the school level
+- **SMAH faculty L&T forum**
+- **Sydney Basin STEM Education and Research Practice Symposium 2026** — as a workshop on Generative AI and assessment design, presented with collaborator Dr Jody Gorman
+
+---
+
+## Conference Presentations and Dissemination
+
+My teaching scholarship has been presented at multiple forums:
+
+### SMAH Learning and Teaching Forum
+
+- **2024:** Presented the multi-stage assessment model developed in BIOL340 and plans on how generative AI tools would be utilised to improve how students learn coding tools and self-assess writing.
+- **2025:** Presented *"A Dimensional Risk Assessment of Generative AI in School of Science Assessments: A Framework for Transparent Evaluation"*, sharing the GARI framework and its application.
+
+### Early Career Research Conference, UOW 2025
+
+Delivered a workshop on *"How to Utilise Generative AI to Enhance Scientific Writing Education"*, sharing practical applications of AI to improve tertiary science education workflows with colleagues across disciplines.
+
+### Australian Conference on Science and Mathematics Education (ACSME) 2025
+
+This presentation argued that rather than treating generative AI as a threat to be avoided, it should be embedded as a teachable graduate skill. The core thesis was that the modern cell biology graduate requires not only practical skills, data analysis, and core content knowledge, but also competence in using GenAI ethically — and that assessment should model and assure this.
+
+The presentation reported on the redesign of BIOL340 assessment and its outcomes for student learning, AI literacy, and assessment integrity, framing GenAI in assessment as a *"wicked problem"* requiring nuanced, pedagogically sound responses.
+
+### Sydney Basin STEM Education and Research Practice Symposium 2026
+
+Presented a workshop on assuring assessment integrity in the generative AI era, showcasing the Generative AI Risk Index (GARI) framework.
+
+---
+
+## Summary
+
+These presentations demonstrate my commitment to disseminating teaching innovations and contributing to scholarly conversations about teaching and learning in the context of generative AI. The progression from institutional grants through to conference presentation and manuscript preparation reflects an intentional trajectory toward sustained engagement with the scholarship of teaching and learning.
+
+::: {.callout-note appearance="simple"}
+**Evidence:** Conference presentation slides, L&T grant documentation, and the GARI framework paper scaffold are available in the evidence folder.
+:::
+
+---
+
+**Previous:** [Qualifier 4 — Scaffolded Assessment](cpd4.qmd) · **Next:** [Qualifier 6 — Evaluation & CPD](cpd6.qmd)

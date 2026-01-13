@@ -4,27 +4,53 @@ project:
 
 website:
   page-navigation: true
-  title: "Nikolas P. Johnston"
-  description: "Homepage for N Johnston CPD."
+  title: "Nikolas P. Johnston CPD Level 2 ePortfolio"
+  description: "Continuing Professional Development — Learning & Teaching Portfolio"
+  favicon: ""
   site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
 
-  repo-url: https://github.com/nikolasjohnston/ohnston_cpd
-  repo-actions: [edit, issue]
-  
-  open-graph: true
+  navbar:
+    background: primary
+    foreground: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: teaching-philosophy.qmd
+        text: Teaching Philosophy
+      - text: CPD Qualifiers
+        menu:
+          - href: cpd/cpd1.qmd
+            text: "1. Curriculum Design"
+          - href: cpd/cpd2.qmd
+            text: "2. Inclusive Learning"
+          - href: cpd/cpd3.qmd
+            text: "3. Learning Pathways"
+          - href: cpd/cpd4.qmd
+            text: "4. Scaffolded Assessment"
+          - href: cpd/cpd5.qmd
+            text: "5. Scholarship of T&L"
+          - href: cpd/cpd6.qmd
+            text: "6. Evaluation & CPD"
+          - href: cpd/cpd7.qmd
+            text: "7. Professional Practice"
+      - href: references.qmd
+        text: References
+
+  sidebar:
+    - title: "CPD Qualifiers"
+      style: "docked"
+      background: light
+      contents:
+        - cpd/cpd1.qmd
+        - cpd/cpd2.qmd
+        - cpd/cpd3.qmd
+        - cpd/cpd4.qmd
+        - cpd/cpd5.qmd
+        - cpd/cpd6.qmd
+        - cpd/cpd7.qmd
 
   page-footer:
-    right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2026, Nikolas Johnston"
-    background: primary
-
-  navbar: 
-    background: primary
-    search: true
-    pinned: true
-    left:
-      - text: "Home"
-        href: index.qmd
+    center: "Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2026"
 
 
 format:

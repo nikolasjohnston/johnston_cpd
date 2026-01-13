@@ -1,0 +1,34 @@
+---
+title: "Teaching Philosophy"
+---
+
+<div class="qualifier-badge">Teaching Philosophy</div>
+
+
+My teaching is grounded in the view that digital and computational literacy is essential for modern biology graduates. As biology becomes increasingly data-driven, students must be able to interpret data, use computational tools effectively, and communicate findings clearly and ethically. These capabilities are central to developing critical thinking, problem solving, and communication skills.
+
+## Embedding Computational Skills in Disciplinary Contexts
+
+I approach the teaching of computational skills by embedding them within disciplinary contexts rather than presenting them as abstract techniques. This reflects an interdisciplinary perspective that integrates biology with data science and supports students in applying knowledge across domains. It also recognises that confidence with quantitative and computational skills develops through supported, meaningful engagement [@bandura1997; @prince2004].
+
+## Active Participation and Authentic Learning
+
+Active participation is a core principle of my teaching. I design learning experiences that mirror authentic scientific workflows, including data analysis, visualisation, interpretation, and writing. These are structured through **constructive alignment**, ensuring that learning outcomes, activities, and assessment are clearly connected [@biggs2011].
+
+## Assessment and Feedback
+
+Assessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback [@boud2006; @nicol2006].
+
+## Inclusive Learning Environments
+
+I aim to create inclusive learning environments in which students feel supported to engage with challenging material and develop confidence in their abilities. This includes clear expectations, scaffolded learning, and opportunities for practice and feedback.
+
+## Summary
+
+Overall, my teaching focuses on supporting students to become capable and adaptable graduates. By aligning learning with authentic disciplinary practice and providing structured support, I aim to enable deep engagement with biology while developing transferable skills for future study and professional practice.
+
+---
+
+::: {.callout-note appearance="simple"}
+**Next:** Explore how these principles are enacted across the [seven CPD qualifiers](cpd/cpd1.qmd).
+:::
