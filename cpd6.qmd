@@ -2,9 +2,7 @@
 title: "Qualifier 6: Evaluate Teaching Practice, Support Teaching Teams, and Engage in Continuing Professional Development"
 ---
 
-::: {.qualifier-badge}
-Qualifier 6 · Evaluation & CPD
-:::
+<div class="qualifier-badge">Qualifier 6 · Evaluation & CPD</div>
 
 I actively use evaluation data to reflect on and improve my teaching practice, and I contribute to the professional development of teaching teams within my school. My approach to evaluation is informed by a commitment to evidence-based reflection, where student feedback, peer input, and personal experience collectively shape iterative improvements to my teaching.
 
@@ -72,7 +70,7 @@ By implementing these two targeted adjustments, the coordinator was able to redu
 
 My engagement in CPD is driven by a recognition that effective teaching requires ongoing learning and adaptation. I have pursued professional development through multiple pathways:
 
-- Engagement with teaching and learning scholarship (detailed in [Qualifier 5](cpd5.qmd))
+- Engagement with teaching and learning scholarship (detailed in [Qualifier 5](cpd5.html))
 - Attendance at institutional and external conferences
 - Collaborative work with colleagues on curriculum and assessment innovation
 - Sustained involvement in the SSCI AI Working Group
@@ -81,4 +79,4 @@ I view this portfolio as itself an exercise in reflective professional developme
 
 ---
 
-**Previous:** [Qualifier 5 — Scholarship of T&L](cpd5.qmd) · **Next:** [Qualifier 7 — Professional Practice](cpd7.qmd)
+**Previous:** [Qualifier 5 — Scholarship of T&L](cpd5.html) · **Next:** [Qualifier 7 — Professional Practice](cpd7.html)

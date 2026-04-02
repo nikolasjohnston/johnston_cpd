@@ -2,9 +2,7 @@
 title: "Qualifier 3: Support Students in Their Choice and Navigation of Formal and Informal Learning Pathways"
 ---
 
-::: {.qualifier-badge}
-Qualifier 3 · Learning Pathways
-:::
+<div class="qualifier-badge">Qualifier 3 · Learning Pathways</div>
 
 I actively support students in navigating both formal and informal learning pathways by making learning processes explicit and providing structured opportunities for choice, progression, and self-directed development. A central principle of my curriculum design is that students should not only develop disciplinary knowledge, but should develop the ability to navigate their own learning — into the subject, through the degree, and into professional practice.
 
@@ -59,4 +57,4 @@ The custom-built teaching website I have developed provides modular code blocks,
 
 ---
 
-**Previous:** [Qualifier 2 — Inclusive Learning](cpd2.qmd) · **Next:** [Qualifier 4 — Scaffolded Assessment](cpd4.qmd)
+**Previous:** [Qualifier 2 — Inclusive Learning](cpd2.html) · **Next:** [Qualifier 4 — Scaffolded Assessment](cpd4.html)

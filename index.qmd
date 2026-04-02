@@ -1,38 +1,23 @@
 ---
-title: "CPD (L&T) Level 2 Teaching Portfolio — Digital Skills, Data Literacy, and Ethical GenAI in Biology"
-author: "Dr. Nikolas Johnston"
-date: "2026-01-13"
-page-layout: full
-toc: false
----
-
-```{=html}
-<!--
-Hosting notes (GitHub Pages + Quarto):
-- Put this file in a Quarto project (e.g., /docs or /site).
-- Add _quarto.yml with `project: type: website` and `output-dir: docs` for GitHub Pages.
-- Render with `quarto render` and publish the /docs folder.
--->
-```
-
----
 title: "CPD Level 2 ePortfolio"
 subtitle: "Continuing Professional Development — Learning & Teaching"
 page-layout: full
 toc: false
 ---
 
-:::: hero-block
-# Dr Nikolas Johnston
-
-**Lecturer in Bioinformatics**
-
-School of Chemistry and Molecular Bioscience · Faculty of Science, Medicine and Health · University of Wollongong
-
-::: meta
-CPD Level 2 Portfolio · 2025
-:::
-::::
+```{=html}
+<div class="hero-block">
+  <div class="hero-text">
+    <h1>Dr Nikolas Johnston</h1>
+    <div class="subtitle"><strong>Lecturer in Bioinformatics</strong></div>
+    <div class="subtitle">School of Chemistry and Molecular Bioscience · Faculty of Science, Medicine and Health · University of Wollongong</div>
+    <div class="meta">CPD Level 2 Portfolio · 2025</div>
+  </div>
+  <div class="hero-photo">
+    <img src="images/headshot.jpg" alt="Dr Nikolas Johnston" />
+  </div>
+</div>
+```
 
 ## Welcome
 
@@ -54,32 +39,50 @@ In response, my teaching integrates opportunities for students to work with real
 
 ## CPD Qualifiers
 
-:::::::::: cpd-grid
-::: cpd-card
-::: {.cpd-number}Qualifier 1::: ::: {.cpd-title}[Effectively Design Curriculum Demonstrating Integration Across the Degree](cpd/cpd1.qmd)::: ::: {.cpd-desc}Scaffolded skills progression across BIOL215, BIOL340, and CHEM325/BIOL984; constructive alignment and authentic learning design.:::
-:::
+```{=html}
+<div class="cpd-grid">
 
-::: cpd-card
-::: {.cpd-number}Qualifier 2::: ::: {.cpd-title}[Facilitate a Wide Variety of Inclusive Learning Experiences](cpd/cpd2.qmd)::: ::: {.cpd-desc}Interactive teaching strategies, block-based coding activities, dedicated dry labs, and UDL-informed practice.:::
-:::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 1</div>
+    <div class="cpd-title"><a href="cpd1.html">Effectively Design Curriculum Demonstrating Integration Across the Degree</a></div>
+    <div class="cpd-desc">Scaffolded skills progression across BIOL215, BIOL340, and CHEM325/BIOL984; constructive alignment and authentic learning design.</div>
+  </div>
 
-::: cpd-card
-::: {.cpd-number}Qualifier 3::: ::: {.cpd-title}[Support Students in Choice and Navigation of Learning Pathways](cpd/cpd3.qmd)::: ::: {.cpd-desc}Transition support, self-directed learning, metacognitive awareness, and workforce preparation.:::
-:::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 2</div>
+    <div class="cpd-title"><a href="cpd2.html">Facilitate a Wide Variety of Inclusive Learning Experiences</a></div>
+    <div class="cpd-desc">Interactive teaching strategies, block-based coding activities, dedicated dry labs, and UDL-informed practice.</div>
+  </div>
 
-::: cpd-card
-::: {.cpd-number}Qualifier 4::: ::: {.cpd-title}[Design Scaffolded Assessments That Foster Progressive Learning](cpd/cpd4.qmd)::: ::: {.cpd-desc}Multi-stage assessment model, peer review, AI reflection tasks, and evidence-based feedback strategies.:::
-:::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 3</div>
+    <div class="cpd-title"><a href="cpd3.html">Support Students in Choice and Navigation of Learning Pathways</a></div>
+    <div class="cpd-desc">Transition support, self-directed learning, metacognitive awareness, and workforce preparation.</div>
+  </div>
 
-::: cpd-card
-::: {.cpd-number}Qualifier 5::: ::: {.cpd-title}[Demonstrate Scholarship of Teaching and Learning](cpd/cpd5.qmd)::: ::: {.cpd-desc}L&T grant, GARI framework development, and conference presentations on GenAI and assessment.:::
-:::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 4</div>
+    <div class="cpd-title"><a href="cpd4.html">Design Scaffolded Assessments That Foster Progressive Learning</a></div>
+    <div class="cpd-desc">Multi-stage assessment model, peer review, AI reflection tasks, and evidence-based feedback strategies.</div>
+  </div>
 
-::: cpd-card
-::: {.cpd-number}Qualifier 6::: ::: {.cpd-title}[Evaluate Teaching Practice, Support Teaching Teams, and Engage in CPD](cpd/cpd6.qmd)::: ::: {.cpd-desc}Critical engagement with TEBS data, teaching team coordination, and the SSCI AI Working Group.:::
-:::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 5</div>
+    <div class="cpd-title"><a href="cpd5.html">Demonstrate Scholarship of Teaching and Learning</a></div>
+    <div class="cpd-desc">L&amp;T grant, GARI framework development, and conference presentations on GenAI and assessment.</div>
+  </div>
 
-::: cpd-card
-::: {.cpd-number}Qualifier 7::: ::: {.cpd-title}[Develop Effective, Resilient Professional Practices That Enhance Course Management](cpd/cpd7.qmd)::: ::: {.cpd-desc}Subject coordination, teaching infrastructure development, and adaptability in the generative AI era.:::
-:::
-::::::::::
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 6</div>
+    <div class="cpd-title"><a href="cpd6.html">Evaluate Teaching Practice, Support Teaching Teams, and Engage in CPD</a></div>
+    <div class="cpd-desc">Critical engagement with TEBS data, teaching team coordination, and the SSCI AI Working Group.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 7</div>
+    <div class="cpd-title"><a href="cpd7.html">Develop Effective, Resilient Professional Practices That Enhance Course Management</a></div>
+    <div class="cpd-desc">Subject coordination, teaching infrastructure development, and adaptability in the generative AI era.</div>
+  </div>
+
+</div>
+```

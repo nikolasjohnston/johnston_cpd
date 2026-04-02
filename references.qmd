@@ -1,13 +1,11 @@
 ---
 title: "References"
-bibliography: references.bib
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+suppress-bibliography: false
 ---
 
 <div class="qualifier-badge">References</div>
 
-
-The following references are cited across this portfolio. They are formatted in APA 7th edition style.
+The following references are cited across this portfolio, formatted in APA 7th edition style.
 
 ---
 

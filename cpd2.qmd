@@ -2,9 +2,7 @@
 title: "Qualifier 2: Facilitate a Wide Variety of Inclusive Learning Experiences for Students"
 ---
 
-::: {.qualifier-badge}
-Qualifier 2 · Inclusive Learning
-:::
+<div class="qualifier-badge">Qualifier 2 · Inclusive Learning</div>
 
 My approach to teaching and supporting student learning is centred on clarity, accessibility, and active engagement — particularly in areas that students often perceive as difficult or unfamiliar, such as bioinformatics and computational data analysis. I recognise that many biology students experience anxiety when encountering quantitative or coding-based content, and I deliberately structure my teaching to reduce these barriers while maintaining academic rigour.
 
@@ -43,11 +41,11 @@ In response to student feedback that aspects of coding were difficult to underst
 This approach aligns with both **cognitive load theory** (reducing unnecessary complexity) and **UDL principles** (incorporating visual and tactile modes of learning alongside traditional instruction).
 
 ::: {layout-ncol=3}
-![Block-based coding activity — physical puzzle pieces.](../images/image4.png){fig-alt="Physical block coding activity" width="100%"}
+![Block-based coding activity — physical puzzle pieces.](images/image4.png){fig-alt="Physical block coding activity" width="100%"}
 
-![Online interface with modular code blocks.](../images/image5.png){fig-alt="Online block-based interface" width="100%"}
+![Online interface with modular code blocks.](images/image5.png){fig-alt="Online block-based interface" width="100%"}
 
-![Students working with block activities in class.](../images/image6.JPG){fig-alt="Students engaged in block-based coding activity" width="100%"}
+![Students working with block activities in class.](images/image6.JPG){fig-alt="Students engaged in block-based coding activity" width="100%"}
 :::
 
 *Figure 4: Block-based coding activity and corresponding online modular code interface.*
@@ -64,11 +62,11 @@ Student evaluation scores for respect, approachability, and encouragement of par
 
 **CHEM325 (2024)**
 
-![Student evaluation scores — CHEM325 2024.](../images/image7.png){fig-alt="CHEM325 2024 evaluation scores" width="100%"}
+![Student evaluation scores — CHEM325 2024.](images/image7.png){fig-alt="CHEM325 2024 evaluation scores" width="100%"}
 
 **BIOL215 (2025)**
 
-![Student evaluation scores — BIOL215 2025.](../images/image8.png){fig-alt="BIOL215 2025 evaluation scores" width="100%"}
+![Student evaluation scores — BIOL215 2025.](images/image8.png){fig-alt="BIOL215 2025 evaluation scores" width="100%"}
 
 *Figure 5: Student evaluation scores and qualitative feedback highlighting supportive and engaging teaching environment.*
 
@@ -96,4 +94,4 @@ The introduction of block-based thinking activities further supports inclusivity
 
 ---
 
-**Previous:** [Qualifier 1 — Curriculum Design](cpd1.qmd) · **Next:** [Qualifier 3 — Learning Pathways](cpd3.qmd)
+**Previous:** [Qualifier 1 — Curriculum Design](cpd1.html) · **Next:** [Qualifier 3 — Learning Pathways](cpd3.html)

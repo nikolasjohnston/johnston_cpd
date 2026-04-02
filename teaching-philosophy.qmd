@@ -30,5 +30,5 @@ Overall, my teaching focuses on supporting students to become capable and adapta
 ---
 
 ::: {.callout-note appearance="simple"}
-**Next:** Explore how these principles are enacted across the [seven CPD qualifiers](cpd/cpd1.qmd).
+**Next:** Explore how these principles are enacted across the [seven CPD qualifiers](cpd1.qmd).
 :::

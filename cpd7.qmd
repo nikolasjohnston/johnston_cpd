@@ -2,9 +2,7 @@
 title: "Qualifier 7: Develop Effective, Resilient Professional Practices That Enhance Course Management"
 ---
 
-::: {.qualifier-badge}
-Qualifier 7 · Professional Practice
-:::
+<div class="qualifier-badge">Qualifier 7 · Professional Practice</div>
 
 My professional practice is characterised by a systematic and responsive approach to course management, underpinned by a commitment to continuous improvement, effective organisation, and adaptability in the face of evolving disciplinary and institutional demands.
 
@@ -68,9 +66,9 @@ I also balance my teaching responsibilities with an active research program in *
 My professional practice is characterised by effective organisation, a commitment to evidence-based improvement, and the capacity to lead and manage change. Through sustained investment in teaching resources, collaborative engagement with colleagues, and proactive responses to emerging challenges, I aim to ensure that the subjects I coordinate are well-managed, pedagogically sound, and responsive to the needs of students and the discipline.
 
 ::: {.callout-note appearance="simple"}
-**Evidence:** Teaching coordination materials, Moodle site structure, teaching website, and pre/post survey instruments are available in the evidence folder.
+**Evidence:** Teaching coordination materials, teaching website, and pre/post survey instruments are available in the evidence folder.
 :::
 
 ---
 
-**Previous:** [Qualifier 6 — Evaluation & CPD](cpd6.qmd) · **Back to:** [Home](../index.qmd)
+**Previous:** [Qualifier 6 — Evaluation & CPD](cpd6.html) · **Back to:** [Home](index.html)

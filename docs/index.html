@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Nikolas Johnston">
-<meta name="dcterms.date" content="2026-01-13">
 
 <title>CPD Level 2 ePortfolio – Nikolas P. Johnston CPD Level 2 ePortfolio</title>
 <style>
@@ -39,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-97859a573ad3e661318e6e4051737532.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-375f9052f78ebd60d0df2662ae759f9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-97859a573ad3e661318e6e4051737532.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c36470fecffc8377719e71fa4b33382c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,173 +68,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -273,31 +106,31 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-cpd-qualifiers">    
         <li>
-    <a class="dropdown-item" href="./cpd/cpd1.html">
+    <a class="dropdown-item" href="./cpd/cpd1.qmd">
  <span class="dropdown-text">1. Curriculum Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd2.html">
+    <a class="dropdown-item" href="./cpd/cpd2.qmd">
  <span class="dropdown-text">2. Inclusive Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd3.html">
+    <a class="dropdown-item" href="./cpd/cpd3.qmd">
  <span class="dropdown-text">3. Learning Pathways</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd4.html">
+    <a class="dropdown-item" href="./cpd/cpd4.qmd">
  <span class="dropdown-text">4. Scaffolded Assessment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd5.html">
+    <a class="dropdown-item" href="./cpd/cpd5.qmd">
  <span class="dropdown-text">5. Scholarship of T&amp;L</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd6.html">
+    <a class="dropdown-item" href="./cpd/cpd6.qmd">
  <span class="dropdown-text">6. Evaluation &amp; CPD</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./cpd/cpd7.html">
+    <a class="dropdown-item" href="./cpd/cpd7.qmd">
  <span class="dropdown-text">7. Professional Practice</span></a>
   </li>  
     </ul>
@@ -309,7 +142,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -318,71 +150,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-<<<<<<< HEAD
     
-=======
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#statement-of-context" id="toc-statement-of-context" class="nav-link active" data-scroll-target="#statement-of-context">Statement of context</a></li>
-  <li><a href="#teaching-philosophy" id="toc-teaching-philosophy" class="nav-link" data-scroll-target="#teaching-philosophy">Teaching philosophy</a></li>
-  <li><a href="#alignment-to-the-uow-cpd-lt-framework-level-2" id="toc-alignment-to-the-uow-cpd-lt-framework-level-2" class="nav-link" data-scroll-target="#alignment-to-the-uow-cpd-lt-framework-level-2">Alignment to the UOW CPD (L&amp;T) Framework — Level 2</a>
-  <ul class="collapse">
-  <li><a href="#design-and-plan-effective-learning-experiences-level-2" id="toc-design-and-plan-effective-learning-experiences-level-2" class="nav-link" data-scroll-target="#design-and-plan-effective-learning-experiences-level-2">1. Design and plan effective learning experiences (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor" id="toc-level-2-descriptor" class="nav-link" data-scroll-target="#level-2-descriptor">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns" id="toc-how-my-practice-aligns" class="nav-link" data-scroll-target="#how-my-practice-aligns">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed" id="toc-evidence-artefacts-to-embed" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#facilitate-activities-that-influence-and-motivate-student-learning-level-2" id="toc-facilitate-activities-that-influence-and-motivate-student-learning-level-2" class="nav-link" data-scroll-target="#facilitate-activities-that-influence-and-motivate-student-learning-level-2">2. Facilitate activities that influence and motivate student learning (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-1" id="toc-level-2-descriptor-1" class="nav-link" data-scroll-target="#level-2-descriptor-1">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-1" id="toc-how-my-practice-aligns-1" class="nav-link" data-scroll-target="#how-my-practice-aligns-1">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-1" id="toc-evidence-artefacts-to-embed-1" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-1">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#support-student-individual-development-and-diversity-level-2" id="toc-support-student-individual-development-and-diversity-level-2" class="nav-link" data-scroll-target="#support-student-individual-development-and-diversity-level-2">3. Support student individual development and diversity (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-2" id="toc-level-2-descriptor-2" class="nav-link" data-scroll-target="#level-2-descriptor-2">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-2" id="toc-how-my-practice-aligns-2" class="nav-link" data-scroll-target="#how-my-practice-aligns-2">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-2" id="toc-evidence-artefacts-to-embed-2" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-2">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#facilitate-assessment-and-feedback-that-fosters-independent-learning-level-2" id="toc-facilitate-assessment-and-feedback-that-fosters-independent-learning-level-2" class="nav-link" data-scroll-target="#facilitate-assessment-and-feedback-that-fosters-independent-learning-level-2">4. Facilitate assessment and feedback that fosters independent learning (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-3" id="toc-level-2-descriptor-3" class="nav-link" data-scroll-target="#level-2-descriptor-3">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-3" id="toc-how-my-practice-aligns-3" class="nav-link" data-scroll-target="#how-my-practice-aligns-3">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-3" id="toc-evidence-artefacts-to-embed-3" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-3">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#integrate-scholarship-research-and-professional-activities-with-teaching-level-2" id="toc-integrate-scholarship-research-and-professional-activities-with-teaching-level-2" class="nav-link" data-scroll-target="#integrate-scholarship-research-and-professional-activities-with-teaching-level-2">5. Integrate scholarship, research and professional activities with teaching (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-4" id="toc-level-2-descriptor-4" class="nav-link" data-scroll-target="#level-2-descriptor-4">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-4" id="toc-how-my-practice-aligns-4" class="nav-link" data-scroll-target="#how-my-practice-aligns-4">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-4" id="toc-evidence-artefacts-to-embed-4" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-4">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#evaluate-teaching-practice-and-engage-in-continuing-professional-development-level-2" id="toc-evaluate-teaching-practice-and-engage-in-continuing-professional-development-level-2" class="nav-link" data-scroll-target="#evaluate-teaching-practice-and-engage-in-continuing-professional-development-level-2">6. Evaluate teaching practice and engage in continuing professional development (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-5" id="toc-level-2-descriptor-5" class="nav-link" data-scroll-target="#level-2-descriptor-5">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-5" id="toc-how-my-practice-aligns-5" class="nav-link" data-scroll-target="#how-my-practice-aligns-5">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-5" id="toc-evidence-artefacts-to-embed-5" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-5">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  <li><a href="#demonstrate-personal-and-professional-effectiveness-level-2" id="toc-demonstrate-personal-and-professional-effectiveness-level-2" class="nav-link" data-scroll-target="#demonstrate-personal-and-professional-effectiveness-level-2">7. Demonstrate personal and professional effectiveness (Level 2)</a>
-  <ul class="collapse">
-  <li><a href="#level-2-descriptor-6" id="toc-level-2-descriptor-6" class="nav-link" data-scroll-target="#level-2-descriptor-6">Level 2 descriptor</a></li>
-  <li><a href="#how-my-practice-aligns-6" id="toc-how-my-practice-aligns-6" class="nav-link" data-scroll-target="#how-my-practice-aligns-6">How my practice aligns</a></li>
-  <li><a href="#evidence-artefacts-to-embed-6" id="toc-evidence-artefacts-to-embed-6" class="nav-link" data-scroll-target="#evidence-artefacts-to-embed-6">Evidence (artefacts to embed)</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#closing-reflection-why-digital-skills-matter-for-biology-graduates" id="toc-closing-reflection-why-digital-skills-matter-for-biology-graduates" class="nav-link" data-scroll-target="#closing-reflection-why-digital-skills-matter-for-biology-graduates">Closing reflection: Why digital skills matter for biology graduates</a></li>
-  <li><a href="#key-evidence-referenced" id="toc-key-evidence-referenced" class="nav-link" data-scroll-target="#key-evidence-referenced">Key evidence referenced</a></li>
-  <li><a href="#appendix-artefact-index-fill-in-as-you-embed" id="toc-appendix-artefact-index-fill-in-as-you-embed" class="nav-link" data-scroll-target="#appendix-artefact-index-fill-in-as-you-embed">Appendix: Artefact index (fill in as you embed)</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/nikolasjohnston/johnston_cpd/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nikolasjohnston/johnston_cpd/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
->>>>>>> refs/remotes/origin/main
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -394,19 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta column-page">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Nikolas Johnston </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 13, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -416,20 +174,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!--
-Hosting notes (GitHub Pages + Quarto):
-- Put this file in a Quarto project (e.g., /docs or /site).
-- Add _quarto.yml with `project: type: website` and `output-dir: docs` for GitHub Pages.
-- Render with `quarto render` and publish the /docs folder.
--->
-<section id="dr-nikolas-johnston" class="level1 hero-block">
-<h1>Dr Nikolas Johnston</h1>
-<p><strong>Lecturer in Bioinformatics</strong></p>
-<p>School of Chemistry and Molecular Bioscience · Faculty of Science, Medicine and Health · University of Wollongong</p>
-<div class="meta">
-<p>CPD Level 2 Portfolio · 2025</p>
+<div class="hero-block">
+  <div class="hero-text">
+    <h1>Dr Nikolas Johnston</h1>
+    <div class="subtitle"><strong>Lecturer in Bioinformatics</strong></div>
+    <div class="subtitle">School of Chemistry and Molecular Bioscience · Faculty of Science, Medicine and Health · University of Wollongong</div>
+    <div class="meta">CPD Level 2 Portfolio · 2025</div>
+  </div>
+  <div class="hero-photo">
+    <img src="images/headshot.jpg" alt="Dr Nikolas Johnston">
+  </div>
 </div>
-</section>
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
 <p>This ePortfolio documents my continuing professional development in learning and teaching at the University of Wollongong. It presents evidence of my practice across the seven CPD Level 2 qualifiers, grounded in my disciplinary context at the interface of biological research and computational science.</p>
@@ -446,27 +201,49 @@ Hosting notes (GitHub Pages + Quarto):
 <section id="cpd-qualifiers" class="level2">
 <h2 class="anchored" data-anchor-id="cpd-qualifiers">CPD Qualifiers</h2>
 <div class="cpd-grid">
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 1::: ::: {.cpd-title}<a href="./cpd/cpd1.html">Effectively Design Curriculum Demonstrating Integration Across the Degree</a>::: ::: {.cpd-desc}Scaffolded skills progression across BIOL215, BIOL340, and CHEM325/BIOL984; constructive alignment and authentic learning design.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 2::: ::: {.cpd-title}<a href="./cpd/cpd2.html">Facilitate a Wide Variety of Inclusive Learning Experiences</a>::: ::: {.cpd-desc}Interactive teaching strategies, block-based coding activities, dedicated dry labs, and UDL-informed practice.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 3::: ::: {.cpd-title}<a href="./cpd/cpd3.html">Support Students in Choice and Navigation of Learning Pathways</a>::: ::: {.cpd-desc}Transition support, self-directed learning, metacognitive awareness, and workforce preparation.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 4::: ::: {.cpd-title}<a href="./cpd/cpd4.html">Design Scaffolded Assessments That Foster Progressive Learning</a>::: ::: {.cpd-desc}Multi-stage assessment model, peer review, AI reflection tasks, and evidence-based feedback strategies.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 5::: ::: {.cpd-title}<a href="./cpd/cpd5.html">Demonstrate Scholarship of Teaching and Learning</a>::: ::: {.cpd-desc}L&amp;T grant, GARI framework development, and conference presentations on GenAI and assessment.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 6::: ::: {.cpd-title}<a href="./cpd/cpd6.html">Evaluate Teaching Practice, Support Teaching Teams, and Engage in CPD</a>::: ::: {.cpd-desc}Critical engagement with TEBS data, teaching team coordination, and the SSCI AI Working Group.:::</p>
-</div>
-<div class="cpd-card">
-<p>::: {.cpd-number}Qualifier 7::: ::: {.cpd-title}<a href="./cpd/cpd7.html">Develop Effective, Resilient Professional Practices That Enhance Course Management</a>::: ::: {.cpd-desc}Subject coordination, teaching infrastructure development, and adaptability in the generative AI era.:::</p>
-</div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 1</div>
+    <div class="cpd-title"><a href="cpd1.html">Effectively Design Curriculum Demonstrating Integration Across the Degree</a></div>
+    <div class="cpd-desc">Scaffolded skills progression across BIOL215, BIOL340, and CHEM325/BIOL984; constructive alignment and authentic learning design.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 2</div>
+    <div class="cpd-title"><a href="cpd2.html">Facilitate a Wide Variety of Inclusive Learning Experiences</a></div>
+    <div class="cpd-desc">Interactive teaching strategies, block-based coding activities, dedicated dry labs, and UDL-informed practice.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 3</div>
+    <div class="cpd-title"><a href="cpd3.html">Support Students in Choice and Navigation of Learning Pathways</a></div>
+    <div class="cpd-desc">Transition support, self-directed learning, metacognitive awareness, and workforce preparation.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 4</div>
+    <div class="cpd-title"><a href="cpd4.html">Design Scaffolded Assessments That Foster Progressive Learning</a></div>
+    <div class="cpd-desc">Multi-stage assessment model, peer review, AI reflection tasks, and evidence-based feedback strategies.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 5</div>
+    <div class="cpd-title"><a href="cpd5.html">Demonstrate Scholarship of Teaching and Learning</a></div>
+    <div class="cpd-desc">L&amp;T grant, GARI framework development, and conference presentations on GenAI and assessment.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 6</div>
+    <div class="cpd-title"><a href="cpd6.html">Evaluate Teaching Practice, Support Teaching Teams, and Engage in CPD</a></div>
+    <div class="cpd-desc">Critical engagement with TEBS data, teaching team coordination, and the SSCI AI Working Group.</div>
+  </div>
+
+  <div class="cpd-card">
+    <div class="cpd-number">Qualifier 7</div>
+    <div class="cpd-title"><a href="cpd7.html">Develop Effective, Resilient Professional Practices That Enhance Course Management</a></div>
+    <div class="cpd-desc">Subject coordination, teaching infrastructure development, and adaptability in the generative AI era.</div>
+  </div>
+
 </div>
 
 
@@ -475,19 +252,6 @@ Hosting notes (GitHub Pages + Quarto):
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -891,15 +655,9 @@ Hosting notes (GitHub Pages + Quarto):
   <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
-<<<<<<< HEAD
     </div>   
     <div class="nav-footer-center">
 <p>Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2026</p>
-=======
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nikolasjohnston/johnston_cpd/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nikolasjohnston/johnston_cpd/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
->>>>>>> refs/remotes/origin/main
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -910,4 +668,5 @@ Hosting notes (GitHub Pages + Quarto):
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

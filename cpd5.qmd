@@ -2,9 +2,7 @@
 title: "Qualifier 5: Demonstrate Scholarship of Teaching and Learning"
 ---
 
-::: {.qualifier-badge}
-Qualifier 5 · Scholarship of T&L
-:::
+<div class="qualifier-badge">Qualifier 5 · Scholarship of T&L</div>
 
 My engagement with the scholarship of teaching and learning is focused on the intersection of assessment design, generative AI in higher education, and computational skills development in biology. I have pursued this scholarship through funded projects, conference presentations, collaborative research, and the development of practical frameworks that contribute to both institutional practice and the broader higher education sector.
 
@@ -72,4 +70,4 @@ These presentations demonstrate my commitment to disseminating teaching innovati
 
 ---
 
-**Previous:** [Qualifier 4 — Scaffolded Assessment](cpd4.qmd) · **Next:** [Qualifier 6 — Evaluation & CPD](cpd6.qmd)
+**Previous:** [Qualifier 4 — Scaffolded Assessment](cpd4.html) · **Next:** [Qualifier 6 — Evaluation & CPD](cpd6.html)
