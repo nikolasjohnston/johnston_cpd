@@ -1,13 +1,16 @@
 ---
 title: "References"
 suppress-bibliography: false
+nocite: "@*"
 ---
 
-<div class="qualifier-badge">References</div>
+::: qualifier-badge
+References
+:::
 
 The following references are cited across this portfolio, formatted in APA 7th edition style.
 
----
+------------------------------------------------------------------------
 
 ::: {#refs}
 :::

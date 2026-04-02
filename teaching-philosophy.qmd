@@ -2,8 +2,9 @@
 title: "Teaching Philosophy"
 ---
 
-<div class="qualifier-badge">Teaching Philosophy</div>
-
+::: qualifier-badge
+Teaching Philosophy
+:::
 
 My teaching is grounded in the view that digital and computational literacy is essential for modern biology graduates. As biology becomes increasingly data-driven, students must be able to interpret data, use computational tools effectively, and communicate findings clearly and ethically. These capabilities are central to developing critical thinking, problem solving, and communication skills.
 
@@ -27,7 +28,7 @@ I aim to create inclusive learning environments in which students feel supported
 
 Overall, my teaching focuses on supporting students to become capable and adaptable graduates. By aligning learning with authentic disciplinary practice and providing structured support, I aim to enable deep engagement with biology while developing transferable skills for future study and professional practice.
 
----
+------------------------------------------------------------------------
 
 ::: {.callout-note appearance="simple"}
 **Next:** Explore how these principles are enacted across the [seven CPD qualifiers](cpd1.qmd).

@@ -52,7 +52,6 @@ website:
 
 bibliography: references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
-suppress-bibliography: true
 
 format:
   html:
