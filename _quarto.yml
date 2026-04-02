@@ -68,5 +68,6 @@ format:
     fig-cap-location: bottom
     link-external-newpage: true
 
+
 execute:
   freeze: auto
