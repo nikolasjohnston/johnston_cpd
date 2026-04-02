@@ -67,7 +67,9 @@ format:
     fig-align: center
     fig-cap-location: bottom
     link-external-newpage: true
-
+    bibliography: references.bib
+    csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+    suppress-bibliography: true
 
 execute:
   freeze: auto
