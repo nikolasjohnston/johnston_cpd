@@ -1,13 +1,11 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
 
 website:
-  page-navigation: true
-  title: "Nikolas P. Johnston CPD Level 2 ePortfolio"
+  title: "CPD Level 2 ePortfolio"
   description: "Continuing Professional Development — Learning & Teaching Portfolio"
-  favicon: ""
-  site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
+
 
   navbar:
     background: primary
@@ -65,9 +63,10 @@ format:
     toc-title: "On this page"
     smooth-scroll: true
     code-fold: false
-    code-copy: true
-    code-overflow: wrap
     number-sections: false
     fig-align: center
     fig-cap-location: bottom
     link-external-newpage: true
+
+execute:
+  freeze: auto
