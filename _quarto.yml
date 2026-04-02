@@ -9,6 +9,7 @@ website:
   favicon: ""
   site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
 
+<<<<<<< HEAD
   navbar:
     background: primary
     foreground: light
@@ -48,6 +49,12 @@ website:
         - cpd/cpd5.qmd
         - cpd/cpd6.qmd
         - cpd/cpd7.qmd
+=======
+  repo-url: https://github.com/nikolasjohnston/johnston_cpd
+  repo-actions: [edit, issue]
+  
+  open-graph: true
+>>>>>>> refs/remotes/origin/main
 
   page-footer:
     center: "Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2026"
