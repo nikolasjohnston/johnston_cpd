@@ -9,7 +9,6 @@ website:
   favicon: ""
   site-url: "https://nikolasjohnston.github.io/johnston_cpd/"
 
-
   navbar:
     background: primary
     foreground: light
@@ -20,19 +19,19 @@ website:
         text: Teaching Philosophy
       - text: CPD Qualifiers
         menu:
-          - href: cpd/cpd1.qmd
+          - href: cpd1.qmd
             text: "1. Curriculum Design"
-          - href: cpd/cpd2.qmd
+          - href: cpd2.qmd
             text: "2. Inclusive Learning"
-          - href: cpd/cpd3.qmd
+          - href: cpd3.qmd
             text: "3. Learning Pathways"
-          - href: cpd/cpd4.qmd
+          - href: cpd4.qmd
             text: "4. Scaffolded Assessment"
-          - href: cpd/cpd5.qmd
+          - href: cpd5.qmd
             text: "5. Scholarship of T&L"
-          - href: cpd/cpd6.qmd
+          - href: cpd6.qmd
             text: "6. Evaluation & CPD"
-          - href: cpd/cpd7.qmd
+          - href: cpd7.qmd
             text: "7. Professional Practice"
       - href: references.qmd
         text: References
@@ -42,17 +41,20 @@ website:
       style: "docked"
       background: light
       contents:
-        - cpd/cpd1.qmd
-        - cpd/cpd2.qmd
-        - cpd/cpd3.qmd
-        - cpd/cpd4.qmd
-        - cpd/cpd5.qmd
-        - cpd/cpd6.qmd
-        - cpd/cpd7.qmd
+        - cpd1.qmd
+        - cpd2.qmd
+        - cpd3.qmd
+        - cpd4.qmd
+        - cpd5.qmd
+        - cpd6.qmd
+        - cpd7.qmd
 
   page-footer:
-    center: "Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2026"
+    center: "Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2025"
 
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+suppress-bibliography: true
 
 format:
   html:
