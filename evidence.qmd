@@ -1,0 +1,74 @@
+---
+title: "Evidence"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Teaching evaluations
+
+**BIOL340 — Cell and Molecular Biology, Autumn 2024** 
+
+Subject evaluation report: [Download PDF](files/Biol340_subject_2024.pdf)
+
+Additional Personalised question results:[Download PDF](files/personalised_question_biol340_2024.pdf)
+
+
+**BIOL340 — Cell and Molecular Biology, Autumn 2025** 
+
+Teacher evaluation report: [Download PDF](files/biol340_2025.pdf)
+
+Subject evaluation report: [Download PDF](files/biol340_2025.pdf)
+
+Additional Personalised question results:[Download PDF](files/personalised_question_biol340_2025.pdf)
+
+
+---
+**BIOL215 / BIOL984 / CHEM325 — Spring 2024** 
+
+Subject evaluation CHEM325 2024 [Download PDF](files/Chem325_subject_2024)
+
+**BIOL215 / BIOL984 / CHEM325 — Spring 2025** 
+Subject evaluation CHEM325 2024 [Download PDF](files/Chem325_subject_2025)
+Teacher evaluation report: [Download PDF](files/chem325_2025.pdf)
+
+
+------------------------------------------------------------------------
+
+## Presentations
+
+**ACSME 2025** [Download PDF](files/ACSME%202025.pdf)
+
+Enhancing scientific writing education through the integration of AI.
+Delivered at the e Australian Conference on Science and Mathematics
+Education 2025.
+
+**SMAH learning and teaching forum 2024** [Download PDF](files/L_T_forum%202024)
+
+Course redesign of Biol340 to incorporate multi-stage assessments and AI
+education
+
+**SMAH learning and teaching forum 2025** [Download PDF](files/L_T_2025_ai_risk)
+
+Introduction of the Generative AI risk matrix for rapidly assessment
+triage and redesign
+
+**Early Career Researcher Conference 2025** [Download PDF](files/AI_research_UOWEMCR.pdf)
+
+Invited presentation on generative AI in research and teaching
+
+**Molecular Horizons EMCR AI workshop 2025** [Download PDF](files/AI_enhance_teaching_MH.pdf)
+
+Invited presentation on using AI to enhance and accelerate teaching,
+writing and research.
+
+------------------------------------------------------------------------
+
+## Additional teaching resources
+
+**In class pre-lab for BIOL340**
+Showing scaffolded assessments and how they link to learning opportunities across the subject [Download PDF](files/In_class_prelab_WL1.pdf)
+
+**Gen AI risk index handout**
+
+A worksheet created by the SSCI AI working group for use during the Sydney Basin STEM Symposium 2025 [Download PDF](Risk Matrix for circulation.pdf)

@@ -2,21 +2,23 @@
 title: "Qualifier 3: Support Students in Their Choice and Navigation of Formal and Informal Learning Pathways"
 ---
 
-<div class="qualifier-badge">Qualifier 3 · Learning Pathways</div>
+::: qualifier-badge
+Qualifier 3 · Learning Pathways
+:::
 
 I actively support students in navigating both formal and informal learning pathways by making learning processes explicit and providing structured opportunities for choice, progression, and self-directed development. A central principle of my curriculum design is that students should not only develop disciplinary knowledge, but should develop the ability to navigate their own learning — into the subject, through the degree, and into professional practice.
 
 This is reflected in three interconnected dimensions: **transition into the curriculum**, **navigation through the course**, and **preparation for the workforce**.
 
----
+------------------------------------------------------------------------
 
 ## Transition Into and Through the Curriculum
 
 Within BIOL340, transition into the curriculum is supported through:
 
-- Clearly scaffolded practical sequences
-- Curated learning resources (step-by-step guides, annotated code, and exemplar outputs)
-- Flexible entry points that allow students to engage with material at an appropriate level of complexity
+-   Clearly scaffolded practical sequences
+-   Curated learning resources (step-by-step guides, annotated code, and exemplar outputs)
+-   Flexible entry points that allow students to engage with material at an appropriate level of complexity
 
 Recognising that many students arrive with limited experience in computational biology, the early weeks of BIOL340 are designed explicitly to support the transition from the more familiar laboratory science of BIOL215 into data-intensive analytical work. I normalise this transition in my teaching language and task design, framing the challenge of learning new tools as an expected and manageable part of becoming a biologist.
 
@@ -26,7 +28,9 @@ Students are encouraged to move between **formal learning environments** (schedu
 
 A key strategy is the integration of staged assessment and reflective tasks, which support students in understanding not only *what* they are learning, but *how* they are learning. The transition from a structured scientific report to a **generative AI reflection task** requires students to evaluate their own learning processes, tool use, and decision-making — promoting **metacognitive awareness** and helping students navigate increasingly independent learning contexts.
 
----
+> *"They \[the BIOL340 wet and dry practicals\] worked very well together and had a good flow between them. They built knowledge from a more simple to a more complex level, and aligned well with the content presented in similar weeks." —* BIOL340 student 2025.
+
+------------------------------------------------------------------------
 
 ## Preparation for the Workforce
 
@@ -36,12 +40,12 @@ My curriculum redesign is premised on this reality: that preparing students for 
 
 This framing is reflected in student feedback. In response to the personalised survey question *"This subject has made me feel equipped to work in the field of Cell and Molecular Biology,"* students in BIOL340 returned:
 
-- Mean score: **4.75/6.0**
-- **80%** agreeing or strongly agreeing
+-   Mean score: **4.75/6.0**
+-   **80%** agreeing or strongly agreeing
 
-Qualitative responses further reinforce this connection — students noted that computational activities were valuable because *"it is what we will be using in the industry"* and that the subject reflected *"current techniques."*
+Qualitative responses further reinforce this connection — students noted in response to "*Were these computer activities valuable and would you like to see more of this kind of learning in the future"* that computational activities were valuable because *"it is what we will be using in the industry"* and that the subject reflected *"current techniques."*
 
----
+------------------------------------------------------------------------
 
 ## Theoretical Underpinning
 
@@ -55,6 +59,6 @@ The custom-built teaching website I have developed provides modular code blocks,
 **Evidence:** BIOL340 pre- and post-dry-practical surveys and student evaluation reports are available in the evidence folder. See also the [BIOL340 teaching website](https://nikolasjohnston.github.io/BIOL340_DP/pages/DP1).
 :::
 
----
+------------------------------------------------------------------------
 
 **Previous:** [Qualifier 2 — Inclusive Learning](cpd2.html) · **Next:** [Qualifier 4 — Scaffolded Assessment](cpd4.html)

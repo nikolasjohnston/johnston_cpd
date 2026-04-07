@@ -11,7 +11,7 @@ toc: false
     <h1>Dr Nikolas Johnston</h1>
     <div class="subtitle"><strong>Lecturer in Bioinformatics</strong></div>
     <div class="subtitle">School of Chemistry and Molecular Bioscience · Faculty of Science, Medicine and Health · University of Wollongong</div>
-    <div class="meta">CPD Level 2 Portfolio · 2025</div>
+    <div class="meta">CPD Level 2 Portfolio · 2026</div>
   </div>
   <div class="hero-photo">
     <img src="images/headshot.jpg" alt="Dr Nikolas Johnston" />
@@ -29,7 +29,9 @@ Use the navigation above to explore each section, or browse the qualifiers below
 
 ## Statement of Context
 
-I am a Lecturer in Bioinformatics in the School of Chemistry and Molecular Bioscience (SCMB), Faculty of Science, Medicine and Health (SMAH), at the University of Wollongong. My teaching is shaped by my disciplinary background at the interface of biological research and computational science. My work in data-intensive biology — including genomics, molecular entomology, and bioinformatics — has centred on analysing and interpreting complex datasets. This experience informs my understanding of what constitutes meaningful learning in contemporary biology, where data-intensive approaches, computational thinking, and digital tools are integral to both research and industry practice.
+Since 2024 I have been a Lecturer in Bioinformatics in the School of Chemistry and Molecular Bioscience (SCMB), Faculty of Science, Medicine and Health (SMAH), at the University of Wollongong. My teaching career began at UOW as a laboratory demonstrator and tutor across eight undergraduate biology subjects (2017–2019), before I secured guest lecture opportunities and a fixed-term teaching contract in biotechnology, bioinformatics, and molecular biology (2019–2021). I then completed two postdoctoral research fellowships in bioinformatics — first at Nicolaus Copernicus University in Poland, then at the University of Technology, Sydney (2021–2023) — deepening the research expertise that now underpins my teaching practice before returning to UOW in my current role.
+
+My teaching is shaped by an interdisciplinary background at the interface of biological research and computational science. My work in data-intensive biology — spanning genomics, molecular entomology, and bioinformatics — has centred on analysing and interpreting complex datasets in real research contexts. This experience directly informs my understanding of what constitutes meaningful learning in contemporary biology, where computational thinking, digital tools, and data-intensive approaches are not peripheral additions to the curriculum but central to how biological knowledge is now produced and applied in both research and industry.
 
 The context in which I teach is defined by a shift toward data-driven biology, where computational approaches underpin research across subdisciplines. Graduates are expected to engage critically with data, apply analytical tools appropriately, and communicate findings clearly. At the same time, many students enter biology with limited experience or confidence in quantitative and computational skills, creating a need for structured, supportive learning environments that enable skill development while maintaining disciplinary rigour.
 
@@ -86,3 +88,21 @@ In response, my teaching integrates opportunities for students to work with real
 
 </div>
 ```
+
+------------------------------------------------------------------------
+
+## Relevant Policy and Reference Documents
+
+Policy documents referred to during the creation of the ePortfolio are available here:
+
+1.  [UOW Standards and Quality Framework for Learning, Teaching and Research Training](https://documents.uow.edu.au/content/groups/public/@web/@gov/documents/doc/uow276748.pdf)
+
+2.  [UOW Subject Delivery Policy](https://policies.uow.edu.au/download.php?id=39&version=3)
+
+3.  [UOW Code of Practice - Learning and Teaching](Code of Practice - Learning and Teaching)
+
+4.  [UOW Assessment and Feedback Policy](Assessment and Feedback Policy)
+
+5.  [TEQSA Enacting assessment reform in a time of artificial intelligence](https://www.teqsa.gov.au/sites/default/files/2025-09/enacting-assessment-reform-in-a-time-of-artificial-intelligence.pdf)
+
+6.  [TEQSA Gen AI strategies for Australian higher education: Emerging practice](https://www.teqsa.gov.au/sites/default/files/2024-11/Gen-AI-strategies-emerging-practice-toolkit.pdf)\

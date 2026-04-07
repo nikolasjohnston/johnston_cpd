@@ -2,37 +2,27 @@
 title: "Qualifier 6: Evaluate Teaching Practice, Support Teaching Teams, and Engage in Continuing Professional Development"
 ---
 
-<div class="qualifier-badge">Qualifier 6 · Evaluation & CPD</div>
+::: qualifier-badge
+Qualifier 6 · Evaluation & CPD
+:::
 
 I actively use evaluation data to reflect on and improve my teaching practice, and I contribute to the professional development of teaching teams within my school. My approach to evaluation is informed by a commitment to evidence-based reflection, where student feedback, peer input, and personal experience collectively shape iterative improvements to my teaching.
 
----
+------------------------------------------------------------------------
 
 ## Engaging with Student Evaluation Data
 
 I regularly review and reflect on Teaching Evaluation (TEBS) data across the subjects I teach.
 
-**BIOL340 (Autumn 2025)**
+Combined evaluation data has consistently demonstrated strong performance, with an overall mean of **5.45/6.0** for 2025.
 
-| Dimension | Score (out of 6.0) |
-|---|---|
-| Overall lecturer mean | 5.44 (n = 33) |
-| Subject knowledge | 5.64 |
-| Clarity of language | 5.58 |
-| Treating students fairly and with respect | 5.64 |
-| Being well prepared | 5.55 |
+I engage critically with areas where evaluation data identifies opportunities for improvement. For example, feedback relating to timeliness of feedback and clarity of assessment expectations (approximately 5.17–5.27/6.0 in BIOL340) has informed specific changes to my practice, including the introduction of formative checkpoints, clearer marking criteria, restructured feedback workflows and a dedicated consulation meeting tool which facilitates students booking one-on-one meetings with me.
 
-**CHEM325/BIOL984 (Bioinformatics)**
+Qualitative feedback from students has also shaped my teaching: students have noted the value of interactive elements, the clarity of structured explanations, and the supportive learning environment, while also identifying areas where communication about assessment requirements could be strengthened. I use this feedback as a direct input into subject redesign and teaching refinement.
 
-Combined evaluation data has consistently demonstrated strong performance, with an overall mean of **5.45/6.0**.
+*\[Figure 8: Longitudinal evaluation data showing trends across BIOL340 and CHEM325/BIOL984 — see evaluation reports in the evidence folder.\]*
 
-I engage critically with areas where evaluation data identifies opportunities for improvement. For example, feedback relating to timeliness of feedback and clarity of assessment expectations (approximately 5.17–5.27/6.0 in BIOL340) has informed specific changes to my practice, including the introduction of formative checkpoints, clearer marking criteria, and restructured feedback workflows.
-
-Qualitative feedback from students has also shaped my teaching: students have noted the value of interactive elements such as Slido and live polling, the clarity of structured explanations, and the supportive learning environment, while also identifying areas where communication about assessment requirements could be strengthened. I use this feedback as a direct input into subject redesign and teaching refinement.
-
-*[Figure 8: Longitudinal evaluation data showing trends across BIOL340 and CHEM325/BIOL984 — see evaluation reports in the evidence folder.]*
-
----
+------------------------------------------------------------------------
 
 ## Supporting and Mentoring Teaching Teams
 
@@ -40,19 +30,19 @@ As Subject Coordinator for BIOL340, I am responsible for coordinating and suppor
 
 I support team coherence through several mechanisms:
 
-- **Pre-lab orientation materials** — Prior to each practical session, I prepare and share detailed materials that set out the learning objectives, expected student background, and key technical and pedagogical points. These ensure all teaching staff can orient students consistently and address questions with confidence.
-- **Pre-session briefings** — I hold briefings with the teaching team to discuss session goals, anticipated student challenges, and any adjustments to materials based on feedback from previous cohorts.
-- **Peer mentoring** — I work alongside colleagues to share pedagogical strategies — for example, discussing how the scaffolded practical structure supports students with limited computational experience, or how the block-based coding activities can be facilitated to maximise engagement.
+-   **Pre-lab orientation materials** — Prior to each practical session, I prepare and share detailed materials that set out the learning objectives, expected student background, and key technical and pedagogical points. These ensure all teaching staff can orient students consistently and address questions with confidence.
+-   **Pre-session briefings** — I hold briefings with the teaching team to discuss session goals, anticipated student challenges, and any adjustments to materials based on feedback from previous cohorts.
+-   **Peer mentoring** — I work alongside colleagues to share pedagogical strategies — for example, discussing how the scaffolded practical structure supports students with limited computational experience, or how the block-based coding activities can be facilitated to maximise engagement.
 
----
+------------------------------------------------------------------------
 
 ## Supporting Colleagues Through the SSCI AI Working Group
 
 I contribute to supporting colleagues through my active role in the **SSCI AI Working Group**, where I have helped establish school-wide guidelines for teaching with AI and designing resilient assessments. This work has involved leading workshops and delivering presentations to academic staff across the School of Science, sharing both conceptual frameworks and practical tools developed through my scholarship. Specific contributions include:
 
-- Presenting the **GARI (Generative AI Risk Index)** framework to school colleagues, providing a shared language and structured approach for evaluating and mitigating AI-related risks in assessment design.
-- Co-developing guidelines for the ethical and pedagogically sound integration of generative AI into teaching and assessment across the school.
-- Delivering workshops on AI in research and teaching contexts, supporting colleagues in developing their own approaches to AI-responsive pedagogy.
+-   Presenting the **GARI (Generative AI Risk Index)** framework to school colleagues, providing a shared language and structured approach for evaluating and mitigating AI-related risks in assessment design.
+-   Co-developing guidelines for the ethical and pedagogically sound integration of generative AI into teaching and assessment across the school.
+-   Delivering workshops on AI in research and teaching contexts, supporting colleagues in developing their own approaches to AI-responsive pedagogy.
 
 ### Concrete Impact: GARI Pilot Consultation
 
@@ -64,19 +54,19 @@ By implementing these two targeted adjustments, the coordinator was able to redu
 **Evidence:** SSCI AI Working Group presentation materials, TEBS evaluation reports, and CPD records are available in the evidence folder.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Engaging in Continuing Professional Development
 
 My engagement in CPD is driven by a recognition that effective teaching requires ongoing learning and adaptation. I have pursued professional development through multiple pathways:
 
-- Engagement with teaching and learning scholarship (detailed in [Qualifier 5](cpd5.html))
-- Attendance at institutional and external conferences
-- Collaborative work with colleagues on curriculum and assessment innovation
-- Sustained involvement in the SSCI AI Working Group
+-   Engagement with teaching and learning scholarship (detailed in [Qualifier 5](cpd5.html))
+-   Attendance at institutional and external conferences
+-   Collaborative work with colleagues on curriculum and assessment innovation
+-   Sustained involvement in the SSCI AI Working Group
 
 I view this portfolio as itself an exercise in reflective professional development — an opportunity to critically evaluate my teaching in relation to the CPD framework and identify areas for ongoing growth. Feedback from students, evaluation data, and the experience of scholarly engagement continue to shape my development as an educator.
 
----
+------------------------------------------------------------------------
 
 **Previous:** [Qualifier 5 — Scholarship of T&L](cpd5.html) · **Next:** [Qualifier 7 — Professional Practice](cpd7.html)

@@ -2,24 +2,26 @@
 title: "Qualifier 7: Develop Effective, Resilient Professional Practices That Enhance Course Management"
 ---
 
-<div class="qualifier-badge">Qualifier 7 · Professional Practice</div>
+::: qualifier-badge
+Qualifier 7 · Professional Practice
+:::
 
 My professional practice is characterised by a systematic and responsive approach to course management, underpinned by a commitment to continuous improvement, effective organisation, and adaptability in the face of evolving disciplinary and institutional demands.
 
----
+------------------------------------------------------------------------
 
 ## Subject Coordination and Course Management
 
 As Subject Coordinator for **BIOL340** (Cell and Molecular Biology), I am responsible for the overall design, delivery, and administration of the subject, including:
 
-- Coordination of a multi-member teaching team
-- Management of practical sessions across wet and dry labs
-- Alignment of assessment with learning outcomes
-- Communication with students
+-   Coordination of a multi-member teaching team
+-   Management of practical sessions across wet and dry labs
+-   Alignment of assessment with learning outcomes
+-   Communication with students
 
-The teaching team I coordinate comprises three academic staff with distinct disciplinary specialisations — **Dr Jody Gorman**, **Professor Lezanne Ooi**, and **Dr Dzung Do-Ha** — as well as a Technical Officer, **Dr Mitchell St Claire-Glover**, who supports practical session delivery. Managing this team requires clear communication, proactive organisation, and the creation of shared materials and frameworks that enable each member to contribute effectively while maintaining a coherent student experience.
+The teaching team I coordinate comprises three academic staff with distinct disciplinary specialisations as well as a Technical Officer, who supports practical session delivery. Managing this team requires clear communication, proactive organisation, and the creation of shared materials and frameworks that enable each member to contribute effectively while maintaining a coherent student experience.
 
-I also teach into **CHEM325/BIOL984** (Bioinformatics) and **BIOL215**, contributing to the coordination and delivery of subjects across both undergraduate and postgraduate levels.
+I also teach into **CHEM325/BIOL984** (Bioinformatics) where I have previously served as a coordinator and **BIOL215**, contributing to the coordination and delivery of subjects across both undergraduate and postgraduate levels.
 
 ### Practical Demands of Coordination
 
@@ -29,37 +31,37 @@ BIOL340 involves a parallel sequence of wet and dry practical sessions, each req
 
 The substantial redesign of BIOL340 that I have led — transitioning from a quiz-only assessment model to a scaffolded, multi-stage structure incorporating wet labs, dry labs, peer review, scientific writing, and generative AI reflection — demonstrates my capacity to manage complex curriculum change while maintaining subject coherence and quality. This redesign required coordinating across multiple teaching and technical staff, developing new practical materials, and ensuring alignment with institutional standards and quality frameworks.
 
----
+------------------------------------------------------------------------
 
 ## Development of Teaching Resources and Infrastructure
 
 I have invested significantly in developing **sustainable teaching resources** that support both students and colleagues:
 
-- **Custom-built teaching website** for BIOL340, featuring modular code blocks, annotated workflows, and step-by-step guides that students can access independently
-- **Quarto-based practical materials** and annotated datasets designed to be reusable and adaptable across teaching sessions
-- **Pre- and post-surveys** to evaluate the impact of teaching innovations (such as the introduction of dry practicals), providing a structured mechanism for evidence-based reflection and continuous improvement
+-   **Custom-built teaching website** for BIOL340, featuring modular code blocks, annotated workflows, and step-by-step guides that students can access independently
+-   **Quarto-based practical materials** and annotated datasets designed to be reusable and adaptable across teaching sessions
+-   **Pre- and post-surveys** to evaluate the impact of teaching innovations (such as the introduction of dry practicals), providing a structured mechanism for evidence-based reflection and continuous improvement
 
 These resources reduce reliance on ad hoc instruction, improve consistency across teaching sessions, and support the scalability of teaching innovations — reflecting a professional approach to course management that prioritises sustainability and quality.
 
----
+------------------------------------------------------------------------
 
 ## Resilience and Adaptability
 
 A defining feature of my professional practice has been my capacity to respond constructively to significant changes in the higher education landscape, particularly the emergence of **generative AI**. Rather than viewing AI as a threat to assessment integrity alone, I have engaged proactively with the challenge:
 
-- Developing new assessment models that embed AI literacy
-- Contributing to school-wide policy through the SSCI AI Working Group
-- Sharing practical strategies with colleagues through workshops and presentations
+-   Developing new assessment models that embed AI literacy
+-   Contributing to school-wide policy through the SSCI AI Working Group
+-   Sharing practical strategies with colleagues through workshops and presentations
 
 This proactive, solutions-oriented approach reflects professional resilience and a commitment to turning disruption into opportunity for pedagogical improvement.
 
----
+------------------------------------------------------------------------
 
 ## Balancing Teaching and Research
 
 I also balance my teaching responsibilities with an active research program in **molecular entomology and bioinformatics**, maintaining a research laboratory group while contributing to teaching innovation. This dual engagement ensures that my teaching remains informed by current disciplinary practice and that my professional practice is grounded in both scholarly and practical expertise.
 
----
+------------------------------------------------------------------------
 
 ## Summary
 
@@ -69,6 +71,6 @@ My professional practice is characterised by effective organisation, a commitmen
 **Evidence:** Teaching coordination materials, teaching website, and pre/post survey instruments are available in the evidence folder.
 :::
 
----
+------------------------------------------------------------------------
 
 **Previous:** [Qualifier 6 — Evaluation & CPD](cpd6.html) · **Back to:** [Home](index.html)

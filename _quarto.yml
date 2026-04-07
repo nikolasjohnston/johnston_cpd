@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "CPD Level 2 ePortfolio"
+  title: "N. Johnston CPD ePortfolio"
   description: "Continuing Professional Development — Learning & Teaching Portfolio"
 
 
@@ -33,22 +33,34 @@ website:
             text: "7. Professional Practice"
       - href: references.qmd
         text: References
+      - href: evidence.qmd
+        text: "Evidence Library"
+
 
   sidebar:
     - title: "CPD Qualifiers"
       style: "docked"
       background: light
       contents:
-        - cpd1.qmd
-        - cpd2.qmd
-        - cpd3.qmd
-        - cpd4.qmd
-        - cpd5.qmd
-        - cpd6.qmd
-        - cpd7.qmd
+          - href: teaching-philosophy.qmd
+            text: Teaching Philosophy
+          - href: cpd1.qmd
+            text: "1. Curriculum Design"
+          - href: cpd2.qmd
+            text: "2. Inclusive Learning"
+          - href: cpd3.qmd
+            text: "3. Learning Pathways"
+          - href: cpd4.qmd
+            text: "4. Scaffolded Assessment"
+          - href: cpd5.qmd
+            text: "5. Scholarship of T&L"
+          - href: cpd6.qmd
+            text: "6. Evaluation & CPD"
+          - href: cpd7.qmd
+            text: "7. Professional Practice"
 
   page-footer:
-    center: "Dr Nikolas Johnston · School of Chemistry and Molecular Bioscience · University of Wollongong · 2025"
+    center: "Dr Nikolas Johnston · School of Science · University of Wollongong · 2026"
 
 bibliography: references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
@@ -68,7 +80,7 @@ format:
     link-external-newpage: true
     bibliography: references.bib
     csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
-    suppress-bibliography: true
+    suppress-bibliography: false
 
 execute:
   freeze: auto

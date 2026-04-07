@@ -2,29 +2,134 @@
 title: "Qualifier 2: Facilitate a Wide Variety of Inclusive Learning Experiences for Students"
 ---
 
-<div class="qualifier-badge">Qualifier 2 · Inclusive Learning</div>
+::: qualifier-badge
+Qualifier 2 · Inclusive Learning
+:::
 
-My approach to teaching and supporting student learning is centred on clarity, accessibility, and active engagement — particularly in areas that students often perceive as difficult or unfamiliar, such as bioinformatics and computational data analysis. I recognise that many biology students experience anxiety when encountering quantitative or coding-based content, and I deliberately structure my teaching to reduce these barriers while maintaining academic rigour.
+My approach to teaching and supporting student learning is centred on clarity, accessibility, and active engagement — particularly in areas that students often perceive as difficult or unfamiliar, such as bioinformatics and computational data analysis. I recognise that many biology students experience anxiety when encountering quantitative or coding-based content, and I deliberately structure my teaching to reduce these barriers while maintaining high-quailty teaching.
 
----
+------------------------------------------------------------------------
 
 ## Clear, Structured Explanations Linked to Biological Meaning
 
-A key feature of my teaching is the use of **clear, structured explanations supported by real-world examples**. I aim to break down complex concepts into manageable components, while consistently linking each step back to the underlying biological question. This approach is particularly important in BIOL340, where students transition from experimental data generation to computational analysis.
+A key feature of my teaching is the use of **clear, structured explanations supported by real-world examples** in both lectures and practical classes. I aim to break down complex concepts into manageable components, while consistently linking each step back to the underlying biological question. This approach is particularly important in complex data driven subjects like CHEM320 and BIOL340, where students transition from experimental data generation to computational analysis.
 
 During teaching sessions, I explicitly walk through analytical workflows, explaining not only what to do, but *why* each step is necessary and how it contributes to scientific interpretation. This reflects the principles of **constructive alignment** [@biggs2011], where teaching activities are explicitly designed to support students in achieving intended learning outcomes.
 
 Student evaluation data consistently reflects the effectiveness of this approach. Across multiple subjects, I receive high scores for clarity of explanation, organisation, and subject knowledge (typically above **5.5/6.0**), with particularly strong performance in bioinformatics teaching contexts. Students frequently comment that concepts are easy to understand and that the structured delivery helps them engage with complex material.
 
-*[Figure 3: Student evaluation scores demonstrating high ratings for clarity, organisation, and explanation — see evaluation reports in the evidence folder.]*
+```{=html}
+<div style="padding: 1.5rem 0; max-width: 760px;">
 
----
+  <p style="font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 2px;">Figure 3</p>
+  <p style="font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px;">Student evaluation scores — clarity, organisation and explanation</p>
+  <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 1.25rem;">TEBS mean scores (out of 6) across three subjects and two semesters · Dr Nikolas Johnston · UOW</p>
+
+  <div style="position: relative; width: 100%; height: 320px; margin-bottom: 1rem;">
+    <canvas id="fig3"></canvas>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 1rem; font-size: 12px; color: var(--color-text-secondary);">
+    <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #1D9E75;"></span>BIOL340 (Autumn 2025, n=33)</span>
+    <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #534AB7;"></span>BIOL215 (Spring 2025, n=27)</span>
+    <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #D85A30;"></span>CHEM325 (Spring 2025, n=11)</span>
+    <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 3px; height: 12px; border-radius: 1px; background: #888780;"></span>Max score = 6.0</span>
+  </div>
+
+  <p style="font-size: 11px; color: var(--color-text-tertiary); margin: 0; line-height: 1.6;"><em>Note.</em> Scores represent TEBS item means on a 6-point scale (1 = Strongly Disagree, 6 = Strongly Agree). Items selected reflect clarity of communication, organisation and explanation of coursework and assessments. Full evaluation reports are held in the evidence folder. BIOL984 Spring 2025 excluded (response threshold not met).</p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+new Chart(document.getElementById('fig3'), {
+  type: 'bar',
+  data: {
+    labels: [
+      'Was well\nprepared',
+      'Was knowledgeable\nabout the subject',
+      'Spoke clearly',
+      'Clear explanations\non assessments',
+      'Connected theory\n& practice'
+    ],
+    datasets: [
+      {
+        label: 'BIOL340 (Autumn 2025)',
+        data: [5.55, 5.64, 5.58, 5.27, 5.39],
+        backgroundColor: '#1D9E75',
+        borderRadius: 3,
+        barPercentage: 0.75
+      },
+      {
+        label: 'BIOL215 (Spring 2025)',
+        data: [5.60, 5.72, 5.64, 5.70, 5.67],
+        backgroundColor: '#534AB7',
+        borderRadius: 3,
+        barPercentage: 0.75
+      },
+      {
+        label: 'CHEM325 (Spring 2025)',
+        data: [5.55, 5.64, 5.73, 5.64, 5.64],
+        backgroundColor: '#D85A30',
+        borderRadius: 3,
+        barPercentage: 0.75
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + ' / 6'
+        }
+      }
+    },
+    scales: {
+      y: {
+        min: 4.5,
+        max: 6,
+        ticks: {
+          stepSize: 0.5,
+          font: { size: 11 },
+          color: '#888780',
+          callback: v => v.toFixed(1)
+        },
+        grid: { color: 'rgba(136,135,128,0.15)' },
+        border: { display: false },
+        title: {
+          display: true,
+          text: 'Mean score (out of 6)',
+          font: { size: 11 },
+          color: '#888780'
+        }
+      },
+      x: {
+        ticks: { font: { size: 11 }, color: '#5F5E5A' },
+        grid: { display: false },
+        border: { display: false }
+      }
+    }
+  }
+});
+</script>
+```
+
+*Figure 3: Student evaluation scores demonstrating high ratings for clarity, organisation, and explanation — see evaluation reports in the evidence folder.*
+
+------------------------------------------------------------------------
 
 ## Active Support and Interactive Engagement
 
-Beyond clarity, I prioritise **active support and engagement during learning**. I adopt a highly interactive teaching style, regularly circulating during sessions, prompting discussion, and encouraging students to ask questions. I also integrate interactive tools such as **Slido** and **Mentimeter** into lectures, using live polls and questions to encourage participation, check understanding in real time, and engage students who may be less likely to contribute verbally. This approach supports a range of learning preferences and aligns with **Universal Design for Learning (UDL)** principles by providing multiple means of engagement and participation.
+Beyond clarity, I prioritise **active support and engagement during learning**. I adopt a highly interactive teaching style, regularly circulating during sessions, prompting discussion, and encouraging students to ask questions. I also integrate interactive tools such as **Slido** into lectures, using live polls and questions to encourage participation, check understanding in real time, and engage students who may be less likely to contribute verbally. This approach supports a range of learning preferences and aligns with **Universal Design for Learning (UDL)** principles by providing multiple means of engagement and participation.
 
----
+> "Their lectures were very engaging, very clear information presented with lots of visuals to match the written information provided. Also employed a lot of audience participation and example exam questions, which made the lectures even more engaging and helped me pinpoint which pieces of information I was less sure on." — BIOL340 student Autumn 2025
+>
+> "Loved how thorough he went through his topic and made it easy to understand. Very interactive which kept me focused." — CHEM325 student Spring 2025
+
+------------------------------------------------------------------------
 
 ## Separating Experimental and Analytical Components: Dedicated Dry Labs
 
@@ -32,7 +137,7 @@ A major development in my teaching practice has been the **intentional separatio
 
 This approach is informed by **cognitive load theory** [@sweller1988]: separating these components minimises extraneous cognitive load and allows students to focus on the underlying concepts and skills. It also creates space to explicitly teach data analysis as a core scientific capability, rather than treating it as an implicit component of laboratory work.
 
----
+------------------------------------------------------------------------
 
 ## Block-Based Learning Activities
 
@@ -40,7 +145,7 @@ In response to student feedback that aspects of coding were difficult to underst
 
 This approach aligns with both **cognitive load theory** (reducing unnecessary complexity) and **UDL principles** (incorporating visual and tactile modes of learning alongside traditional instruction).
 
-::: {layout-ncol=3}
+::: {layout-ncol="3"}
 ![Block-based coding activity — physical puzzle pieces.](images/image4.png){fig-alt="Physical block coding activity" width="100%"}
 
 ![Online interface with modular code blocks.](images/image5.png){fig-alt="Online block-based interface" width="100%"}
@@ -52,7 +157,7 @@ This approach aligns with both **cognitive load theory** (reducing unnecessary c
 
 This approach is reinforced through a custom-built teaching website, where code is presented in modular "blocks" that students can copy and use directly in their analyses. Together, these strategies emphasise that the key learning outcome is understanding the purpose and function of each step, rather than memorising or reproducing code — supporting a diverse student cohort by accommodating different levels of prior experience and preferred learning styles.
 
----
+------------------------------------------------------------------------
 
 ## Inclusive and Psychologically Safe Learning Environments
 
@@ -62,11 +167,9 @@ Student evaluation scores for respect, approachability, and encouragement of par
 
 **CHEM325 (2024)**
 
-![Student evaluation scores — CHEM325 2024.](images/image7.png){fig-alt="CHEM325 2024 evaluation scores" width="100%"}
+![Student evaluations — CHEM325 2024.](images/image7.png){fig-alt="CHEM325 2024 evaluation scores" width="100%"}
 
-**BIOL215 (2025)**
-
-![Student evaluation scores — BIOL215 2025.](images/image8.png){fig-alt="BIOL215 2025 evaluation scores" width="100%"}
+![Student evaluations — BIOL215 2025.](images/image8.png){fig-alt="BIOL215 2025 evaluation scores" width="100%"}
 
 *Figure 5: Student evaluation scores and qualitative feedback highlighting supportive and engaging teaching environment.*
 
@@ -80,18 +183,6 @@ Selected student comments:
 >
 > — BIOL215 student, 2025
 
----
-
-## Collaborative and Structured Learning Formats
-
-I also employ a range of **structured and collaborative learning activities**, including think–pair–share discussions and guided problem-solving tasks within practical sessions. These ensure that students can engage with content in multiple ways, supporting diverse learning preferences and prior knowledge levels.
-
-The introduction of block-based thinking activities further supports inclusivity by translating abstract computational concepts into tangible, manipulable forms, allowing students to build understanding without being constrained by coding syntax — developed in direct response to student feedback indicating that traditional coding instruction was a barrier to engagement.
-
-::: {.callout-note appearance="simple"}
-**Evidence:** Pre- and post-dry-practical surveys and teaching evaluation reports are available in the evidence folder.
-:::
-
----
+------------------------------------------------------------------------
 
 **Previous:** [Qualifier 1 — Curriculum Design](cpd1.html) · **Next:** [Qualifier 3 — Learning Pathways](cpd3.html)
