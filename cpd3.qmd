@@ -47,17 +47,7 @@ Qualitative responses further reinforce this connection — students noted in re
 
 ------------------------------------------------------------------------
 
-## Theoretical Underpinning
-
-These approaches are informed by theories of student transition and **self-regulated learning** [@zimmerman2002], which emphasise the importance of scaffolding, feedback, and learner agency in developing independence.
-
-**Universal Design for Learning (UDL)** principles are embedded by offering multiple pathways for engagement and progression, ensuring that students with diverse backgrounds and prior experiences can successfully navigate the subject.
-
-The custom-built teaching website I have developed provides modular code blocks, worked examples, and extension materials that students can access independently — bridging structured teaching and self-directed learning outside scheduled sessions.
-
-::: {.callout-note appearance="simple"}
 **Evidence:** BIOL340 pre- and post-dry-practical surveys and student evaluation reports are available in the evidence folder. See also the [BIOL340 teaching website](https://nikolasjohnston.github.io/BIOL340_DP/pages/DP1).
-:::
 
 ------------------------------------------------------------------------
 

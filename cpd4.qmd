@@ -48,7 +48,7 @@ This approach aligns with the **UOW Standards and Quality Framework** (particula
 
 ## Student Evaluation Data
 
-Student evaluation data indicates strong performance in areas relating to clarity of assessment expectations, with mean scores typically above **5.5/6.0**, suggesting that students understand what is required and how their work will be evaluated.
+We asked students in Biol340 evaluation data indicates strong performance in areas relating to clarity of assessment expectations, with mean scores typically above **5.5/6.0**, suggesting that students understand what is required and how their work will be evaluated.
 
 ![Student evaluation scores relating to clarity of assessment expectations.](images/image9.png){fig-alt="Bar chart showing student evaluation scores for assessment clarity" width="100%"}
 

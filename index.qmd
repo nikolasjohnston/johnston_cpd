@@ -33,7 +33,7 @@ Since 2024 I have been a Lecturer in Bioinformatics in the School of Chemistry a
 
 My teaching is shaped by an interdisciplinary background at the interface of biological research and computational science. My work in data-intensive biology — spanning genomics, molecular entomology, and bioinformatics — has centred on analysing and interpreting complex datasets in real research contexts. This experience directly informs my understanding of what constitutes meaningful learning in contemporary biology, where computational thinking, digital tools, and data-intensive approaches are not peripheral additions to the curriculum but central to how biological knowledge is now produced and applied in both research and industry.
 
-The context in which I teach is defined by a shift toward data-driven biology, where computational approaches underpin research across subdisciplines. Graduates are expected to engage critically with data, apply analytical tools appropriately, and communicate findings clearly. At the same time, many students enter biology with limited experience or confidence in quantitative and computational skills, creating a need for structured, supportive learning environments that enable skill development while maintaining disciplinary rigour.
+The context in which I teach is defined by a shift toward data-driven biology, where the ability to use digital tools are essential skills. Graduates are expected to engage critically with data, apply analytical tools appropriately, and communicate findings clearly. At the same time, many students enter biology with limited experience or confidence in digital technologies and computational skills, creating a need for structured, supportive learning environments that enable skill development while maintaining disciplinary rigour.
 
 In response, my teaching integrates opportunities for students to work with real biological data, develop analytical skills, and engage with tools used in research and industry. Learning activities reflect authentic scientific practices and are embedded within the curriculum. I am Subject Coordinator for **BIOL340** (Cell and Molecular Biology), and teach into **CHEM325/BIOL984** (Bioinformatics: Genome, Genes and Biomolecules / Applied Bioinformatics) and **BIOL215**. More recently, the emergence of generative AI has further shaped this context, requiring approaches that support transparent, critical, and appropriate use of these technologies. My practice continues to evolve through reflection, feedback, and engagement with ongoing developments in both biology and higher education.
 
@@ -99,9 +99,9 @@ Policy documents referred to during the creation of the ePortfolio are available
 
 2.  [UOW Subject Delivery Policy](https://policies.uow.edu.au/download.php?id=39&version=3)
 
-3.  [UOW Code of Practice - Learning and Teaching](Code of Practice - Learning and Teaching)
+3.  [UOW Code of Practice - Learning and Teaching](Code%20of%20Practice%20-%20Learning%20and%20Teaching)
 
-4.  [UOW Assessment and Feedback Policy](Assessment and Feedback Policy)
+4.  [UOW Assessment and Feedback Policy](Assessment%20and%20Feedback%20Policy)
 
 5.  [TEQSA Enacting assessment reform in a time of artificial intelligence](https://www.teqsa.gov.au/sites/default/files/2025-09/enacting-assessment-reform-in-a-time-of-artificial-intelligence.pdf)
 
