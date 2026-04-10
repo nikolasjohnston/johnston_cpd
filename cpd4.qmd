@@ -58,8 +58,9 @@ Evaluation data highlights feedback as an area for continued development, partic
 
 -   Introducing **formative checkpoints** within practical sequences
 -   Providing **clear marking criteria and annotated exemplars**
+-   Refining email systems by utilising a subject and email and templates to more rapidly respond to student concerns.
+-   Doing weekly check-ins via a moodle embedded student FAQ discussion board.
 -   Increasing **in-class, verbal feedback** during practical sessions
--   Restructuring workflows to improve **feedback turnaround time**
 
 These changes mean that feedback is integrated throughout the learning process rather than occurring solely at the end.
 

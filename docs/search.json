@@ -110,7 +110,7 @@
     "href": "cpd3.html#preparation-for-the-workforce",
     "title": "Qualifier 3: Support Students in Their Choice and Navigation of Formal and Informal Learning Pathways",
     "section": "Preparation for the Workforce",
-    "text": "Preparation for the Workforce\nMy curriculum redesign explicitly frames computational and digital literacy as essential graduate skills. In dry lab discussions, I situate what students are learning within the context of employer and research expectations. Student feedback supports this framing: BIOL340 students scored a mean of 4.75/6.0 on feeling equipped to work in Cell and Molecular Biology, with qualitative responses noting that computational activities reflect current industry practice.\n\nEvidence: BIOL340 pre- and post-dry-practical surveys and student evaluation reports are available in the evidence folder. See also the BIOL340 teaching website.\n\nPrevious: Qualifier 2 — Inclusive Learning · Next: Qualifier 4 — Scaffolded Assessment",
+    "text": "Preparation for the Workforce\nMy curriculum redesign explicitly frames computational and digital literacy as essential graduate skills. In dry lab discussions, I situate what students are learning within the context of employer and research expectations. Student feedback supports this framing: BIOL340 students scored a mean of 4.75/6.0 on feeling equipped to work in Cell and Molecular Biology, with qualitative responses noting that computational activities reflect current industry practice.\n\nEvidence: Student evaluation reports are available in the evidence folder. See also the BIOL340 teaching website.\n\nPrevious: Qualifier 2 — Inclusive Learning · Next: Qualifier 4 — Scaffolded Assessment",
     "crumbs": [
       "Teaching Philosophy",
       "3. Learning Pathways"
@@ -165,7 +165,7 @@
     "href": "cpd4.html#responding-to-feedback",
     "title": "Qualifier 4: Design Scaffolded Assessments That Foster Progressive Learning",
     "section": "Responding to Feedback",
-    "text": "Responding to Feedback\nEvaluation data highlights feedback as an area for continued development, particularly in relation to timeliness and perceived usefulness (approximately 5.2–5.5/6.0). In response, I have implemented several changes:\n\nIntroducing formative checkpoints within practical sequences\nProviding clear marking criteria and annotated exemplars\nIncreasing in-class, verbal feedback during practical sessions\nRestructuring workflows to improve feedback turnaround time\n\nThese changes mean that feedback is integrated throughout the learning process rather than occurring solely at the end.\n\n\n\n\n\n\nEvidence: Assessment design documents, marking rubrics, and the L&T grant application are available in the evidence folder.",
+    "text": "Responding to Feedback\nEvaluation data highlights feedback as an area for continued development, particularly in relation to timeliness and perceived usefulness (approximately 5.2–5.5/6.0). In response, I have implemented several changes:\n\nIntroducing formative checkpoints within practical sequences\nProviding clear marking criteria and annotated exemplars\nRefining email systems by utilising a subject and email and templates to more rapidly respond to student concerns.\nDoing weekly check-ins via a moodle embedded student FAQ discussion board.\nIncreasing in-class, verbal feedback during practical sessions\n\nThese changes mean that feedback is integrated throughout the learning process rather than occurring solely at the end.\n\n\n\n\n\n\nEvidence: Assessment design documents, marking rubrics, and the L&T grant application are available in the evidence folder.",
     "crumbs": [
       "Teaching Philosophy",
       "4. Scaffolded Assessment"
@@ -375,17 +375,6 @@
     ]
   },
   {
-    "objectID": "cpd5.html#conference-presentations-and-dissemination",
-    "href": "cpd5.html#conference-presentations-and-dissemination",
-    "title": "Qualifier 5: Demonstrate Scholarship of Teaching and Learning",
-    "section": "Conference Presentations and Dissemination",
-    "text": "Conference Presentations and Dissemination",
-    "crumbs": [
-      "Teaching Philosophy",
-      "5. Scholarship of T&L"
-    ]
-  },
-  {
     "objectID": "cpd5.html#the-generative-ai-risk-index-gari-framework",
     "href": "cpd5.html#the-generative-ai-risk-index-gari-framework",
     "title": "Qualifier 5: Demonstrate Scholarship of Teaching and Learning",
@@ -397,8 +386,8 @@
     ]
   },
   {
-    "objectID": "cpd5.html#conference-presentations-and-dissemination-1",
-    "href": "cpd5.html#conference-presentations-and-dissemination-1",
+    "objectID": "cpd5.html#conference-presentations-and-dissemination",
+    "href": "cpd5.html#conference-presentations-and-dissemination",
     "title": "Qualifier 5: Demonstrate Scholarship of Teaching and Learning",
     "section": "Conference Presentations and Dissemination",
     "text": "Conference Presentations and Dissemination\nMy teaching scholarship has been presented at multiple forums:\n\nSMAH Learning and Teaching Forum\n\n2024: Presented the multi-stage assessment model developed in BIOL340 and plans on how generative AI tools would be utilised to improve how students learn coding tools and self-assess writing.\n2025: Presented “A Dimensional Risk Assessment of Generative AI in School of Science Assessments: A Framework for Transparent Evaluation”, sharing the GARI framework and its application.\n\n\n\nEarly Career Research Conference, UOW 2025\nDelivered a workshop on “How to Utilise Generative AI to Enhance Scientific Writing Education”, sharing practical applications of AI to improve tertiary science education workflows with colleagues across disciplines.\n\n\nAustralian Conference on Science and Mathematics Education (ACSME) 2025\nThis presentation argued that rather than treating generative AI as a threat to be avoided, it should be embedded as a teachable graduate skill. The core thesis was that the modern cell biology graduate requires not only practical skills, data analysis, and core content knowledge, but also competence in using GenAI ethically — and that assessment should model and assure this.\nThe presentation reported on the redesign of BIOL340 assessment and its outcomes for student learning, AI literacy, and assessment integrity, framing GenAI in assessment as a “wicked problem” requiring nuanced, pedagogically sound responses.\n\n\nSydney Basin STEM Education and Research Practice Symposium 2026\nPresented a workshop on assuring assessment integrity in the generative AI era, showcasing the Generative AI Risk Index (GARI) framework.",

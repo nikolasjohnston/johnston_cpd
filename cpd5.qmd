@@ -24,8 +24,6 @@ This project aims to investigate whether intervention (e.g., AI learning module)
 
 -----------------------------------------------------------------------
 
-## Conference Presentations and Dissemination
-
 ## The Generative AI Risk Index (GARI) Framework
 
 In collaboration with the School of Science (SSCI) AI Working Group, I co-developed a **four-dimensional risk assessment framework** for evaluating generative AI-related risks in higher education assessment.
@@ -44,6 +42,8 @@ I have also presented this framework at the university level through:
 -   **SSCI L&T planning days** — to guide assessment redesign at the school level
 -   **SMAH faculty L&T forum**
 -   **Sydney Basin STEM Education and Research Practice Symposium 2026** — as a workshop on Generative AI and assessment design, presented with collaborator Dr Jody Gorman
+
+<iframe src="files/ai_risk_excerpt.pdf#toolbar=1&navpanes=0" width="80%" height="500px" style="border: none;"></iframe> 
 
 ------------------------------------------------------------------------
 
