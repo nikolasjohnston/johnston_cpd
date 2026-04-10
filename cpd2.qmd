@@ -21,10 +21,6 @@ Student evaluation data consistently reflects the effectiveness of this approach
 ```{=html}
 <div style="padding: 1.5rem 0; max-width: 760px;">
 
-  <p style="font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 2px;">Figure 3</p>
-  <p style="font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px;">Student evaluation scores — clarity, organisation and explanation</p>
-  <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 1.25rem;">TEBS mean scores (out of 6) across three subjects and two semesters · Dr Nikolas Johnston · UOW</p>
-
   <div style="position: relative; width: 100%; height: 320px; margin-bottom: 1rem;">
     <canvas id="fig3"></canvas>
   </div>

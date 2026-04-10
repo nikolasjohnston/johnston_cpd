@@ -31,6 +31,12 @@ BIOL340 involves a parallel sequence of wet and dry practical sessions, each req
 
 The substantial redesign of BIOL340 that I have led — transitioning from a quiz-only assessment model to a scaffolded, multi-stage structure incorporating wet labs, dry labs, peer review, scientific writing, and generative AI reflection — demonstrates my capacity to manage complex curriculum change while maintaining subject coherence and quality. This redesign required coordinating across multiple teaching and technical staff, developing new practical materials, and ensuring alignment with institutional standards and quality frameworks.
 
+I am particularly proud of my technical support teams in Biol215 and Biol340 and have encouraged them to be co-developers of the practicals we deliver. These staff have used our innovations to enhance their own careers and professional practice and have been able to showcase their innovations, **most recently through the SMAH L&T forum (Displayed below)**. 
+
+
+<iframe src="images/TO_LT.pdf#toolbar=1&navpanes=0" width="80%" height="500px" style="border: none;"></iframe>
+
+
 ------------------------------------------------------------------------
 
 ## Development of Teaching Resources and Infrastructure
@@ -38,7 +44,7 @@ The substantial redesign of BIOL340 that I have led — transitioning from a qui
 I have invested significantly in developing **sustainable teaching resources** that support both students and colleagues:
 
 -   **Custom-built teaching website** for BIOL340, featuring modular code blocks, annotated workflows, and step-by-step guides that students can access independently
--   **Quarto-based practical materials** and annotated datasets designed to be reusable and adaptable across teaching sessions
+-   Annotated datasets designed to be reusable and adaptable across teaching sessions
 -   **Pre- and post-surveys** to evaluate the impact of teaching innovations (such as the introduction of dry practicals), providing a structured mechanism for evidence-based reflection and continuous improvement
 
 These resources reduce reliance on ad hoc instruction, improve consistency across teaching sessions, and support the scalability of teaching innovations — reflecting a professional approach to course management that prioritises sustainability and quality.

@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -40,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-29a098f7bcaa67dffc0e1032b87ab13d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2f53af821d17a5d79837931b3ef15073.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -228,10 +248,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#transition-into-and-through-the-curriculum" id="toc-transition-into-and-through-the-curriculum" class="nav-link active" data-scroll-target="#transition-into-and-through-the-curriculum">Transition Into and Through the Curriculum</a>
-  <ul class="collapse">
-  <li><a href="#formal-and-informal-pathways" id="toc-formal-and-informal-pathways" class="nav-link" data-scroll-target="#formal-and-informal-pathways">Formal and Informal Pathways</a></li>
-  </ul></li>
+  <li><a href="#transition-into-and-through-the-curriculum" id="toc-transition-into-and-through-the-curriculum" class="nav-link active" data-scroll-target="#transition-into-and-through-the-curriculum">Transition Into and Through the Curriculum</a></li>
+  <li><a href="#student-choice-and-informal-pathways" id="toc-student-choice-and-informal-pathways" class="nav-link" data-scroll-target="#student-choice-and-informal-pathways">Student Choice and Informal Pathways</a></li>
   <li><a href="#preparation-for-the-workforce" id="toc-preparation-for-the-workforce" class="nav-link" data-scroll-target="#preparation-for-the-workforce">Preparation for the Workforce</a></li>
   </ul>
 </nav>
@@ -262,46 +280,50 @@ ul.task-list li input[type="checkbox"] {
 <p>Qualifier 3 · Learning Pathways</p>
 </div>
 <p>I actively support students in navigating both formal and informal learning pathways by making learning processes explicit and providing structured opportunities for choice, progression, and self-directed development. A central principle of my curriculum design is that students should not only develop disciplinary knowledge, but should develop the ability to navigate their own learning — into the subject, through the degree, and into professional practice.</p>
-<p>This is reflected in three interconnected dimensions: <strong>transition into the curriculum</strong>, <strong>navigation through the course</strong>, and <strong>preparation for the workforce</strong>.</p>
 <hr>
 <section id="transition-into-and-through-the-curriculum" class="level2">
 <h2 class="anchored" data-anchor-id="transition-into-and-through-the-curriculum">Transition Into and Through the Curriculum</h2>
-<p>Within BIOL340, transition into the curriculum is supported through:</p>
-<ul>
-<li>Clearly scaffolded practical sequences</li>
-<li>Curated learning resources (step-by-step guides, annotated code, and exemplar outputs)</li>
-<li>Flexible entry points that allow students to engage with material at an appropriate level of complexity</li>
-</ul>
-<p>Recognising that many students arrive with limited experience in computational biology, the early weeks of BIOL340 are designed explicitly to support the transition from the more familiar laboratory science of BIOL215 into data-intensive analytical work. I normalise this transition in my teaching language and task design, framing the challenge of learning new tools as an expected and manageable part of becoming a biologist.</p>
-<section id="formal-and-informal-pathways" class="level3">
-<h3 class="anchored" data-anchor-id="formal-and-informal-pathways">Formal and Informal Pathways</h3>
-<p>Students are encouraged to move between <strong>formal learning environments</strong> (scheduled labs, workshops, and assessments) and <strong>informal pathways</strong>, such as independent practice, peer collaboration, and extension materials embedded within the subject’s Moodle site.</p>
-<p>A key strategy is the integration of staged assessment and reflective tasks, which support students in understanding not only <em>what</em> they are learning, but <em>how</em> they are learning. The transition from a structured scientific report to a <strong>generative AI reflection task</strong> requires students to evaluate their own learning processes, tool use, and decision-making — promoting <strong>metacognitive awareness</strong> and helping students navigate increasingly independent learning contexts.</p>
+<p>Many students arrive in BIOL340 from BIOL215 with strong laboratory foundations but limited experience in coding or data analysis. The early weeks bridge this gap through scaffolded practicals, curated resources, and flexible entry points designed to manage cognitive load <span class="citation" data-cites="sweller1988">Sweller (<a href="#ref-sweller1988" role="doc-biblioref">1988</a>)</span>] — introducing computational concepts incrementally so that new skills build on established disciplinary knowledge rather than competing with it. This scaffolded progression is embedded within a constructively aligned curriculum <span class="citation" data-cites="biggs2011">(<a href="#ref-biggs2011" role="doc-biblioref">Biggs &amp; Tang, 2011</a>)</span>, where learning activities, resources, and assessments are intentionally sequenced so that students can see a clear path from guided instruction to independent practice. I normalise this transition in my teaching language, framing new tools as an expected part of becoming a modern biologist. In lectures and dry lab discussions, I make connections across the degree explicit, highlighting how skills developed in BIOL340 transfer into CHEM325 and honours research, helping students navigate their formal pathway as a coherent trajectory.</p>
 <blockquote class="blockquote">
-<p><em>“They [the BIOL340 wet and dry practicals] worked very well together and had a good flow between them. They built knowledge from a more simple to a more complex level, and aligned well with the content presented in similar weeks.” —</em> BIOL340 student 2025.</p>
+<p><em>“They [the BIOL340 wet and dry practicals] worked very well together and had a good flow between them. They built knowledge from a more simple to a more complex level.”</em> — BIOL340 student, 2025.</p>
 </blockquote>
 <hr>
 </section>
+<section id="student-choice-and-informal-pathways" class="level2">
+<h2 class="anchored" data-anchor-id="student-choice-and-informal-pathways">Student Choice and Informal Pathways</h2>
+<p>Within this structured framework, I create deliberate space for student agency. In the data visualisation components, students are provided with coding examples but encouraged to make their own decisions about how to present their data, using generative AI to explore alternative approaches that they then evaluate and justify. This aligns with UDL’s emphasis on providing multiple means of action and expression <span class="citation" data-cites="cast2024UDL">(<a href="#ref-cast2024UDL" role="doc-biblioref">CAST, 2024</a>)</span> — students engage with the same learning outcomes through pathways that reflect their developing confidence and creativity, rather than following a single prescribed route.</p>
+<p>Beyond formal teaching, I have developed extension resources using Google NotebookLM, including podcasts and summary videos embedded in the Moodle site as informal learning tools. These provide multiple means of representation <span class="citation" data-cites="cast2024UDL">(<a href="#ref-cast2024UDL" role="doc-biblioref">CAST, 2024</a>)</span> allowing students to revisit concepts in formats that suit their learning preferences. Students are also encouraged to create their own study guides using similar tools, further developing their capacity for self-directed learning. The staged assessment structure supports this transition to independence: moving from a scientific report to a generative AI reflection task requires students to evaluate their own learning processes, promoting metacognitive awareness and reducing the cognitive demands of tackling both scientific communication and reflective thinking simultaneously (Sweller, 1988).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="images/example_refresher.mp4" class="img-fluid" style="width:100.0%" alt="Google notebookLM generated content refresher video" controls=""><a href="images/example_refresher.mp4">Video</a></video></p>
+<figcaption>Example lecture summary video</figcaption>
+</figure>
+</div>
+<hr>
 </section>
 <section id="preparation-for-the-workforce" class="level2">
 <h2 class="anchored" data-anchor-id="preparation-for-the-workforce">Preparation for the Workforce</h2>
-<p>A deliberate focus of my curriculum redesign in both BIOL340 and CHEM325 has been the explicit framing of <strong>computational and digital literacy as essential graduate skills</strong> for modern biologists. As biology becomes increasingly data-driven, graduates are expected to engage with real datasets, use analytical tools confidently, and communicate findings in ways that reflect contemporary scientific practice.</p>
-<p>My curriculum redesign is premised on this reality: that preparing students for the workforce requires embedding the tools, workflows, and ways of thinking they will encounter in research and industry roles.</p>
-<p>This framing is reflected in student feedback. In response to the personalised survey question <em>“This subject has made me feel equipped to work in the field of Cell and Molecular Biology,”</em> students in BIOL340 returned:</p>
-<ul>
-<li>Mean score: <strong>4.75/6.0</strong></li>
-<li><strong>80%</strong> agreeing or strongly agreeing</li>
-</ul>
-<p>Qualitative responses further reinforce this connection — students noted in response to “<em>Were these computer activities valuable and would you like to see more of this kind of learning in the future”</em> that computational activities were valuable because <em>“it is what we will be using in the industry”</em> and that the subject reflected <em>“current techniques.”</em></p>
+<p>My curriculum redesign explicitly frames computational and digital literacy as essential graduate skills. In dry lab discussions, I situate what students are learning within the context of employer and research expectations. Student feedback supports this framing: BIOL340 students scored a mean of 4.75/6.0 on feeling equipped to work in Cell and Molecular Biology, with qualitative responses noting that computational activities reflect current industry practice.</p>
 <hr>
 <p><strong>Evidence:</strong> BIOL340 pre- and post-dry-practical surveys and student evaluation reports are available in the evidence folder. See also the <a href="https://nikolasjohnston.github.io/BIOL340_DP/pages/DP1">BIOL340 teaching website</a>.</p>
 <hr>
 <p><strong>Previous:</strong> <a href="cpd2.html">Qualifier 2 — Inclusive Learning</a> · <strong>Next:</strong> <a href="cpd4.html">Qualifier 4 — Scaffolded Assessment</a></p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-biggs2011" class="csl-entry" role="listitem">
+Biggs, J., &amp; Tang, C. (2011). <em>Teaching for quality learning at university</em> (4th ed.). Open University Press.
+</div>
+<div id="ref-cast2024UDL" class="csl-entry" role="listitem">
+CAST. (2024). <em><span class="nocase">Universal Design for Learning Guidelines version 3.0</span></em>. <a href="https://udlguidelines.cast.org">https://udlguidelines.cast.org</a>
+</div>
+<div id="ref-sweller1988" class="csl-entry" role="listitem">
+Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science</em>, <em>12</em>(2), 257–285. <a href="https://doi.org/10.1016/0364-0213(88)90023-7">https://doi.org/10.1016/0364-0213(88)90023-7</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -44,14 +44,14 @@ I contribute to supporting colleagues through my active role in the **SSCI AI Wo
 -   Co-developing guidelines for the ethical and pedagogically sound integration of generative AI into teaching and assessment across the school.
 -   Delivering workshops on AI in research and teaching contexts, supporting colleagues in developing their own approaches to AI-responsive pedagogy.
 
-### Concrete Impact: GARI Pilot Consultation
+### Impact Example: GARI Pilot Consultation
 
 The practical impact of this mentoring is illustrated by one concrete example from the GARI pilot. Following a consultation arising from the working group's assessment review, one subject coordinator reflected on a high-risk assessment and recognised that two of the GARI framework's built-in mitigation strategies were applicable to their context: reducing the assessment's weighting (thereby reducing the incentive for AI misuse) and providing explicit, specific guidance to students about permissible AI use.
 
 By implementing these two targeted adjustments, the coordinator was able to reduce the assessment's composite risk classification from **"high"** to **"moderate"** — without requiring a full redesign. This outcome illustrates how the GARI framework functions not only as an analytical tool, but as a practical scaffold that supports educators in taking evidence-based, proportionate action.
 
 ::: {.callout-note appearance="simple"}
-**Evidence:** SSCI AI Working Group presentation materials, TEBS evaluation reports, and CPD records are available in the evidence folder.
+**Evidence:** SSCI AI Working Group presentation materials and evaluation reports are available in the evidence folder.
 :::
 
 ------------------------------------------------------------------------
@@ -64,8 +64,9 @@ My engagement in CPD is driven by a recognition that effective teaching requires
 -   Attendance at institutional and external conferences
 -   Collaborative work with colleagues on curriculum and assessment innovation
 -   Sustained involvement in the SSCI AI Working Group
+-   Completion of the 2024 UOW Early Career Academic Development Program
 
-I view this portfolio as itself an exercise in reflective professional development — an opportunity to critically evaluate my teaching in relation to the CPD framework and identify areas for ongoing growth. Feedback from students, evaluation data, and the experience of scholarly engagement continue to shape my development as an educator.
+Indeed the creation of this portfolio itself has been a valuable opportunity to critically evaluate my teaching in relation to the CPD framework and identify areas for ongoing growth. Feedback from students, evaluation data, and the experience of scholarly engagement continue to shape my development as an educator.
 
 ------------------------------------------------------------------------
 

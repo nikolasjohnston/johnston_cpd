@@ -46,6 +46,32 @@
 }
 
 // ── CPD card grid ─────────────────────────────────────────────────────────────
+
+.phil-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.phil-card {
+  border: 1px solid #e5e5e5;
+  border-top: 4px solid #EB6864;
+  border-radius: 3px;
+  padding: 1.2rem 1.3rem 1rem;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+  .phil-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0.3rem 0 0.5rem;
+    line-height: 1.35;
+    color: #EB6864;
+    text-align: center;
+
+    a { color: #333; text-decoration: none; }
+    a:hover { color: #EB6864; }
+  }
 .cpd-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));

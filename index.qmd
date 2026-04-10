@@ -19,7 +19,7 @@ toc: false
 </div>
 ```
 
-## Welcome
+# Welcome
 
 This ePortfolio documents my continuing professional development in learning and teaching at the University of Wollongong. It presents evidence of my practice across the seven CPD Level 2 qualifiers, grounded in my disciplinary context at the interface of biological research and computational science.
 
@@ -27,7 +27,7 @@ Use the navigation above to explore each section, or browse the qualifiers below
 
 ------------------------------------------------------------------------
 
-## Statement of Context
+# Statement of Context
 
 Since 2024 I have been a Lecturer in Bioinformatics in the School of Chemistry and Molecular Bioscience (SCMB), Faculty of Science, Medicine and Health (SMAH), at the University of Wollongong. My teaching career began at UOW as a laboratory demonstrator and tutor across eight undergraduate biology subjects (2017–2019), before I secured guest lecture opportunities and a fixed-term teaching contract in biotechnology, bioinformatics, and molecular biology (2019–2021). I then completed two postdoctoral research fellowships in bioinformatics — first at Nicolaus Copernicus University in Poland, then at the University of Technology, Sydney (2021–2023) — deepening the research expertise that now underpins my teaching practice before returning to UOW in my current role.
 
@@ -39,7 +39,17 @@ In response, my teaching integrates opportunities for students to work with real
 
 ------------------------------------------------------------------------
 
-## CPD Qualifiers
+```{=html}
+<div class="phil-grid">
+
+  <div class="phil-card">
+    <div class="phil-title"><a href="teaching-philosophy.html">View My Teaching Philosophy</a></div>
+```
+
+
+------------------------------------------------------------------------
+
+# CPD Qualifiers
 
 ```{=html}
 <div class="cpd-grid">
@@ -105,4 +115,6 @@ Policy documents referred to during the creation of the ePortfolio are available
 
 5.  [TEQSA Enacting assessment reform in a time of artificial intelligence](https://www.teqsa.gov.au/sites/default/files/2025-09/enacting-assessment-reform-in-a-time-of-artificial-intelligence.pdf)
 
-6.  [TEQSA Gen AI strategies for Australian higher education: Emerging practice](https://www.teqsa.gov.au/sites/default/files/2024-11/Gen-AI-strategies-emerging-practice-toolkit.pdf)\
+6.  [TEQSA Gen AI strategies for Australian higher education: Emerging practice](https://www.teqsa.gov.au/sites/default/files/2024-11/Gen-AI-strategies-emerging-practice-toolkit.pdf)
+
+7.  [CAST Universal Design for Learning Guidelines version 3.0.](https://udlguidelines.cast.org/)

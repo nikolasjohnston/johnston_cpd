@@ -12,7 +12,7 @@ My approach to assessment is grounded in the principle that assessment should bo
 
 ## Constructive Alignment
 
-Assessment design is guided by **constructive alignment** [@biggs2011], ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practised, and what is assessed.
+Assessment design is guided by **constructive alignment** [@biggs2011], ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practised, and what is assessed. Similar is explified in my resdesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class and their results that they build will form part of their scientific report assessment.
 
 ------------------------------------------------------------------------
 
@@ -30,19 +30,11 @@ This staged design serves several pedagogical purposes:
 
 3.  **Iterative feedback** — Creating opportunities for iterative feedback allows students to reflect on and improve their work across stages, rather than receiving feedback only at the end of the process.
 
-------------------------------------------------------------------------
+These assessment are delivered via a customized feedback fruits workflow. Feedback fruits is an online interactive digital platform that navigates the student through submitting their assessment, providing feedback guided by a rubric, and then reflecting on the feedback the recieve.
 
-## Alignment with UOW Frameworks
-
-This approach aligns with the **UOW Standards and Quality Framework** (particularly its integration of design, delivery, and performance) and maps directly onto the **UOW Assessment and Feedback Principles**:
-
-| Principle | How It Is Addressed |
-|------------------------------------|------------------------------------|
-| **Alignment** | Constructive alignment of assessment with learning outcomes and teaching activities |
-| **Authenticity** | Real datasets, peer review, and scientific report formats reflecting genuine research practice |
-| **Transparency** | Explicit marking criteria, annotated exemplars, and structured task descriptors |
-| **Feedback** | Formative checkpoints, in-class verbal feedback, and staged structure enabling action on feedback |
-| **Diversity & Inclusion** | UDL-informed design reducing barriers related to prior coding experience while maintaining high expectations |
+::: {.callout-note appearance="simple"}
+**Evidence:** Example Feedback fruit workflow. <iframe src="images/feedbackfruits.pdf" width="80%" height="500px" style="border: none;"></iframe>
+:::
 
 ------------------------------------------------------------------------
 
@@ -74,6 +66,40 @@ These changes mean that feedback is integrated throughout the learning process r
 ::: {.callout-note appearance="simple"}
 **Evidence:** Assessment design documents, marking rubrics, and the L&T grant application are available in the evidence folder.
 :::
+
+------------------------------------------------------------------------
+
+## Alignment with UOW Framework and Policy
+
+My teaching and curriculum development are grounded in UOW's **Standards and Quality Framework**, **Assessment and Feedback Policy**, **Subject Delivery Policy**, and **Code of Practice – Learning and Teaching**. I approach these not as compliance requirements but as a practical scaffold for design decisions, using them to ensure that my choices serve both institutional standards and genuine student learning. Examples of the alignment between my teaching practice and UOW's policy and educational frameworks are outlined below.
+
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Practice                                                                                              | Framework Alignment                                                                                                                                                                                        |
++=======================================================================================================+============================================================================================================================================================================================================+
+| **Constructive alignment of learning outcomes, activities, and assessment in BIOL340**                | *Assessment and Feedback Policy* 6: assessment tasks designed in accordance with Course Design Procedures and directly linked to subject and course learning outcomes.                                     |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Standards and Quality Framework* Design Standard 7.4: learning activities, resources, and assessment are aligned to enable effective achievement of learning outcomes.                                    |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Multi-stage assessment model (peer-reviewed scientific report → GenAI reflection task)**            | *Assessment and Feedback Policy* 17-20: supports the ethical, transparent, and critically engaged use of GenAI in assessment.                                                                              |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Standards and Quality Framework* Design Standard 10.1: criterion-based assessment appropriate to subject learning outcomes.                                                                               |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Explicit rubrics and detailed task descriptors**                                                    | *Assessment and Feedback Policy* 8: explicit performance standards set out in a rubric made available to students when the task is set.                                                                    |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Subject Delivery Policy*: assessment information consistent across all sources and communicated in the Subject Outline                                                                                    |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Formative checkpoints, in-class verbal feedback, and staged workflows enabling action on feedback** | *Assessment and Feedback Policy* 10-12: constructive and timely feedback; tasks scheduled to allow students to put feedback into practice.                                                                 |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Standards and Quality Framework* Delivery Standard 9.2: teaching staff provide helpful and timely feedback on performance                                                                                 |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **UDL-informed design scaffolding diverse prior experience in coding and quantitative analysis**      | *Assessment and Feedback Policy* 22: assessment tasks designed to be accessible and inclusive in accordance with UDL principles.                                                                           |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Standards and Quality Framework* Support Standard 9.2: UOW provides an inclusive teaching environment.                                                                                                    |
+|                                                                                                       |                                                                                                                                                                                                            |
+|                                                                                                       | *Code of Practice - Learning and Teaching 9 (teaching staff responsibilities)*: learning experiences offer variation and choice to support diverse cohorts and promote an inclusive learning environment.  |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Student evaluation data used iteratively to refine assessment design and feedback practice**        | *Standards and Quality Framework* Performance Standard 1: UOW collects and acts on student feedback to improve learning experience.                                                                        |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 

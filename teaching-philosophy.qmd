@@ -10,7 +10,7 @@ My teaching is grounded in the view that digital and computational literacy is e
 
 ## Embedding Computational Skills in Disciplinary Contexts
 
-I approach the teaching of computational skills by embedding them within disciplinary contexts rather than presenting them as abstract techniques. This reflects an interdisciplinary perspective that integrates biology with data science and supports students in applying knowledge across domains. It also recognises that confidence with quantitative and computational skills develops through supported, meaningful engagement [@bandura1997; @prince2004].
+I approach the teaching of computational skills by embedding them within disciplinary contexts rather than presenting them as abstract techniques. This reflects an interdisciplinary perspective that integrates biology with data science and supports students in applying knowledge across domains. It also recognises that confidence with quantitative and computational skills develops through supported, meaningful engagement.
 
 ## Active Participation and Authentic Learning
 
@@ -18,7 +18,7 @@ Active participation is a core principle of my teaching. I design learning exper
 
 ## Assessment and Feedback
 
-Assessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback [@boud2006; @nicol2006].
+Assessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.
 
 ## Inclusive Learning Environments
 

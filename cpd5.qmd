@@ -16,6 +16,16 @@ In 2024-2025 I was awarded a **UOW Learning and Teaching grant** to support the 
 
 ------------------------------------------------------------------------
 
+## UOW Early Career Researcher Grant 
+
+**How an AI Literacy Learning Module Shapes Students’ Understanding and Practices of Responsible Generative AI (GenAI) Use: A Qualitative Study** -- in progress (2026 -- 2027)
+
+This project aims to investigate whether intervention (e.g., AI learning module) will shape students’ ethical and responsible use of GenAI in learning. To do so, drawing upon the knowledge, attitudes and practices (KAP) framework, this study will examine students’ attitudinal and intentional change regarding GenAI use before and after an AI literacy learning module.
+
+-----------------------------------------------------------------------
+
+## Conference Presentations and Dissemination
+
 ## The Generative AI Risk Index (GARI) Framework
 
 In collaboration with the School of Science (SSCI) AI Working Group, I co-developed a **four-dimensional risk assessment framework** for evaluating generative AI-related risks in higher education assessment.
