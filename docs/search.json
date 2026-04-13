@@ -251,7 +251,7 @@
     "href": "teaching-philosophy.html#active-participation-and-authentic-learning",
     "title": "Teaching Philosophy",
     "section": "Active Participation and Authentic Learning",
-    "text": "Active Participation and Authentic Learning\nActive participation is a core principle of my teaching. I design learning experiences that mirror authentic scientific workflows, including data analysis, visualisation, interpretation, and writing. These are structured through constructive alignment, ensuring that learning outcomes, activities, and assessment are clearly connected (Biggs & Tang, 2011). ## Assessment and Feedback\nAssessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.",
+    "text": "Active Participation and Authentic Learning\nActive participation is a core principle of my teaching. I design learning experiences that mirror authentic scientific workflows, including data analysis, visualisation, interpretation, and writing. These are structured through constructive alignment, ensuring that learning outcomes, activities, and assessment are clearly connected (Biggs & Tang, 2011).",
     "crumbs": [
       "Teaching Philosophy"
     ]
@@ -292,7 +292,7 @@
     "href": "cpd6.html#engaging-with-student-evaluation-data",
     "title": "Qualifier 6: Evaluate Teaching Practice, Support Teaching Teams, and Engage in Continuing Professional Development",
     "section": "Engaging with Student Evaluation Data",
-    "text": "Engaging with Student Evaluation Data\nI regularly review and reflect on Teaching Evaluation (TEBS) data across the subjects I teach.\nCombined evaluation data has consistently demonstrated strong performance, with an overall mean of 5.45/6.0 for 2025.\nI engage critically with areas where evaluation data identifies opportunities for improvement. For example, feedback relating to timeliness of feedback and clarity of assessment expectations (approximately 5.17–5.27/6.0 in BIOL340) has informed specific changes to my practice, including the introduction of formative checkpoints, clearer marking criteria, restructured feedback workflows and a dedicated consulation meeting tool which facilitates students booking one-on-one meetings with me.\nQualitative feedback from students has also shaped my teaching: students have noted the value of interactive elements, the clarity of structured explanations, and the supportive learning environment, while also identifying areas where communication about assessment requirements could be strengthened. I use this feedback as a direct input into subject redesign and teaching refinement.\n[Figure 8: Longitudinal evaluation data showing trends across BIOL340 and CHEM325/BIOL984 — see evaluation reports in the evidence folder.]",
+    "text": "Engaging with Student Evaluation Data\nI regularly review and reflect on Teaching Evaluation (TEBS) data across the subjects I teach.\nCombined evaluation data has consistently demonstrated strong performance, with an overall mean of 5.45/6.0 for 2025.\nI engage critically with areas where evaluation data identifies opportunities for improvement. For example, feedback relating to timeliness of feedback and clarity of assessment expectations (approximately 5.17–5.27/6.0 in BIOL340) has informed specific changes to my practice, including the introduction of formative checkpoints, clearer marking criteria, restructured feedback workflows and a dedicated consulation meeting tool which facilitates students booking one-on-one meetings with me.\nQualitative feedback from students has also shaped my teaching: students have noted the value of interactive elements, the clarity of structured explanations, and the supportive learning environment, while also identifying areas where communication about assessment requirements could be strengthened. I use this feedback as a direct input into subject redesign and teaching refinement.\n\n\n\n\n\n\nEvidence: Evaluation reports are avaiallbe in the evidence folder.",
     "crumbs": [
       "Teaching Philosophy",
       "6. Evaluation & CPD"
@@ -493,5 +493,15 @@
     "title": "Evidence",
     "section": "Additional teaching resources",
     "text": "Additional teaching resources\nIn class pre-lab for BIOL340 Showing scaffolded assessments and how they link to learning opportunities across the subject Download PDF\nGen AI risk index handout\nA worksheet created by the SSCI AI working group for use during the Sydney Basin STEM Symposium 2025 Download PDF"
+  },
+  {
+    "objectID": "teaching-philosophy.html#assessment-and-feedback",
+    "href": "teaching-philosophy.html#assessment-and-feedback",
+    "title": "Teaching Philosophy",
+    "section": "Assessment and Feedback",
+    "text": "Assessment and Feedback\nAssessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.",
+    "crumbs": [
+      "Teaching Philosophy"
+    ]
   }
 ]
