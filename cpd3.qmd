@@ -31,7 +31,7 @@ Beyond formal teaching, I have developed extension resources using Google Notebo
 
 ## Preparation for the Workforce
 
-My curriculum redesign explicitly frames computational and digital literacy as essential graduate skills. In dry lab discussions, I situate what students are learning within the context of employer and research expectations. Student feedback supports this framing: BIOL340 students scored a mean of 4.75/6.0 on feeling equipped to work in Cell and Molecular Biology, with qualitative responses noting that computational activities reflect current industry practice.
+Digital literacy and by extension digital competence are essential skills in the post-Covid and post-Gen-AI eras [@morgan2022, @lucas2022, @Zhou2025]. My curriculum redesign frames computational and digital literacy as essential biology graduate skills. In dry lab discussions, I situate what students are learning within the context of employer and research expectations. Student feedback supports this framing: BIOL340 students scored a mean of 4.75/6.0 on feeling equipped to work in Cell and Molecular Biology, with qualitative responses noting that computational activities reflect current industry practice.
 
 ------------------------------------------------------------------------
 
