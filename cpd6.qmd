@@ -20,8 +20,10 @@ I engage critically with areas where evaluation data identifies opportunities fo
 
 Qualitative feedback from students has also shaped my teaching: students have noted the value of interactive elements, the clarity of structured explanations, and the supportive learning environment, while also identifying areas where communication about assessment requirements could be strengthened. I use this feedback as a direct input into subject redesign and teaching refinement.
 
-*\[Figure 8: Longitudinal evaluation data showing trends across BIOL340 and CHEM325/BIOL984 — see evaluation reports in the evidence folder.\]*
 
+::: {.callout-note appearance="simple"}
+**Evidence:** Evaluation reports are avaiallbe in the evidence folder.
+:::
 ------------------------------------------------------------------------
 
 ## Supporting and Mentoring Teaching Teams
