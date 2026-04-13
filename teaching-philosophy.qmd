@@ -15,6 +15,7 @@ I approach the teaching of computational skills by embedding them within discipl
 ## Active Participation and Authentic Learning
 
 Active participation is a core principle of my teaching. I design learning experiences that mirror authentic scientific workflows, including data analysis, visualisation, interpretation, and writing. These are structured through **constructive alignment**, ensuring that learning outcomes, activities, and assessment are clearly connected [@biggs2011]. 
+
 ## Assessment and Feedback
 
 Assessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.
