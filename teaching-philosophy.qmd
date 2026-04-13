@@ -21,7 +21,7 @@ Assessment is designed to be authentic and to require application, justification
 
 ## Inclusive Learning Environments
 
-I aim to create inclusive learning environments  in which students feel supported to engage with challenging material and develop confidence in their abilities. This includes clear expectations, scaffolded learning, and opportunities for practice and feedback. This practice is informed by following the principles of Universal Design for Learning [@cast2024UDL] and the concept of reducing cogntive load [@Sweller1988]
+I aim to create inclusive learning environments  in which students feel supported to engage with challenging material and develop confidence in their abilities. This includes clear expectations, scaffolded learning, and opportunities for practice and feedback. This practice is informed by following the principles of Universal Design for Learning [@cast2024UDL] and the concept of reducing cogntive load [@sweller1988]
 
 ## Summary
 
