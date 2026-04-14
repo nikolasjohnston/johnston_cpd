@@ -75,4 +75,4 @@ Showing scaffolded assessments and how they link to learning opportunities acros
 
 **Gen AI risk index handout**
 
-A worksheet created by the SSCI AI working group for use during the Sydney Basin STEM Symposium 2025 [Download PDF](Risk Matrix for circulation.pdf)
+A worksheet created by the SSCI AI working group for use during the Sydney Basin STEM Symposium 2025 [Download PDF](risk_matrix.pdf)
