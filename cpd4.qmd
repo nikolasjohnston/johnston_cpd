@@ -10,17 +10,17 @@ My approach to assessment is grounded in the principle that assessment should bo
 
 ------------------------------------------------------------------------
 
-## Constructive Alignment
+## Theoretical basis: Constructive Alignment and Cognitive load theory
 
-Assessment design is guided by **constructive alignment** [@biggs2011], ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practised, and what is assessed. Similar is explified in my resdesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class and their results that they build will form part of their scientific report assessment.
+My assessment design is guided by a combination of **Constructive Alignment** [@biggs2011], ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities and **Cognitive Load Theory** [@sweller1988], whereby discrete types of learning are separated to reduce cognitive overload and promote better student outcomes. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practiced, and what is assessed. Similar is exemplified in my redesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class, and in-turn their results form the basis of their scientific report assessment.
 
 ------------------------------------------------------------------------
 
 ## The Multi-Stage Assessment Model
 
-A key innovation in my assessment practice has been the development of a **multi-stage assessment model**, informed by my Learning and Teaching grant project and aligned with institutional priorities around authentic assessment and academic integrity.
+A key innovation in my assessment practice has been the development of a **multi-stage assessment model**, informed by my Learning and Teaching grant project for BIOL340 and aligned with institutional priorities around authentic assessment and academic integrity.
 
-In this model, students first complete a **peer-reviewed scientific report**, requiring them to analyse data and communicate findings in a formal scientific format. This is followed by a **generative AI reflection task**, where students critically evaluate their use of AI tools in the writing and analysis process.
+In this model, students first complete a series of practicals which are assessed through immediate **post-laboratory quizzes** which assess the immediate skills utilised in the practical. Following from this the student synthesise the results obtained across all practicals through  a **peer-reviewed scientific report**, requiring them to formally analyse data and communicate findings in a scientific format. This then culminates in a **generative AI reflection task**, where students critically evaluate feedback on their report and engage with AI tools to assist in their revision and editing process (see CPD qualifier 2 for an example of the reflection task Pro Forma).
 
 This staged design serves several pedagogical purposes:
 

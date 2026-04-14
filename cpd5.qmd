@@ -6,7 +6,7 @@ title: "Qualifier 5: Demonstrate Scholarship of Teaching and Learning"
 Qualifier 5 · Scholarship of T&L
 :::
 
-My engagement with the scholarship of teaching and learning is focused on the intersection of assessment design, generative AI in higher education, and computational skills development in biology. I have pursued this scholarship through funded projects, conference presentations, collaborative research, and the development of practical frameworks that contribute to both institutional practice and the broader higher education sector.
+My engagement with the scholarship of teaching and learning is focused on the intersection of assessment design, generative AI in higher education, and the development of digital competency in biology graduates. I have pursued this scholarship through funded projects, conference presentations, collaborative research, and the development of practical frameworks that contribute to both institutional practice and the broader higher education sector.
 
 ------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ My engagement with the scholarship of teaching and learning is focused on the in
 
 In 2024-2025 I was awarded a **UOW Learning and Teaching grant** to support the redesign of assessment in BIOL340 (Cell and Molecular Biology). This project focused on transitioning the subject from a quiz-only assessment structure to an authentic, multi-stage model that integrates scientific report writing, peer review, and structured engagement with generative AI. The grant supported the development and evaluation of this approach, which has since become a central feature of the subject and informed my broader scholarship on AI-responsive assessment design.
 
-The results of this grant and my curriculum redesign in Biol340 is also supported by an approved Human Ethics Application [H2025-1268]: Integrating Data Analysis and Computational Skills in Third-Year Cell and Molecular Biology and is currently being prepared for publication.
+The results of this grant and my curriculum redesign in Biol340 is also supported by an approved Human Ethics Application, *[H2025-1268]: Integrating Data Analysis and Computational Skills in Third-Year Cell and Molecular Biology*, and is currently being prepared for publication.
 
 ------------------------------------------------------------------------
 

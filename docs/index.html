@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -197,9 +217,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="statement-of-context" class="level1">
 <h1>Statement of Context</h1>
-<p>Since 2024 I have been a Lecturer in Bioinformatics in the School of Chemistry and Molecular Bioscience (SCMB), Faculty of Science, Medicine and Health (SMAH), at the University of Wollongong. My teaching career began at UOW as a laboratory demonstrator and tutor across eight undergraduate biology subjects (2017–2019), before I secured guest lecture opportunities and a fixed-term teaching contract in biotechnology, bioinformatics, and molecular biology (2019–2021). I then completed two postdoctoral research fellowships in bioinformatics — first at Nicolaus Copernicus University in Poland, then at the University of Technology, Sydney (2021–2023) — deepening the research expertise that now underpins my teaching practice before returning to UOW in my current role.</p>
+<p>Since 2024 I have been a Lecturer in Bioinformatics in the School of Science, Faculty of Science, Medicine and Health (SMAH), at the University of Wollongong. My teaching career began at UOW as a laboratory demonstrator and tutor across eight undergraduate biology subjects (2017–2019), before I secured guest lecture opportunities and a fixed-term teaching contract in biotechnology, bioinformatics, and molecular biology (2019–2021). I then completed two postdoctoral research fellowships in bioinformatics — first at Nicolaus Copernicus University in Poland, then at the University of Technology, Sydney (2021–2023) — deepening the research expertise that now underpins my teaching practice before returning to UOW in my current role.</p>
 <p>My teaching is shaped by an interdisciplinary background at the interface of biological research and computational science. My work in data-intensive biology — spanning genomics, molecular entomology, and bioinformatics — has centred on analysing and interpreting complex datasets in real research contexts. This experience directly informs my understanding of what constitutes meaningful learning in contemporary biology, where computational thinking, digital tools, and data-intensive approaches are not peripheral additions to the curriculum but central to how biological knowledge is now produced and applied in both research and industry.</p>
-<p>The context in which I teach is defined by a shift toward data-driven biology, where the ability to use digital tools are essential skills. Graduates are expected to engage critically with data, apply analytical tools appropriately, and communicate findings clearly. At the same time, many students enter biology with limited experience or confidence in digital technologies and computational skills, creating a need for structured, supportive learning environments that enable skill development while maintaining disciplinary rigour.</p>
+<p>The context in which I teach is defined by a shift toward data-driven biology, where the ability to use digital tools are essential skills <span class="citation" data-cites="zhou2025">(<a href="#ref-zhou2025" role="doc-biblioref">Zhou et al., 2025</a>)</span>. Graduates in the post-covid, post-GenAI landscape are expected to engage critically with data and digital platforms, apply analytical tools ethically and effectively, and communicate findings clearly. At the same time, many students enter biology with limited experience or confidence in digital technologies and computational skills <span class="citation" data-cites="lucas2022 morgan2022">(<a href="#ref-lucas2022" role="doc-biblioref">Lucas et al., 2022</a>; <a href="#ref-morgan2022" role="doc-biblioref">Morgan et al., 2022</a>)</span>, creating a need for structured, supportive learning environments that enable skill development while maintaining disciplinary rigour.</p>
 <p>In response, my teaching integrates opportunities for students to work with real biological data, develop analytical skills, and engage with tools used in research and industry. Learning activities reflect authentic scientific practices and are embedded within the curriculum. I am Subject Coordinator for <strong>BIOL340</strong> (Cell and Molecular Biology), and teach into <strong>CHEM325/BIOL984</strong> (Bioinformatics: Genome, Genes and Biomolecules / Applied Bioinformatics) and <strong>BIOL215</strong>. More recently, the emergence of generative AI has further shaped this context, requiring approaches that support transparent, critical, and appropriate use of these technologies. My practice continues to evolve through reflection, feedback, and engagement with ongoing developments in both biology and higher education.</p>
 <hr>
 <div class="phil-grid">
@@ -270,10 +290,21 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-lucas2022" class="csl-entry" role="listitem">
+Lucas, M., Bem-haja, P., Santos, S., Figueiredo, H., Ferreira Dias, M., &amp; Amorim, M. (2022). Digital proficiency: <span>Sorting</span> real gaps from myths among higher education students. <em>British Journal of Educational Technology</em>, <em>53</em>(6), 1885–1914. <a href="https://doi.org/10.1111/bjet.13220">https://doi.org/10.1111/bjet.13220</a>
+</div>
+<div id="ref-morgan2022" class="csl-entry" role="listitem">
+Morgan, A., Sibson, R., &amp; Jackson, D. (2022). Digital demand and digital deficit: Conceptualising digital literacy and gauging proficiency among higher education students. <em>Journal of Higher Education Policy and Management</em>, <em>44</em>(3), 258–275. <a href="https://doi.org/10.1080/1360080X.2022.2030275">https://doi.org/10.1080/1360080X.2022.2030275</a>
+</div>
+<div id="ref-zhou2025" class="csl-entry" role="listitem">
+Zhou, Y., Morgan, T., Sheridan, I., et al. (2025). Are <span>Graduates</span> <span>Digitally</span> <span>Unprepared</span>? <span>A</span> <span>Digital</span> <span>Technology</span> <span>Gap</span> <span>Analysis</span> <span>From</span> <span>Alumni</span> and <span>Employer</span> <span>Perspectives</span>. <em>Journal of Computer Assisted Learning</em>. <a href="https://doi.org/10.1111/jcal.70046">https://doi.org/10.1111/jcal.70046</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

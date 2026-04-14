@@ -6,7 +6,7 @@ title: "Qualifier 2: Facilitate a Wide Variety of Inclusive Learning Experiences
 Qualifier 2 · Inclusive Learning
 :::
 
-My approach to teaching and supporting student learning is centred on clarity, accessibility, and active engagement — particularly in areas that students often perceive as difficult or unfamiliar, such as bioinformatics and computational data analysis. I recognise that many biology students experience anxiety when encountering quantitative or coding-based content, and I deliberately structure my teaching to reduce these barriers while maintaining high-quailty teaching.
+My approach to teaching and supporting student learning is centred on clarity, accessibility, and active engagement — particularly in areas that students often perceive as difficult or unfamiliar, such as bioinformatics and computational data analysis. I recognise that many biology students experience anxiety when encountering quantitative or coding-based content, and I deliberately structure my content to reduce these barriers while maintaining high-quailty teaching.
 
 ------------------------------------------------------------------------
 
@@ -127,11 +127,15 @@ Beyond clarity, I prioritise **active support and engagement during learning**. 
 
 ------------------------------------------------------------------------
 
-## Separating Experimental and Analytical Components: Dedicated Dry Labs
+## Separating Experimental and Analytical Components: Reducing Cognitive Load
 
 A major development in my teaching practice has been the **intentional separation of experimental and analytical components of learning**. In BIOL340, I redesigned the practical sequence to introduce dedicated "dry labs" focused exclusively on data analysis and interpretation. This allows students to engage with experimental work and computational analysis as distinct cognitive tasks, reducing overload and improving conceptual understanding.
 
 This approach is informed by **cognitive load theory** [@sweller1988]: separating these components minimises extraneous cognitive load and allows students to focus on the underlying concepts and skills. It also creates space to explicitly teach data analysis as a core scientific capability, rather than treating it as an implicit component of laboratory work.
+
+This idea of reducing cognitive load to improve learning outcomes extends into how I develop my assessments. In BIOL340 I utilise scaffolded approach (outlined in detail in CPD descriptor 4) that reduces student mental load by separates the processes of writing, editing and reflecting. In the final reflection phase students are asked to use a previous piece of their writing as a basis for a guided workshop on how AI tools can be used ethically to improve scientific writing. This process is aided through a Pro Forma (see below) which outlines key prompting strategies and itself acts as a journal of their editing and reflection process.
+
+<iframe src="files/Assessment_5.pdf#toolbar=1&navpanes=0" width="80%" height="500px" style="border: none;"></iframe>
 
 ------------------------------------------------------------------------
 

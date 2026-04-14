@@ -6,7 +6,7 @@ title: "Teaching Philosophy"
 Teaching Philosophy
 :::
 
-My teaching is grounded in the view that digital and computational literacy is essential for modern biology graduates. As biology becomes increasingly data-driven and professional workforces increase their expectations of graduate digital capabilities [@zhou2025], students must be able to interpret data, use computational tools effectively, and communicate findings clearly and ethically. These capabilities are central to developing critical thinking, problem solving, and communication skills.
+My teaching is grounded in the view that digital and computational literacy is essential for modern biology graduates. As biology becomes increasingly data-driven and professional workforces increase their expectations of graduate digital capabilities [@zhou2025], students must be able to interpret data, use computational tools effectively, and communicate findings clearly and ethically. These capabilities are central to developing critical thinking, problem solving, and communication skills. Indeed, the digital competency expected from employers has changed dramatically over last five years, as summarsied by @zhou2025 below, with COVID driving the uptake of hybrid working and collaborative digital workspaces and the recent integration of AI tools in many workplaces.
 
 ![Zhou et al. 2025: Impact of COVID and AI on the evolution of expectations of employers' digital skills and literacy.](docs/images/zhou2025.png){width="574"}
 
