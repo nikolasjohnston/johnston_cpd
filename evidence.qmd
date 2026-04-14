@@ -32,8 +32,9 @@ Subject evaluation CHEM325 2024 [Download PDF](files/Chem325_subject_2024.pdf)
 ---
 
 **Combined BIOL215 / BIOL984 / CHEM325 — Spring 2025** 
-Combined Subject evaluation BIOL215 / BIOL984 / CHEM325 2024 [Download PDF](files/Chem325_subject_2025.pdf)
-Teacher evaluation report: [Download PDF](files/chem325_2025.pdf)
+Combined Subject evaluation: [Download PDF](files/Chem325_subject_2025.pdf)
+
+Combined Teacher evaluation: [Download PDF](files/chem325_2025.pdf)
 
 
 ------------------------------------------------------------------------
@@ -51,7 +52,7 @@ Education 2025.
 Course redesign of Biol340 to incorporate multi-stage assessments and AI
 education
 
-**SMAH learning and teaching forum 2025** [Download PDF](files/L_T_2025_ai_risk.pdf)
+**SMAH learning and teaching forum 2025** [Download PDF](files/ai_risk.pdf)
 
 Introduction of the Generative AI risk matrix for rapidly assessment
 triage and redesign
