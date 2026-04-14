@@ -27,6 +27,15 @@ Beyond formal teaching, I have developed extension resources using Google Notebo
 ![Example lecture summary video](images/example_refresher.mp4){fig-alt="Google notebookLM generated content refresher video" width="100%"} 
 
 
+<figure>
+  <audio controls style="width: 100%;">
+    <source src="images/example_podcast.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+  <figcaption>Google NotebookLM generated lecture summary podcast</figcaption>
+</figure>
+
+
 ------------------------------------------------------------------------
 
 ## Preparation for the Workforce
