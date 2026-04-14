@@ -4,7 +4,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "References\n\nThe following references are cited across this portfolio, formatted in APA 7th edition style.\n\n\n\nBiggs, J., & Tang, C. (2011). Teaching for quality learning at university (4th ed.). Open University Press.\n\n\nBoud, D., & Falchikov, N. (2006). Aligning assessment with long-term learning. Assessment & Evaluation in Higher Education, 31(4), 399–413. https://doi.org/10.1080/02602930600679050\n\n\nCAST. (2024). Universal Design for Learning Guidelines version 3.0. https://udlguidelines.cast.org\n\n\nLucas, M., Bem-haja, P., Santos, S., Figueiredo, H., Ferreira Dias, M., & Amorim, M. (2022). Digital proficiency: Sorting real gaps from myths among higher education students. British Journal of Educational Technology, 53(6), 1885–1914. https://doi.org/10.1111/bjet.13220\n\n\nMorgan, A., Sibson, R., & Jackson, D. (2022). Digital demand and digital deficit: Conceptualising digital literacy and gauging proficiency among higher education students. Journal of Higher Education Policy and Management, 44(3), 258–275. https://doi.org/10.1080/1360080X.2022.2030275\n\n\nSweller, J. (1988). Cognitive load during problem solving: Effects on learning. Cognitive Science, 12(2), 257–285. https://doi.org/10.1016/0364-0213(88)90023-7\n\n\nZhou, Y., Morgan, T., Sheridan, I., et al. (2025). Are Graduates Digitally Unprepared? A Digital Technology Gap Analysis From Alumni and Employer Perspectives. Journal of Computer Assisted Learning. https://doi.org/10.1111/jcal.70046\n\n\nZimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70. https://doi.org/10.1207/s15430421tip4102_2"
+    "text": "References\n\nThe following references are cited across this portfolio, formatted in APA 7th edition style.\n\n\n\nBiggs, J., & Tang, C. (2011). Teaching for quality learning at university (4th ed.). Open University Press.\n\n\nBjork, R. A., Dunlosky, J., & Kornell, N. (2013). Self-Regulated Learning: Beliefs, Techniques, and Illusions. Annual Review of Psychology, 64(1), 417–444. https://doi.org/10.1146/annurev-psych-113011-143823\n\n\nBoud, D., & Falchikov, N. (2006). Aligning assessment with long-term learning. Assessment & Evaluation in Higher Education, 31(4), 399–413. https://doi.org/10.1080/02602930600679050\n\n\nCAST. (2024). Universal Design for Learning Guidelines version 3.0. https://udlguidelines.cast.org\n\n\nLucas, M., Bem-haja, P., Santos, S., Figueiredo, H., Ferreira Dias, M., & Amorim, M. (2022). Digital proficiency: Sorting real gaps from myths among higher education students. British Journal of Educational Technology, 53(6), 1885–1914. https://doi.org/10.1111/bjet.13220\n\n\nMorgan, A., Sibson, R., & Jackson, D. (2022). Digital demand and digital deficit: Conceptualising digital literacy and gauging proficiency among higher education students. Journal of Higher Education Policy and Management, 44(3), 258–275. https://doi.org/10.1080/1360080X.2022.2030275\n\n\nSweller, J. (1988). Cognitive load during problem solving: Effects on learning. Cognitive Science, 12(2), 257–285. https://doi.org/10.1016/0364-0213(88)90023-7\n\n\nZhou, Y., Morgan, T., Sheridan, I., et al. (2025). Are Graduates Digitally Unprepared? A Digital Technology Gap Analysis From Alumni and Employer Perspectives. Journal of Computer Assisted Learning. https://doi.org/10.1111/jcal.70046\n\n\nZimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70. https://doi.org/10.1207/s15430421tip4102_2"
   },
   {
     "objectID": "cpd2.html",
@@ -40,11 +40,11 @@
     ]
   },
   {
-    "objectID": "cpd2.html#separating-experimental-and-analytical-components-dedicated-dry-labs",
-    "href": "cpd2.html#separating-experimental-and-analytical-components-dedicated-dry-labs",
+    "objectID": "cpd2.html#separating-experimental-and-analytical-components-reducing-cognitive-load",
+    "href": "cpd2.html#separating-experimental-and-analytical-components-reducing-cognitive-load",
     "title": "Qualifier 2: Facilitate a Wide Variety of Inclusive Learning Experiences for Students",
-    "section": "Separating Experimental and Analytical Components: Dedicated Dry Labs",
-    "text": "Separating Experimental and Analytical Components: Dedicated Dry Labs\nA major development in my teaching practice has been the intentional separation of experimental and analytical components of learning. In BIOL340, I redesigned the practical sequence to introduce dedicated “dry labs” focused exclusively on data analysis and interpretation. This allows students to engage with experimental work and computational analysis as distinct cognitive tasks, reducing overload and improving conceptual understanding.\nThis approach is informed by cognitive load theory (Sweller, 1988): separating these components minimises extraneous cognitive load and allows students to focus on the underlying concepts and skills. It also creates space to explicitly teach data analysis as a core scientific capability, rather than treating it as an implicit component of laboratory work.",
+    "section": "Separating Experimental and Analytical Components: Reducing Cognitive Load",
+    "text": "Separating Experimental and Analytical Components: Reducing Cognitive Load\nA major development in my teaching practice has been the intentional separation of experimental and analytical components of learning. In BIOL340, I redesigned the practical sequence to introduce dedicated “dry labs” focused exclusively on data analysis and interpretation. This allows students to engage with experimental work and computational analysis as distinct cognitive tasks, reducing overload and improving conceptual understanding.\nThis approach is informed by cognitive load theory (Sweller, 1988): separating these components minimises extraneous cognitive load and allows students to focus on the underlying concepts and skills. It also creates space to explicitly teach data analysis as a core scientific capability, rather than treating it as an implicit component of laboratory work.\nThis idea of reducing cognitive load to improve learning outcomes extends into how I develop my assessments. In BIOL340 I utilise scaffolded approach (outlined in detail in CPD descriptor 4) that reduces student mental load by separates the processes of writing, editing and reflecting. In the final reflection phase students are asked to use a previous piece of their writing as a basis for a guided workshop on how AI tools can be used ethically to improve scientific writing. This process is aided through a Pro Forma (see below) which outlines key prompting strategies and itself acts as a journal of their editing and reflection process.",
     "crumbs": [
       "Teaching Philosophy",
       "2. Inclusive Learning"
@@ -128,11 +128,11 @@
     ]
   },
   {
-    "objectID": "cpd4.html#constructive-alignment",
-    "href": "cpd4.html#constructive-alignment",
+    "objectID": "cpd4.html#theoretical-basis-constructive-alignment-and-cognitive-load-theory",
+    "href": "cpd4.html#theoretical-basis-constructive-alignment-and-cognitive-load-theory",
     "title": "Qualifier 4: Design Scaffolded Assessments That Foster Progressive Learning",
-    "section": "Constructive Alignment",
-    "text": "Constructive Alignment\nAssessment design is guided by constructive alignment (Biggs & Tang, 2011), ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practised, and what is assessed. Similar is explified in my resdesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class and their results that they build will form part of their scientific report assessment.",
+    "section": "Theoretical basis: Constructive Alignment and Cognitive load theory",
+    "text": "Theoretical basis: Constructive Alignment and Cognitive load theory\nMy assessment design is guided by a combination of Constructive Alignment (Biggs & Tang, 2011), ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities and Cognitive Load Theory (Sweller, 1988), whereby discrete types of learning are separated to reduce cognitive overload and promote better student outcomes. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practiced, and what is assessed. Similar is exemplified in my redesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class, and in-turn their results form the basis of their scientific report assessment.",
     "crumbs": [
       "Teaching Philosophy",
       "4. Scaffolded Assessment"
@@ -257,6 +257,16 @@
     ]
   },
   {
+    "objectID": "teaching-philosophy.html#assessment-and-feedback",
+    "href": "teaching-philosophy.html#assessment-and-feedback",
+    "title": "Teaching Philosophy",
+    "section": "Assessment and Feedback",
+    "text": "Assessment and Feedback\nAssessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.",
+    "crumbs": [
+      "Teaching Philosophy"
+    ]
+  },
+  {
     "objectID": "teaching-philosophy.html#inclusive-learning-environments",
     "href": "teaching-philosophy.html#inclusive-learning-environments",
     "title": "Teaching Philosophy",
@@ -347,7 +357,7 @@
     "href": "cpd5.html#learning-and-teaching-grant-redesigning-assessment-in-biol340",
     "title": "Qualifier 5: Demonstrate Scholarship of Teaching and Learning",
     "section": "Learning and Teaching Grant: Redesigning Assessment in BIOL340",
-    "text": "Learning and Teaching Grant: Redesigning Assessment in BIOL340\nIn 2024-2025 I was awarded a UOW Learning and Teaching grant to support the redesign of assessment in BIOL340 (Cell and Molecular Biology). This project focused on transitioning the subject from a quiz-only assessment structure to an authentic, multi-stage model that integrates scientific report writing, peer review, and structured engagement with generative AI. The grant supported the development and evaluation of this approach, which has since become a central feature of the subject and informed my broader scholarship on AI-responsive assessment design.\nThe results of this grant and my curriculum redesign in Biol340 is also supported by an approved Human Ethics Application [H2025-1268]: Integrating Data Analysis and Computational Skills in Third-Year Cell and Molecular Biology and is currently being prepared for publication.",
+    "text": "Learning and Teaching Grant: Redesigning Assessment in BIOL340\nIn 2024-2025 I was awarded a UOW Learning and Teaching grant to support the redesign of assessment in BIOL340 (Cell and Molecular Biology). This project focused on transitioning the subject from a quiz-only assessment structure to an authentic, multi-stage model that integrates scientific report writing, peer review, and structured engagement with generative AI. The grant supported the development and evaluation of this approach, which has since become a central feature of the subject and informed my broader scholarship on AI-responsive assessment design.\nThe results of this grant and my curriculum redesign in Biol340 is also supported by an approved Human Ethics Application, [H2025-1268]: Integrating Data Analysis and Computational Skills in Third-Year Cell and Molecular Biology, and is currently being prepared for publication.",
     "crumbs": [
       "Teaching Philosophy",
       "5. Scholarship of T&L"
@@ -402,7 +412,7 @@
     "href": "cpd1.html",
     "title": "Qualifier 1: Effectively design curriculum demonstrating integration across the degree",
     "section": "",
-    "text": "Qualifier 1 · Curriculum Design\nMy approach to the design and planning of learning activities is grounded in the principle that modern biology education must develop not only conceptual understanding, but also the ability engage with technology to work with data, interpret results, and communicate findings effectively. As Subject Coordinator for BIOL340 (Cell and Molecular Biology), I have led a substantial redesign of the subject to align learning activities with authentic scientific practice whilst introducing digital literacy skills, ensuring that students engage with the kinds of workflows they will encounter beyond university.",
+    "text": "Qualifier 1 · Curriculum Design\nMy approach to the design and planning of learning activities is grounded in the principle that modern biology education must develop not only conceptual understanding, but also the ability engage with digital technologies to work with data, interpret results, and communicate findings effectively. As Subject Coordinator for BIOL340 (Cell and Molecular Biology) and through my teaching in BIOL215 and CHEM325, I have led a substantial redesign of both subjects and assessments to align learning activities with authentic scientific practice whilst introducing digital literacy skills, ensuring that students engage with the kinds of workflows they will encounter beyond university.",
     "crumbs": [
       "Teaching Philosophy",
       "1. Curriculum Design"
@@ -435,7 +445,7 @@
     "href": "cpd1.html#integration-into-chem325biol984",
     "title": "Qualifier 1: Effectively design curriculum demonstrating integration across the degree",
     "section": "Integration into CHEM325/BIOL984",
-    "text": "Integration into CHEM325/BIOL984\nThis design philosophy extends beyond BIOL340 into my teaching in bioinformatics (CHEM325/BIOL984), where I similarly emphasise the integration of theory with applied, real-world datasets. I have redesigned assessments in CHEM325 to equip students with the skills to analyse large-scale real-world datasets, including a formal report that explores the evolution and epidemiology of Zika virus on data personalised for each student (through a custom script). I similarly apply principles of constructive alignment where computer practicals allow students to obtain and analyse their data, which then directly translates into the results section of their formal report.\nStudent feedback consistently highlights the value of this approach, with mean scores of 5.8/6.0 for connecting theory with practical applications — indicating that students recognise the relevance and coherence of the learning activities.",
+    "text": "Integration into CHEM325/BIOL984\nThis design philosophy extends beyond BIOL340 into my teaching in bioinformatics (CHEM325/BIOL984), where I similarly emphasise the integration of theory with applied, real-world datasets. I have redesigned assessments in CHEM325 to equip students with the skills to analyse large-scale real-world datasets, including a formal report that explores the evolution and epidemiology of Zika virus on data personalised for each student (through custom scripts). I similarly apply principles of constructive alignment where computer practicals allow students to obtain and analyse their data, which then directly translates into the results section of their formal report.\nStudent feedback consistently highlights the value of this approach, with mean scores of 5.8/6.0 for connecting theory with practical applications — indicating that students recognise the relevance and coherence of the learning activities.",
     "crumbs": [
       "Teaching Philosophy",
       "1. Curriculum Design"
@@ -493,37 +503,5 @@
     "title": "Evidence",
     "section": "Additional teaching resources",
     "text": "Additional teaching resources\nIn class pre-lab for BIOL340 Showing scaffolded assessments and how they link to learning opportunities across the subject Download PDF\nGen AI risk index handout\nA worksheet created by the SSCI AI working group for use during the Sydney Basin STEM Symposium 2025 Download PDF"
-  },
-  {
-    "objectID": "teaching-philosophy.html#assessment-and-feedback",
-    "href": "teaching-philosophy.html#assessment-and-feedback",
-    "title": "Teaching Philosophy",
-    "section": "Assessment and Feedback",
-    "text": "Assessment and Feedback\nAssessment is designed to be authentic and to require application, justification, and clear communication. I incorporate opportunities for feedback and reflection, supporting the development of self-regulated learners. Where appropriate, I integrate generative AI in a structured way, requiring students to evaluate and refine outputs. This supports ethical engagement with emerging technologies and aligns with contemporary approaches to assessment and feedback.",
-    "crumbs": [
-      "Teaching Philosophy"
-    ]
-  },
-  {
-    "objectID": "cpd2.html#separating-experimental-and-analytical-components-reducing-cognitive-load",
-    "href": "cpd2.html#separating-experimental-and-analytical-components-reducing-cognitive-load",
-    "title": "Qualifier 2: Facilitate a Wide Variety of Inclusive Learning Experiences for Students",
-    "section": "Separating Experimental and Analytical Components: Reducing Cognitive Load",
-    "text": "Separating Experimental and Analytical Components: Reducing Cognitive Load\nA major development in my teaching practice has been the intentional separation of experimental and analytical components of learning. In BIOL340, I redesigned the practical sequence to introduce dedicated “dry labs” focused exclusively on data analysis and interpretation. This allows students to engage with experimental work and computational analysis as distinct cognitive tasks, reducing overload and improving conceptual understanding.\nThis approach is informed by cognitive load theory (Sweller, 1988): separating these components minimises extraneous cognitive load and allows students to focus on the underlying concepts and skills. It also creates space to explicitly teach data analysis as a core scientific capability, rather than treating it as an implicit component of laboratory work.\nThis idea of reducing cognitive load to improve learning outcomes extends into how I develop my assessments. In BIOL340 I utilise scaffolded approach (outlined in detail in CPD descriptor 4) that reduces student mental load by separates the processes of writing, editing and reflecting. In the final reflection phase students are asked to use a previous piece of their writing as a basis for a guided workshop on how AI tools can be used ethically to improve scientific writing. This process is aided through a Pro Forma (see below) which outlines key prompting strategies and itself acts as a journal of their editing and reflection process.",
-    "crumbs": [
-      "Teaching Philosophy",
-      "2. Inclusive Learning"
-    ]
-  },
-  {
-    "objectID": "cpd4.html#theoretical-basis-constructive-alignment-and-cognitive-load-theory",
-    "href": "cpd4.html#theoretical-basis-constructive-alignment-and-cognitive-load-theory",
-    "title": "Qualifier 4: Design Scaffolded Assessments That Foster Progressive Learning",
-    "section": "Theoretical basis: Constructive Alignment and Cognitive load theory",
-    "text": "Theoretical basis: Constructive Alignment and Cognitive load theory\nMy assessment design is guided by a combination of Constructive Alignment (Biggs & Tang, 2011), ensuring that tasks are directly linked to intended learning outcomes and supported by teaching activities and Cognitive Load Theory (Sweller, 1988), whereby discrete types of learning are separated to reduce cognitive overload and promote better student outcomes. In BIOL340, this is exemplified through a staged assessment structure that aligns with the progression from experimental work to computational analysis and interpretation. Students are required to engage with authentic datasets and produce outputs that reflect real scientific practice, ensuring coherence between what is taught, what is practiced, and what is assessed. Similar is exemplified in my redesign of the CHEM325 bioinformatics assessment where students will engage with a real data set in class, and in-turn their results form the basis of their scientific report assessment.",
-    "crumbs": [
-      "Teaching Philosophy",
-      "4. Scaffolded Assessment"
-    ]
   }
 ]
